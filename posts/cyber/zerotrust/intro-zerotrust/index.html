@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Mais en fait, on a rien compris au Zero Trust</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, zerotrust, philosophie, architecture'>
+
+    <meta property="og:url" content="http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mais en fait, on a rien compris au Zero Trust">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mais en fait, on a rien compris au Zero Trust">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/">
+    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/">
+    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="http://localhost:1313/">
+                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Mais en fait, on a rien compris au Zero Trust</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            novembre 25, 2025
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/zerotrust">zerotrust</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/philosophie">philosophie</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/architecture">architecture</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>Oubliez le Zero Trust comme vous le connaissez. On s&rsquo;est fait lobotomiser par des providers qui veulent nous vendre des solutions toutes faites, et les définitions très floues qu&rsquo;on trouve partout n&rsquo;aident pas.</p>
+<p>On pense bien faire, on vérifie le device, on vérifie l&rsquo;identité&hellip; C&rsquo;est très bien, bravo. Mais en fait, si on s&rsquo;arrête là, on a commis une erreur philosophique majeure.</p>
+<p>Des fois, on oublie que le mot Zero Trust est composé de deux mots, <strong>Zero</strong> et <strong>Trust</strong>. Et on a mal compris les deux.</p>
+<h2 id="le-problème-du-zero">Le problème du &ldquo;Zero&rdquo;</h2>
+<p>Le &ldquo;Zero&rdquo; dans Zero Trust signifie qu&rsquo;on ne doit faire confiance à rien ni personne par défaut. Pas de confiance implicite. Chaque demande d&rsquo;accès doit être vérifiée, authentifiée et autorisée avant d&rsquo;être accordée. Cela signifie que même les utilisateurs internes et les systèmes doivent être traités comme des entités non fiables jusqu&rsquo;à preuve du contraire.</p>
+<p>Il existe une phrase célèbre qui dit &ldquo;Always assume breach&rdquo; (Supposez toujours qu&rsquo;on a été compromis). C&rsquo;est exactement ça l&rsquo;esprit du Zero, on part du principe qu&rsquo;on a déjà été compromis, donc on ne fait confiance à rien.</p>
+<p>Mais on oublie souvent que le &ldquo;Zero&rdquo;, mal appliqué, c&rsquo;est en fait se mettre des bâtons dans les roues à soi-même. Si on ne fait confiance à rien ni personne, nos collaborateurs, à chaque fois qu&rsquo;ils veulent accéder à une ressource, vont devoir passer par des étapes de vérification, d&rsquo;authentification et d&rsquo;autorisation lourdes.</p>
+<p>C&rsquo;est là qu&rsquo;on tombe dans le piège : <strong>trop de sécu tue la sécu.</strong></p>
+<p>Cela ralentit vachement le processus et peut générer de la frustration. Et ça engendre inévitablement des comportements à risque, comme le Shadow IT. Les utilisateurs, pour pouvoir simplement bosser, cherchent des moyens de contourner les restrictions. On voulait sécuriser, on a fini par créer des angles morts parce qu&rsquo;on a rendu l&rsquo;expérience insupportable.</p>
+<h2 id="le-malentendu-du-trust">Le malentendu du &ldquo;Trust&rdquo;</h2>
+<p>C&rsquo;est sur la deuxième partie, le &ldquo;Trust&rdquo;, qu&rsquo;on se plante le plus.</p>
+<p>Le Trust dans Zero Trust signifie qu&rsquo;on doit établir un niveau de confiance basé sur des critères stricts. Souvent, on se dit : &ldquo;Ok, j&rsquo;ai mis du MFA (Multi-Factor Authentication), c&rsquo;est bon, j&rsquo;ai fait du Trust&rdquo;.</p>
+<p>Faux.</p>
+<p>Le problème, c&rsquo;est qu&rsquo;on voit la confiance comme un tampon qu&rsquo;on met sur le front du gars à l&rsquo;entrée de la boîte de nuit. Une fois qu&rsquo;il est rentré, il fait ce qu&rsquo;il veut.
+Or, le vrai Trust ne devrait pas être binaire (je te fais confiance / je ne te fais pas confiance). Il devrait être <strong>éphémère et contextuel</strong>.</p>
+<p>Dans une vraie approche, la confiance ne se possède pas, <strong>elle se loue</strong>. Elle se loue à la milliseconde. C&rsquo;est une fonction mathématique continue. Si ton contexte change (tu changes d&rsquo;IP, ton PC commence à scanner le réseau, tu tapes sur ton clavier différemment), le loyer n&rsquo;est plus payé. L&rsquo;accès se coupe. Immédiatement. Sans émotion.</p>
+<p>Mais même si on arrive à faire ça, il reste un problème énorme. Un problème dont personne ne parle dans les brochures marketing.</p>
+<h2 id="lhypocrisie-du-système--quis-custodiet-ipsos-custodes">L&rsquo;Hypocrisie du système : Quis custodiet ipsos custodes?</h2>
+<p>On applique une paranoïa totale envers nos utilisateurs (le Zero Trust), mais pour faire ça, on a centralisé tout le pouvoir de décision dans un seul endroit : le <em>Policy Engine</em> (le moteur de politique) de notre fournisseur de sécu (votre IdP, votre solution SASE/SSE).</p>
+<p>On a retiré la confiance au réseau pour la donner aveuglément à un outil. On est passé du &ldquo;Trust&rdquo; envers nos employés au &ldquo;Full Trust&rdquo; envers un vendor.</p>
+<p>C&rsquo;est là que la vieille locution latine prend tout son sens : <strong>Quis custodiet ipsos custodes ?</strong> (Qui gardera les gardiens eux-mêmes ?).</p>
+<p>Si votre architecture Zero Trust repose sur un moteur auquel vous faites une confiance absolue et aveugle, vous n&rsquo;avez pas sécurisé votre entreprise. Vous avez juste créé un <strong>SPOF (Single Point of Failure)</strong> monstrueux. Si ce gardien tombe (panne mondiale) ou s&rsquo;il devient fou (compromission du fournisseur), vous perdez votre entreprise.</p>
+<p>C&rsquo;est l&rsquo;asymétrie dangereuse du Zero Trust actuel, une dictature numérique où le citoyen (l&rsquo;utilisateur) est surveillé en permanence, mais où le dictateur (l&rsquo;Admin/l&rsquo;Outil) n&rsquo;a de comptes à rendre à personne.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Alors on fait quoi ? On jette tout ? Non. Mais on arrête d&rsquo;être naïf.</p>
+<p>Le vrai Zero Trust, ce n&rsquo;est pas acheter un péage pour son réseau. C&rsquo;est construire un <strong>système</strong>.
+Un système où la friction est invisible pour l&rsquo;utilisateur sain, mais impitoyable pour le comportement déviant. Et surtout, un système où même l&rsquo;infrastructure de sécurité doit prouver son intégrité.</p>
+<p>Tant qu&rsquo;on n&rsquo;aura pas compris que la confiance est une variable dynamique et pas une configuration statique dans une console d&rsquo;admin, on continuera à passer à côté du sujet.</p>
+
+        </p>
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/k8s/knative/knative/">
+            &#8592;
+            :
+            AWS Lambda open source avec Knative
+        </a>
+    </p>
+    <p class="prev-post-date">
+        novembre 11, 2025
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/docs/envoy/envoy-1/">
+            :
+            Envoy, le proxy que vous utilisez déjà
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            décembre 27, 2025
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

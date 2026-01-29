@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Envoy, le proxy que vous utilisez déjà</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, docs, envoy'>
+
+    <meta property="og:url" content="http://localhost:1313/posts/docs/envoy/envoy-1/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Envoy, le proxy que vous utilisez déjà">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Envoy, le proxy que vous utilisez déjà">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/envoy/envoy-1/">
+    <meta property="twitter:url" content="http://localhost:1313/posts/docs/envoy/envoy-1/">
+    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="http://localhost:1313/posts/docs/envoy/envoy-1/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="http://localhost:1313/">
+                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>Envoy, le proxy que vous utilisez déjà</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            décembre 27, 2025
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/docs">docs</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/envoy">envoy</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p>Si vous travaillez dans le domaine de l&rsquo;IT depuis un moment, ou si vous avez simplement pris le temps de regarder ce qui se passe derrière le rideau des applications modernes, vous avez sûrement déjà entendu parler de HAProxy, Nginx ou même Apache.</p>
+<p>Ces applications sont des proxies (ou reverse proxies pour être plus précis). Ils ont été créés initialement pour gérer le trafic <strong>nord-sud</strong>, c&rsquo;est-à-dire le trafic qui entre et sort d&rsquo;un datacenter ou d&rsquo;une infrastructure vers l&rsquo;extérieur.</p>
+<p>Ce genre d&rsquo;application fonctionne très bien pour ces usages classiques. Cependant, avec les nouvelles méthodes de développement, notamment l&rsquo;avènement du SOA (Service Oriented Architecture) puis des microservices, ces proxies ont vite montré leurs limites.</p>
+<p>Les géants du cloud comme Google, Lyft ou Amazon ont identifié 3 problèmes que les proxies classiques peinaient à résoudre :</p>
+<ul>
+<li>Le trafic est désormais majoritairement <strong>est-ouest</strong> (entre services) plutôt que nord-sud.</li>
+<li>L&rsquo;<strong>observabilité</strong> et la télémétrie sont devenues critiques pour gérer la complexité des architectures distribuées.</li>
+<li>La gestion des configurations et des déploiements doit être <strong>dynamique</strong> et automatisable.</li>
+</ul>
+<p>&ldquo;À l&rsquo;ancienne&rdquo;, à chaque modification d&rsquo;une règle de routage ou ajout d&rsquo;un service, il fallait modifier la configuration du proxy manuellement et redémarrer le service. Cela provoquait des interruptions et augmentait le risque d&rsquo;erreurs humaines.</p>
+<p>De plus, puisque la majorité du trafic se fait désormais entre services, les standards de sécurité actuels (Zero Trust) exigent que chaque service puisse vérifier l&rsquo;identité de son interlocuteur et que le trafic soit chiffré de bout en bout. Cela générait une complexité énorme pour les développeurs, qui devaient inclure toute cette logique de sécurité et de réseau directement dans le code métier.</p>
+<p>C&rsquo;est dans ce contexte qu&rsquo;<strong>Envoy</strong> a été créé par Lyft en 2016. C&rsquo;est un proxy open-source conçu spécifiquement pour répondre aux besoins de ces architectures modernes.</p>
+<h2 id="envoy-cest-quoi-">Envoy, c&rsquo;est quoi ?</h2>
+<p><img src="/images/doc/envoy/image.png" alt="Envoy"></p>
+<p>Envoy est littéralement utilisé par les géants de la tech (Google, Amazon, Microsoft, IBM). On le retrouve partout : dans les architectures microservices, les Service Meshes (Istio, Consul Connect), les CDN, les API Gateways et même au cœur des infrastructures de cloud public.</p>
+<p>En bref, Envoy est un proxy L7 (couche applicative) qui fonctionne généralement comme un <strong>sidecar</strong> ou une gateway. Il est conçu pour être hautement performant (codé en C++), extensible (via des filtres) et configurable dynamiquement (via xDS APIs).</p>
+<h2 id="les-concepts-clés">Les concepts clés</h2>
+<h3 id="configuration-dynamique">Configuration dynamique</h3>
+<p>Le gros atout d&rsquo;Envoy, c&rsquo;est sa capacité à mettre à jour sa configuration sans redémarrage (hot reload). Via les APIs xDS (Listener, Route, Cluster, Endpoint Discovery Services), un <em>control plane</em> comme Istio ou Consul peut pousser de nouvelles règles de routage à des milliers d&rsquo;instances Envoy en quelques secondes.</p>
+<p>Plus besoin de SSH sur vos machines pour modifier des fichiers de config. Tout est centralisé et automatisé.</p>
+<h3 id="le-pattern-sidecar">Le pattern Sidecar</h3>
+<p>Envoy tourne généralement en tant que <strong>sidecar</strong>, c&rsquo;est-à-dire dans un conteneur accolé à votre application (dans le même Pod Kubernetes par exemple). Votre code applicatif ne gère plus la logique réseau complexe, il fait juste une requête vers <code>http://localhost:15001/api/users</code> et Envoy s&rsquo;occupe du reste : load balancing, retries, circuit breaking, TLS, métriques&hellip;</p>
+<div class="mermaid">
+graph LR
+    App[Votre App] -->|localhost:15001| Envoy[Envoy Sidecar]
+    Envoy -->|mTLS| Service[Autre Service]
+    
+    style Envoy fill:#333,stroke:#333,stroke-width:2px,color:#fff
+</div>
+<p>Cette séparation des responsabilités (<em>separation of concerns</em>) est géniale car elle permet d&rsquo;être agnostique du langage. Python, Go, Java, Rust&hellip; tout le monde bénéficie de la même infrastructure réseau sans réimplémenter les bibliothèques.</p>
+<h3 id="observabilité-native">Observabilité native</h3>
+<p>Envoy collecte automatiquement des métriques détaillées sur chaque requête : latence (p50, p95, p99), codes HTTP, erreurs, timeouts. Tout ça sans écrire une seule ligne de code dans votre app. Ces métriques sont directement exploitables dans Prometheus et Grafana.</p>
+<blockquote>
+<p><em>Note : Si vous ne savez pas ce que sont les p50, p95, p99, je vous conseille cet <a href="https://www.debugbear.com/docs/rum/percentiles">article</a>.</em></p>
+</blockquote>
+<p>C&rsquo;est un gain de temps énorme. Auparavant, il fallait instrumenter chaque service manuellement. Maintenant, vous avez une vue unifiée de toute votre infrastructure.</p>
+<h3 id="sécurité-by-design">Sécurité &ldquo;by design&rdquo;</h3>
+<p>Envoy gère nativement le TLS et le mTLS (mutual TLS). Chaque service peut vérifier l&rsquo;identité de l&rsquo;autre avant d&rsquo;accepter une connexion, et le trafic est chiffré. Dans un monde où le <em>Zero Trust</em> devient la norme, c&rsquo;est un avantage considérable qui décharge les développeurs.</p>
+<h2 id="des-applications-réelles">Des applications réelles</h2>
+<p>Pour l&rsquo;anecdote, Lyft (qui a créé l&rsquo;outil) l&rsquo;utilise pour gérer des millions de requêtes par seconde entre ses microservices. Résultat : une réduction de latence de 20% et une disponibilité augmentée à 99.999%.</p>
+<p>De même, Google Cloud Platform utilise Envoy par défaut pour ses Load Balancers HTTP(S). Si vous êtes sur GCP, vous utilisez déjà Envoy sans le savoir. Istio, le Service Mesh le plus populaire, l&rsquo;utilise également comme <em>data plane</em>.</p>
+<p>Envoy est omniprésent.</p>
+<h2 id="mais-pas-de-magie-non-plus">Mais pas de magie non plus</h2>
+<p>Envoy résout beaucoup de problèmes, mais il en crée aussi de nouveaux.</p>
+<ul>
+<li><strong>Courbe d&rsquo;apprentissage :</strong> Elle est raide.</li>
+<li><strong>Configuration :</strong> Le YAML peut vite devenir monstrueux et difficile à débugger.</li>
+<li><strong>Latence :</strong> Vous ajoutez forcément un saut réseau (5-10ms de latence ajoutée, voire plus selon la config).</li>
+<li><strong>Complexité opérationnelle :</strong> C&rsquo;est un composant de plus à maintenir.</li>
+</ul>
+<p>Mon expérience m&rsquo;a appris qu&rsquo;Envoy n&rsquo;est pas fait pour tout le monde. Si vous avez 5 services qui tournent tranquillement avec Nginx, pas besoin de tout casser pour migrer. Mais si vous construisez une architecture distribuée avec 50+ microservices, Envoy (ou un service mesh basé dessus) devient quasi indispensable.</p>
+<p>Comme toujours, le contexte est roi.</p>
+<h2 id="ce-qui-vient-ensuite">Ce qui vient ensuite</h2>
+<p>Cet article n&rsquo;est qu&rsquo;une introduction. Dans les prochains posts, nous plongerons dans :</p>
+<ul>
+<li>La configuration concrète d&rsquo;Envoy (listeners, routes, clusters)</li>
+<li>Les patterns avancés (canary deployments, A/B testing, fault injection)</li>
+<li>L&rsquo;intégration avec Kubernetes</li>
+<li>Les performances et le tuning en production</li>
+</ul>
+<p>Envoy est un outil complexe mais puissant. Nous prendrons le temps de l&rsquo;apprivoiser progressivement.</p>
+
+        </p>
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/cyber/zerotrust/intro-zerotrust/">
+            &#8592;
+            :
+            Mais en fait, on a rien compris au Zero Trust
+        </a>
+    </p>
+    <p class="prev-post-date">
+        novembre 25, 2025
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/docs/ebpf/ebpf-1/">
+            :
+            A la decouverte d&#39;eBPF
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            janvier 21, 2026
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zerotrust on makhal.fr</title>
+    <link>http://localhost:1313/tags/zerotrust/</link>
+    <description>Recent content in Zerotrust on makhal.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Tue, 25 Nov 2025 08:05:49 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zerotrust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mais en fait, on a rien compris au Zero Trust</title>
+      <link>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</link>
+      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</guid>
+      <description>On a rien compris au Zero Trust, on se mélange les pinceaux avec les définitions et on finit par construire des infra fragiles.</description>
+    </item>
+  </channel>
+</rss>

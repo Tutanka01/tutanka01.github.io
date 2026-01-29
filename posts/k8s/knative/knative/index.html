@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, serverless, knative, kubernetes'>
 
-    <meta property="og:url" content="https://makhal.fr/posts/k8s/knative/knative/">
+    <meta property="og:url" content="http://localhost:1313/posts/k8s/knative/knative/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="AWS Lambda open source avec Knative">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AWS Lambda open source avec Knative">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/knative/knative/">
-    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/knative/knative/">
-    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/knative/knative/">
+    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/knative/knative/">
+    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
 
     
-    <link rel="canonical" href="https://makhal.fr/posts/k8s/knative/knative/" />
+    <link rel="canonical" href="http://localhost:1313/posts/k8s/knative/knative/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.30b2395f3ff8c77f92f8f803732c95cd644f831ff0f058f07e1314dc79d8f3de.js" integrity="sha256-MLI5Xz/4x3&#43;S&#43;PgDcyyVzWRPgx/w8FjwfhMU3HnY894="></script>
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
     <script>
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="https://makhal.fr/">
-                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                <a href="http://localhost:1313/">
+                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/posts/"> Posts </a>
+                    <a href="http://localhost:1313/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/tags/"> Tags </a>
+                    <a href="http://localhost:1313/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/pages/about/"> Bio </a>
+                    <a href="http://localhost:1313/pages/about/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/posts/"> Posts </a>
+                        <a href="http://localhost:1313/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/tags/"> Tags </a>
+                        <a href="http://localhost:1313/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/pages/about/"> Bio </a>
+                        <a href="http://localhost:1313/pages/about/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/serverless">serverless</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/serverless">serverless</a></li>
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/knative">knative</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/knative">knative</a></li>
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
         
         </ul>
     </div>
@@ -285,18 +285,18 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://github.com/knative-extensions/net-kourier/releases/download/knative-v1.20.0/kourier.yaml
 </span></span></code></pre></div><p>Puis, on dit à Knative Serving : &ldquo;Hey, ton Ingress par défaut, c&rsquo;est Kourier !&rdquo;</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-network <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --namespace knative-serving <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --type merge <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;ingress-class&#34;:&#34;kourier.ingress.networking.knative.dev&#34;}}&#39;</span>
+</span></span></span><span style="display:flex;"><span>  --namespace knative-serving <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --type merge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;ingress-class&#34;:&#34;kourier.ingress.networking.knative.dev&#34;}}&#39;</span>
 </span></span></code></pre></div><h3 id="étape-4--le-dns-magique-sslipio">Étape 4 : Le DNS Magique (sslip.io)</h3>
 <p>C&rsquo;est mon astuce préférée pour les &ldquo;home labs&rdquo;. On n&rsquo;a pas de &ldquo;vrai&rdquo; nom de domaine. Donc on va utiliser une astuce que pas grand monde connait (selon moi) !</p>
 <p>On va utiliser <code>sslip.io</code>, un service DNS public qui résout une IP&hellip; à partir de l&rsquo;IP elle-même !</p>
 <p>Il suffit de dire à Knative : &ldquo;Toutes tes URLs finiront par <code>[MON-IP].sslip.io</code>&rdquo;.</p>
 <p>(Remplacez <code>192.168.100.135</code> par l&rsquo;IP de votre nœud K3s)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-domain <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --namespace knative-serving <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --type merge <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;192.168.100.135.sslip.io&#34;:&#34;&#34;}}&#39;</span>
+</span></span></span><span style="display:flex;"><span>  --namespace knative-serving <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --type merge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;192.168.100.135.sslip.io&#34;:&#34;&#34;}}&#39;</span>
 </span></span></code></pre></div><h3 id="étape-5--déployer-">Étape 5 : Déployer !</h3>
 <p>C&rsquo;est fini. On n&rsquo;écrit PAS de <code>Deployment</code>, pas de <code>Service</code>, pas d&rsquo;<code>Ingress</code>. On écrit un seul objet : un <code>Service</code> Knative (<code>ksvc</code>).</p>
 <p>Créez <code>hello.yaml</code> :</p>
@@ -317,7 +317,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ kubectl get ksvc hello
 </span></span><span style="display:flex;"><span>NAME    URL                                              LATESTCREATED   LATESTREADY   READY   REASON
-</span></span><span style="display:flex;"><span>hello   <span style="color:#f92672">[</span>http://hello.default.192.168.100.135.sslip.io<span style="color:#f92672">](</span>http://hello.default.192.168.100.135.sslip.io<span style="color:#f92672">)</span>    hello-00001     hello-00001   True    
+</span></span><span style="display:flex;"><span>hello   http://hello.default.192.168.100.135.sslip.io    hello-00001     hello-00001   True    
 </span></span></code></pre></div><p>Et voilà ! Vous pouvez faire le <code>curl</code> de la démo. Votre propre &ldquo;Cloud Run maison&rdquo; est opérationnel.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Alors, magique ? Pas tout à fait.</p>
@@ -363,6 +363,19 @@
 
 
 
+<div class="next-post">
+    <p>
+        <a href="/posts/cyber/zerotrust/intro-zerotrust/">
+            :
+            Mais en fait, on a rien compris au Zero Trust
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            novembre 25, 2025
+        </p>
+</div>
+
 
             
         
@@ -378,7 +391,7 @@
     
 
     
-    <span>&copy; 2025 makhal.fr</span>
+    <span>&copy; 2026 makhal.fr</span>
     
 </footer>
 </body>

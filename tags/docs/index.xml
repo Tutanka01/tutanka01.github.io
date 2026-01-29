@@ -6,14 +6,14 @@
     <description>Recent content in Docs on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Fri, 27 Jun 2025 08:40:45 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 27 Dec 2025 06:40:45 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Authentik : Self-Hosted IAM</title>
-      <link>http://localhost:1313/posts/docs/authentik/authentik-1/</link>
-      <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/authentik/authentik-1/</guid>
-      <description>Et si on parlait d&amp;rsquo;IAM ? Authentik est une solution self-hosted qui permet de gérer l&amp;rsquo;authentification et l&amp;rsquo;autorisation de vos applications.</description>
+      <title>Envoy, le proxy que vous utilisez déjà</title>
+      <link>http://localhost:1313/posts/docs/envoy/envoy-1/</link>
+      <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
+      <guid>http://localhost:1313/posts/docs/envoy/envoy-1/</guid>
+      <description>Découverte d&amp;rsquo;Envoy, un proxy open-source devenu incontournable dans le monde des microservices et des architectures cloud-native.</description>
     </item>
   </channel>
 </rss>

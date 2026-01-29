@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Secops on makhal.fr</title>
-    <link>https://makhal.fr/tags/secops/</link>
-    <description>Recent content in Secops on makhal.fr</description>
+    <title>SecOPS on makhal.fr</title>
+    <link>http://localhost:1313/tags/secops/</link>
+    <description>Recent content in SecOPS on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 27 Sep 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/secops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/secops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring pour les nuls</title>
-      <link>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</link>
+      <link>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</link>
       <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est le monitoring, pourquoi c&amp;rsquo;est important et quelques outils pour commencer.</description>
     </item>
     <item>
       <title>KASM - Navigateur et OS jetables</title>
-      <link>https://makhal.fr/posts/sysadmin/kasm-post/</link>
+      <link>http://localhost:1313/posts/sysadmin/kasm-post/</link>
       <pubDate>Wed, 19 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/kasm-post/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/kasm-post/</guid>
       <description>On va découvrir comment mettre en place un navigateur et un OS jetable avec Kasm</description>
     </item>
     <item>
       <title>C&#39;est quoi un système distribué ?</title>
-      <link>https://makhal.fr/posts/sysadmin/distibuted-systems/</link>
+      <link>http://localhost:1313/posts/sysadmin/distibuted-systems/</link>
       <pubDate>Sat, 15 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/distibuted-systems/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/distibuted-systems/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est un système distribué. Et quelques exemples.</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 4</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_4/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_4/</link>
       <pubDate>Thu, 22 Aug 2024 09:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_4/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_4/</guid>
       <description>On verra dans ce post la puissance de Wazuh en important de nouvelles règles et des démos</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 3</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_3/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_3/</link>
       <pubDate>Sat, 17 Aug 2024 12:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_3/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_3/</guid>
       <description>Dans ce post, nous allons ajouter, configurer et voir Wazuh en action</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 2</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_2/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_2/</link>
       <pubDate>Fri, 16 Aug 2024 21:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_2/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_2/</guid>
       <description>Dans la suite du post précédent, nous allons installer et configurer le wazuh-master et autres.</description>
     </item>
     <item>
       <title>Decouverte de Wazuh</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem/</link>
       <pubDate>Wed, 07 Aug 2024 20:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem/</guid>
       <description>Dans une (encore) nouvelle serie de posts, nous allons decouvir le monde extraordianaire des SIEM</description>
     </item>
   </channel>

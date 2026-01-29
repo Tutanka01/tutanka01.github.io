@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, docker, devops'>
 
-    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s1-3/">
+    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s1-3/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Le debut d&#39;une grande aventure K8s">
     <meta property="og:description" content="">
-    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Le debut d&#39;une grande aventure K8s">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s1-3/">
-    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s1-3/">
-    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s1-3/">
+    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s1-3/">
+    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
 
     
-    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s1-3/" />
+    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s1-3/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -48,7 +48,7 @@
     <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
 
     
-    <script src="/js/bundle.min.30b2395f3ff8c77f92f8f803732c95cd644f831ff0f058f07e1314dc79d8f3de.js" integrity="sha256-MLI5Xz/4x3&#43;S&#43;PgDcyyVzWRPgx/w8FjwfhMU3HnY894="></script>
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
     <script>
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="https://makhal.fr/">
-                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                <a href="http://localhost:1313/">
+                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/posts/"> Posts </a>
+                    <a href="http://localhost:1313/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/tags/"> Tags </a>
+                    <a href="http://localhost:1313/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="https://makhal.fr/pages/about/"> Bio </a>
+                    <a href="http://localhost:1313/pages/about/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/posts/"> Posts </a>
+                        <a href="http://localhost:1313/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/tags/"> Tags </a>
+                        <a href="http://localhost:1313/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="https://makhal.fr/pages/about/"> Bio </a>
+                        <a href="http://localhost:1313/pages/about/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
         
-            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
         
         </ul>
     </div>
@@ -190,7 +190,7 @@
 <h2 id="2-conteneurisation-de-l"><strong>2. Conteneurisation de l&rsquo;application</strong></h2>
 <p>Pour exécuter notre serveur web sur Kubernetes, nous avons besoin d&rsquo;une image Docker. Cette image inclura un serveur web <strong>Apache2</strong> avec le support de <strong>PHP</strong>. Voici le contenu du <code>Dockerfile</code> qui nous permettra de construire cette image :</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">php:8.3-apache</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> src/ /var/www/html/<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">COPY</span> src/ /var/www/html/<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><h3 id="explication-"><strong>Explication :</strong></h3>
 <ol>
 <li><strong>FROM php:8.3-apache</strong> : Nous utilisons une image de base officielle qui combine Apache et PHP.</li>
@@ -424,7 +424,7 @@ graph TD
     
 
     
-    <span>&copy; 2025 makhal.fr</span>
+    <span>&copy; 2026 makhal.fr</span>
     
 </footer>
 </body>

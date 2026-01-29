@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twingate on makhal.fr</title>
-    <link>https://makhal.fr/tags/twingate/</link>
+    <link>http://localhost:1313/tags/twingate/</link>
     <description>Recent content in Twingate on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 05 Oct 2025 08:05:49 +0100</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/twingate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/twingate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Twingate : Le Zero Trust, enfin simplifié</title>
-      <link>https://makhal.fr/posts/cyber/twingate/twingate/</link>
+      <link>http://localhost:1313/posts/cyber/twingate/twingate/</link>
       <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/twingate/twingate/</guid>
+      <guid>http://localhost:1313/posts/cyber/twingate/twingate/</guid>
       <description>On découvre Twingate, une solution de sécurité réseau qui remplace les VPN traditionnels avec une approche Zero Trust Network Access (ZTNA).</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud on makhal.fr</title>
-    <link>https://makhal.fr/tags/cloud/</link>
+    <link>http://localhost:1313/tags/cloud/</link>
     <description>Recent content in Cloud on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 07 Sep 2025 08:40:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sommes-nous devenus accros au cloud ?</title>
-      <link>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</link>
+      <link>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</link>
       <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</guid>
+      <guid>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</guid>
       <description>Accros ou dépendants du cloud ? Entre innovation, coûts et risques, où placer la limite ?</description>
     </item>
     <item>
       <title>Kata Containers : La sécurité des VM avec la vitesse des conteneurs</title>
-      <link>https://makhal.fr/posts/docs/katacontainers/kata-containers/</link>
+      <link>http://localhost:1313/posts/docs/katacontainers/kata-containers/</link>
       <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/katacontainers/kata-containers/</guid>
+      <guid>http://localhost:1313/posts/docs/katacontainers/kata-containers/</guid>
       <description>Découvrez Kata Containers, le projet open source qui réconcilie le meilleur des deux mondes</description>
     </item>
   </channel>

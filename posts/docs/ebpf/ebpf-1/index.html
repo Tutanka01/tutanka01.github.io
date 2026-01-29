@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>A la decouverte d&#39;eBPF</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, ebpf, linux'>
+
+    <meta property="og:url" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="A la decouverte d&#39;eBPF">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A la decouverte d&#39;eBPF">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
+    <meta property="twitter:url" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
+    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="http://localhost:1313/posts/docs/ebpf/ebpf-1/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="http://localhost:1313/">
+                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>A la decouverte d&#39;eBPF</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            janvier 21, 2026
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/ebpf">ebpf</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+        
+            <li class="post-tag"><a href="http://localhost:1313/tags/linux">linux</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <p><img src="/images/doc/ebpf/EBPF_logo.png" alt="ebpf logo"></p>
+<p>Le monitoring est le pilier de tout système d&rsquo;information, que ce soit ceux que l&rsquo;on gère ou les applications que l&rsquo;on utilise au quotidien comme Netflix, Amazon, Google ou Instagram.</p>
+<p>Toutes ces plateformes ont un besoin critique : savoir à tout moment si l&rsquo;application fait ce qu&rsquo;elle est censée faire. Et détrompez-vous, quand on parle de monitoring, on ne parle pas seulement d&rsquo;uptime ! On parle de performance, de sécurité, de débogage, et bien plus encore.</p>
+<p>Si vous avez suivi mes <a href="https://makhal.fr/posts/sysadmin/distibuted-systems/">articles</a> ou ma récente chaîne <a href="https://www.youtube.com/@makhalX">Youtube</a>, vous savez sûrement que les applications modernes reposent sur des architectures distribuées. L&rsquo;application n&rsquo;est plus hébergée sur un seul serveur, mais éclatée sur plusieurs machines, plusieurs datacenters, voire plusieurs pays !</p>
+<p>Dans ce contexte, l&rsquo;observabilité devient un défi de taille. Comment surveiller efficacement un puzzle éparpillé ? Et même si on surveille chaque serveur individuellement, comment s&rsquo;assurer que l&rsquo;ensemble fonctionne de façon optimale ?</p>
+<p>Pour répondre à ça, il faut aller à la source, là où tout se passe, c&rsquo;est a dire le système d&rsquo;exploitation. C&rsquo;est lui qui arbitre les ressources, les processus, le réseau et le stockage.</p>
+<p>Vous l&rsquo;aurez deviné, Linux est roi dans ce domaine, c&rsquo;est l&rsquo;OS standard des datacenters. Pour avoir une visibilité parfaite, il faut donc s&rsquo;approcher au plus près du Kernel Linux. Mais il y a un petit probleme, on ne touche pas au Kernel n&rsquo;importe comment. Ce que l&rsquo;on peut y faire est très limité (et tant mieux !), car le Kernel est le cœur du système. Si on laisse n&rsquo;importe qui y exécuter du code, on risque de tout casser, et pas qu&rsquo;un peu&hellip;</p>
+<p>C&rsquo;est là que nous avons besoin d&rsquo;un moyen sécurisé, performant et dynamique pour interagir avec le Kernel. C&rsquo;est exactement là qu&rsquo;eBPF entre en scène.</p>
+<h2 id="le-kernel-linux">Le Kernel Linux</h2>
+<p>Avant de plonger dans eBPF et pourquoi c&rsquo;est une révolution (et croyez-moi, ça l&rsquo;est), faisons un petit rappel sur le Kernel Linux.</p>
+<p>Le kernel selon wikipedia est defini comme :</p>
+<p><img src="/images/doc/ebpf/def-kernel.png" alt="Un noyau de système d’exploitation, ou simplement noyau, ou kernel en anglais[1], est une des parties fondamentales de certains systèmes d’exploitation. Il gère les ressources de l’ordinateur et permet aux différents composants — matériels et logiciels — de communiquer entre eux."></p>
+<p>En bref, un kernel est un programme qui fait la traduction entre ce que nous on veut (espace utilisateur) et ce que le matériel peut faire (espace noyau). C&rsquo;est lui qui gère les ressources, les processus, le réseau et le stockage.</p>
+<p>Lorsqu&rsquo;on cree un fichier, lance une application, ou envoie une requête réseau, en fait ce qu&rsquo;il se passe, c&rsquo;est quon demande au noyau de faire quelque chose pour nous. Par exemple ecrire un fichier sur le disque. Mon explorateur de fichier c&rsquo;est juste une interface graphique qui me permet de demander au kernel d&rsquo;ecrire un fichier. C&rsquo;est le kernel qui va faire le sale boulot de communiquer avec le disque dur, c&rsquo;est a dire aller chercher l&rsquo;emplacement libre, ecrire les données, mettre a jour la table d&rsquo;allocation, etc&hellip;</p>
+<p>Tant de choses que si on laissait chaque developpeur faire a sa sauce, on aurait un systeme instable, lent et plein de bugs. C&rsquo;est pour ca que le kernel est si important.</p>
+<p>Linux n&rsquo;est pas le seul OS a avoir un kernel, Windows, MacOS, BSD, tous ont un kernel. Mais Linux est special car c&rsquo;est un kernel totalement open source, ce qui veut dire, qu&rsquo;on peut regarder son code source, le modifier, et meme profiter des ventes qu&rsquo;on fait avec. Et ça c&rsquo;est enorme !</p>
+<p>C&rsquo;est pour cela que Linux est devenu le kernel de reference pour les serveurs, les datacenters, et meme les smartphones (Android est base sur Linux).</p>
+
+        </p>
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/docs/envoy/envoy-1/">
+            &#8592;
+            :
+            Envoy, le proxy que vous utilisez déjà
+        </a>
+    </p>
+    <p class="prev-post-date">
+        décembre 27, 2025
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

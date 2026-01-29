@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Knative on makhal.fr</title>
-    <link>https://makhal.fr/tags/knative/</link>
+    <link>http://localhost:1313/tags/knative/</link>
     <description>Recent content in Knative on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Tue, 11 Nov 2025 08:05:49 +0100</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/knative/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/knative/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Lambda open source avec Knative</title>
-      <link>https://makhal.fr/posts/k8s/knative/knative/</link>
+      <link>http://localhost:1313/posts/k8s/knative/knative/</link>
       <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/knative/knative/</guid>
+      <guid>http://localhost:1313/posts/k8s/knative/knative/</guid>
       <description>On découvre et deploie notre propre plateforme serverless avec Knative sur un cluster Kubernetes</description>
     </item>
   </channel>

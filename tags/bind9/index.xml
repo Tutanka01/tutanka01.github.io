@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bind9 on makhal.fr</title>
-    <link>https://makhal.fr/tags/bind9/</link>
+    <link>http://localhost:1313/tags/bind9/</link>
     <description>Recent content in Bind9 on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 15 Oct 2023 09:10:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/bind9/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bind9/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bind9</title>
-      <link>https://makhal.fr/posts/old/bind9/</link>
+      <link>http://localhost:1313/posts/old/bind9/</link>
       <pubDate>Sun, 15 Oct 2023 09:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/old/bind9/</guid>
+      <guid>http://localhost:1313/posts/old/bind9/</guid>
       <description>Dans ce post, je vais vous montrer comment configurer un serveur DNS avec Bind9.</description>
     </item>
   </channel>
