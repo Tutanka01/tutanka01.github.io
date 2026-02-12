@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, devops, IAC, Pulumi, Azure'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Decouverte de l&#39;IAC avec Pulumi">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Decouverte de l&#39;IAC avec Pulumi">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,13 +162,13 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/iac">IAC</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/iac">IAC</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/pulumi">Pulumi</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/pulumi">Pulumi</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/azure">Azure</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/azure">Azure</a></li>
         
         </ul>
     </div>
@@ -195,21 +195,21 @@
 <h3 id="installation-de-pulumi-et-prérequis">Installation de Pulumi et Prérequis</h3>
 <p>Petite précision avant de commencer : bien que je sois sous Windows, j&rsquo;utilise WSL, donc ce guide sera utile pour Linux et très similaire pour macOS. Si vous êtes sur Windows, je vous conseille aussi d’installer WSL : c’est vraiment pratique.</p>
 <p>Pour installer Pulumi, il suffit de se rendre sur le site officiel et de télécharger le binaire correspondant à votre OS. Dans mon cas, je suis sous Debian 12. La <a href="https://www.pulumi.com/docs/iac/download-install/">documentation officielle</a> recommande simplement cette commande pour l&rsquo;installation :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://get.pulumi.com | sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://get.pulumi.com | sh
 </span></span></code></pre></div><p>Une fois que vous avez lancé cette commande, vous pouvez en profiter pour prendre une gorgée de café. L’installation terminée, tapez :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi about
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi about
 </span></span></code></pre></div><p>et vous devriez voir une sortie similaire à celle-ci :</p>
 <p><img src="/images/IAC/Pulumi/pulumi-install-1.png" alt="Pulumi install 1"></p>
 <p>Nous avons maintenant Pulumi d&rsquo;installé et prêt à l&rsquo;emploi. Avant de nous lancer dans le code, quelques prérequis sont nécessaires pour un déploiement sur Azure : il faut un compte Azure actif ainsi que le CLI d&rsquo;Azure installé et python3 d&rsquo;installe aussi. Pour vous aider sur l&rsquo;installation du <em><strong>azure-cli</strong></em>, la documentation <a href="https://docs.microsoft.com/en-us/cli/azure/install-azure-cli">officielle</a> peut vous aider.</p>
 <h3 id="premier-code-avec-pulumi">Premier Code avec Pulumi</h3>
 <p>Avec les prérequis installés, nous allons écrire notre premier code. Pour commencer, créons un dossier et initialisons un projet Pulumi avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir Pulumi <span style="color:#f92672">&amp;&amp;</span> cd Pulumi
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir Pulumi <span style="color:#f92672">&amp;&amp;</span> cd Pulumi
 </span></span><span style="display:flex;"><span>pulumi new azure-python
 </span></span></code></pre></div><p>Ici, Pulumi nous demande de nous connecter à un compte. Oui, cela peut surprendre, mais cela permet de sauvegarder les projets sur le cloud sans partager votre code avec des tiers.</p>
 <p><img src="/images/IAC/Pulumi/lancement-projet.png" alt="Connexion au compte Pulumi"></p>
 <p>Une fois connecté, Pulumi demande le nom du projet et celui de la stack, autrement dit l’environnement dans lequel vous souhaitez déployer votre code. Vous pouvez conserver les valeurs par défaut pour l’instant, c’est-à-dire <strong>Project</strong> et <strong>Dev</strong>. Pulumi initialise alors son environnement, créant un environnement virtuel Python (nécessitant Python et pip). Il génère un fichier <code>__main__.py</code> qui contiendra le code de votre projet.</p>
 <p>L’arborescence de votre projet devrait ressembler à ceci :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pcmakhal:/home/mohamad/Documents/Pulumi# tree -L <span style="color:#ae81ff">1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pcmakhal:/home/mohamad/Documents/Pulumi# tree -L <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>|-- Pulumi.dev2.yaml
 </span></span><span style="display:flex;"><span>|-- Pulumi.yaml
@@ -218,11 +218,11 @@
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">`</span>-- venv
 </span></span></code></pre></div><p>Ces fichiers sont essentiels au projet. Le fichier <code>__main__.py</code> contient le code, <code>Pulumi.yaml</code> stocke les informations générales du projet, et <code>Pulumi.dev2.yaml</code> garde les détails de l’environnement initialisé. Si vous avez besoin de dépendances supplémentaires, vous pourrez les ajouter dans le fichier <code>requirements.txt</code>. En cas de suppression du dossier <code>venv</code>, il est également possible de recréer l’environnement virtuel.</p>
 <p>Dans le fichier <code>Pulumi.dev2.yaml</code>, si vous souhaitez changer le nom de l’environnement, du provider, ou de la région de déploiement (par défaut sur <code>West US</code>), c&rsquo;est possible en modifiant cette configuration :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">config</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">config</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">azure-native:location</span>: <span style="color:#ae81ff">WestUS2</span>
 </span></span></code></pre></div><h3 id="code-de-linfrastructure">Code de l&rsquo;Infrastructure</h3>
 <p>Lorsqu’on utilise la stack Azure par défaut de Pulumi, on obtient un code qui crée un groupe de ressources et un compte de stockage. Voici un exemple de ce code :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Un programme Pulumi pour Azure avec Python&#34;&#34;&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;Un programme Pulumi pour Azure avec Python&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pulumi
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pulumi_azure_native <span style="color:#f92672">import</span> storage
@@ -256,14 +256,14 @@
 </span></span></code></pre></div><p>Le code est en Python, ce qui le rend très parlant. On importe les modules nécessaires, crée un groupe de ressources et un compte de stockage, puis on exporte la clé primaire du compte pour la récupérer après le déploiement. Ce code, bien que simple, déploie efficacement et rapidement une infrastructure sur Azure.</p>
 <h3 id="déploiement-de-linfrastructure">Déploiement de l&rsquo;Infrastructure</h3>
 <p>Pour déployer avec Pulumi, il suffit d&rsquo;exécuter cette commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi up
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi up
 </span></span></code></pre></div><p>Vous verrez une sortie semblable à celle-ci :</p>
 <p><img src="/images/IAC/Pulumi/_speed_ezgif-6-66b81fa85a.gif" alt="Animation du déploiement Pulumi"></p>
 <p>En seulement 60 secondes, l&rsquo;infrastructure est déployée sur Azure. Rendez-vous sur le portail Azure pour vérifier la création du groupe de ressources et du compte de stockage :</p>
 <p><img src="/images/IAC/Pulumi/capture_azure.png" alt="Portail Azure"></p>
 <h3 id="suppression-de-linfrastructure">Suppression de l&rsquo;Infrastructure</h3>
 <p>Enfin, pour détruire cette infrastructure, lancez simplement :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi destroy
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pulumi destroy
 </span></span></code></pre></div><p>Ce qui donnera une sortie similaire à celle-ci :</p>
 <p><img src="/images/IAC/Pulumi/ezgif.com-speed.gif" alt="Suppression de l&rsquo;infrastructure"></p>
 <p>Voilà ! Vous avez déployé puis supprimé une infrastructure sur Azure avec Pulumi.</p>

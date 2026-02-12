@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, Wazuh, SecOPS'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/decouverte_siem_3/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/decouverte_siem_3/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Découverte de Wazuh Partie 3">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Découverte de Wazuh Partie 3">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/decouverte_siem_3/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/decouverte_siem_3/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/decouverte_siem_3/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/decouverte_siem_3/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/decouverte_siem_3/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/decouverte_siem_3/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/siem">SIEM</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/siem">SIEM</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/wazuh">Wazuh</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/wazuh">Wazuh</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/secops">SecOPS</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/secops">SecOPS</a></li>
         
         </ul>
     </div>
@@ -199,7 +199,7 @@
 <p><img src="/images/SIEM/Ajout-agent/Ajout_agent3.png" alt="Ajout Agent 3"></p>
 <p>Ici, nous devons d&rsquo;abord donner un nom <em><strong>UNIQUE</strong></em> à notre agent. Une fois que vous aurez décidé quel nom mettre, il faudra l&rsquo;assigner au groupe Windows créé un peu plus haut.</p>
 <p>Et voilà, maintenant Wazuh nous donne une commande <em><strong>PowerShell</strong></em> que nous devrons exécuter sur notre agent. Sans trop tarder, il faut copier cette commande et la lancer sur un terminal PowerShell avec les droits d&rsquo;administrateur. Une fois que Wazuh aura terminé de s&rsquo;installer, il faudra simplement démarrer le service avec la commande PowerShell :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>NET START WazuhSvc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>NET START WazuhSvc
 </span></span></code></pre></div><p><img src="/images/SIEM/Ajout-agent/Wazuh1.gif" alt="Ajout Agent 4"></p>
 <p>C&rsquo;est rapide, n&rsquo;est-ce pas ? Une fois que nous avons réussi à installer notre agent, il ne nous reste plus qu&rsquo;à <em><strong>fermer</strong></em> la fenêtre où nous sommes et vérifier si notre agent a bien été ajouté :</p>
 <p><img src="/images/SIEM/Ajout-agent/Ajout_agent5.png" alt="Ajout Agent 5"></p>

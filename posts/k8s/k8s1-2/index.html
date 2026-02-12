@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, docker, devops'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s1-2/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s1-2/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kubernetes Partie 2">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kubernetes Partie 2">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s1-2/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s1-2/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s1-2/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s1-2/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s1-2/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s1-2/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
         </ul>
     </div>
@@ -198,7 +198,7 @@
 <p>Donc, etcd, c&rsquo;est une base de données. Par ailleurs, vous pouvez, si vous le voulez, installer etcd en standalone, c&rsquo;est-à-dire sans avoir besoin de Kubernetes, et l&rsquo;utiliser comme vous utiliseriez MongoDB ou une autre base de données NoSQL.</p>
 <p>Je vais le répéter à nouveau : etcd, c&rsquo;est le cœur de Kubernetes. Sans etcd, les autres éléments ne sauraient pas comment suivre les changements et répondre aux demandes de l&rsquo;administrateur. Par exemple, si l&rsquo;on veut ajouter un nouveau Pod, notre demande va être envoyée depuis l&rsquo;ApiServer à l&rsquo;etcd où la valeur du Pod va être ajoutée. Vu que le scheduler est là à regarder tout changement qui se passe dans l&rsquo;ApiServer, il va se rendre compte qu&rsquo;il y a un Pod qui n&rsquo;a pas de nœud attribué, donc il va faire son boulot et dire à un nœud de créer ce Pod. Puis, l&rsquo;ApiServer va mettre à jour l&rsquo;etcd pour indiquer où se trouve le Pod créé.</p>
 <p>Il existe des commandes pour maîtriser etcd, comme <em><strong>etcdctl</strong></em>. Cette commande permet de parler directement avec le service etcd et de récupérer toutes les infos qu&rsquo;on veut. Voici quelques commandes qui peuvent être utilisées pour déboguer :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    etcdctl snapshot save 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    etcdctl snapshot save 
 </span></span><span style="display:flex;"><span>    etcdctl endpoint health
 </span></span><span style="display:flex;"><span>    etcdctl get
 </span></span><span style="display:flex;"><span>    etcdctl put
@@ -213,7 +213,7 @@
 <li><em><strong>Mise à jour de l&rsquo;etcd</strong></em></li>
 </ul>
 <p>Avant d&rsquo;expliquer, je vais vous donner un scénario où l&rsquo;on tape une commande pour créer un nouveau Pod :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl run nginx --image<span style="color:#f92672">=</span>nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl run nginx --image<span style="color:#f92672">=</span>nginx
 </span></span></code></pre></div><p>Ici, nous allons créer un Pod qui s&rsquo;appelle nginx et qui a l&rsquo;image du même nom.</p>
 <p>Dans l&rsquo;étape <em><strong>Authentification</strong></em>, l&rsquo;Api-Server va vérifier si la personne qui envoie la requête a bien le droit d&rsquo;accéder aux ressources. Une fois qu&rsquo;il a validé que j&rsquo;ai le droit, il va ensuite vérifier la syntaxe de la commande, si elle est correcte ou pas. Si elle est correcte et que j&rsquo;ai bien le droit, il va récupérer ou écrire les données dans l&rsquo;etcd. Ici, il va écrire dans l&rsquo;etcd qu&rsquo;il y a un nouveau Pod qui s&rsquo;appelle nginx et dont l&rsquo;image est aussi nginx.</p>
 <p>Une fois qu&rsquo;il a créé cette entrée, il va renvoyer à l&rsquo;utilisateur que le Pod a bien été créé. Mais ça ne s&rsquo;arrête pas ici ! Le scheduler, que nous détaillerons après, fait souvent des requêtes à l&rsquo;Api Server pour savoir s&rsquo;il y a de nouvelles choses à faire. Une fois qu&rsquo;il découvre qu&rsquo;il existe un nouveau Pod sans nœud attribué, il va envoyer au Kubelet d&rsquo;un nœud de créer ce Pod. Une fois fait, l&rsquo;ApiServer met à jour l&rsquo;etcd et attribue le Pod au nœud que le scheduler a choisi.</p>

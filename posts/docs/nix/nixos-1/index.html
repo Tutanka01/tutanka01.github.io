@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, nixos, homelab'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/nix/nixos-1/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/nix/nixos-1/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="NixOS mon homelab reproductible">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NixOS mon homelab reproductible">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/nix/nixos-1/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/nix/nixos-1/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/nix/nixos-1/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/nix/nixos-1/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/nix/nixos-1/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/nix/nixos-1/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/nixos">nixos</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/nixos">nixos</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/homelab">homelab</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/homelab">homelab</a></li>
         
         </ul>
     </div>
@@ -236,7 +236,7 @@ graph TD
 </div>
 <p>Donc pour résumer, une machine virtuelle sur Proxmox, avec un disque dur de 30Go, et 4Go de RAM.</p>
 <p>Si jamais vous le souhaitez, voilà la commande pour créer une machine virtuelle avec Proxmox :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm create <span style="color:#ae81ff">115</span> --name VM-Test --memory <span style="color:#ae81ff">4096</span> --cores <span style="color:#ae81ff">2</span> --net0 virtio,bridge<span style="color:#f92672">=</span>vmbr0 --scsihw virtio-scsi-pci --ide2 local-lvm:cloudinit --boot c --agent enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> --ostype l26
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm create <span style="color:#ae81ff">115</span> --name VM-Test --memory <span style="color:#ae81ff">4096</span> --cores <span style="color:#ae81ff">2</span> --net0 virtio,bridge<span style="color:#f92672">=</span>vmbr0 --scsihw virtio-scsi-pci --ide2 local-lvm:cloudinit --boot c --agent enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> --ostype l26
 </span></span><span style="display:flex;"><span>qm set <span style="color:#ae81ff">115</span> --scsi0 local-lvm:30G
 </span></span><span style="display:flex;"><span>qm set <span style="color:#ae81ff">115</span> --cdrom local:iso/nix-os.iso
 </span></span><span style="display:flex;"><span>qm start <span style="color:#ae81ff">115</span>
@@ -246,9 +246,9 @@ graph TD
 <h2 id="configuration--on-décore-notre-maison-">Configuration : On Décore Notre Maison !</h2>
 <p>Maintenant que NixOS est installé, laissons de côté les fondations pour passer à la décoration intérieure !  On va enfin pouvoir définir les meubles, les objets, les plantes, bref tout ce qui fait notre environnement de travail.  Et avec NixOS, tout ça se passe dans un seul endroit : le fichier de configuration.</p>
 <p>Ce fichier magique, c&rsquo;est celui-ci :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/nixos/configuration.nix
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo vim /etc/nixos/configuration.nix
 </span></span></code></pre></div><p>Avant de plonger dans les détails, je veux vous montrer la puissance de Nix avec un exemple simple. Par défaut, il n&rsquo;y a pas de serveur SSH installé.  Pour l&rsquo;installer, devinez quoi ? Il suffit de rajouter quelques lignes dans notre fichier de configuration :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>services<span style="color:#f92672">.</span>openssh <span style="color:#f92672">=</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>services<span style="color:#f92672">.</span>openssh <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>  enable <span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>;
 </span></span><span style="display:flex;"><span>  ports <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">22</span> ];
 </span></span><span style="display:flex;"><span>  settings <span style="color:#f92672">=</span> {
@@ -265,9 +265,9 @@ graph TD
 <p>Voilà à quoi ça ressemble dans mon fichier de config :</p>
 <p><img src="/images/doc/nix/ssh.png" alt="NixOS-ssh"></p>
 <p>Et pour que SSH fonctionne, il faut aussi ouvrir le port 22 dans le firewall. On ajoute donc cette ligne :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>networking<span style="color:#f92672">.</span>firewall<span style="color:#f92672">.</span>allowedTCPPorts <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">22</span> ];
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>networking<span style="color:#f92672">.</span>firewall<span style="color:#f92672">.</span>allowedTCPPorts <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">22</span> ];
 </span></span></code></pre></div><p>Une fois ces modifications faites, il ne reste plus qu&rsquo;à appliquer la configuration avec cette commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
 </span></span></code></pre></div>
 
 <style>
@@ -296,17 +296,17 @@ graph TD
 <h3 id="ajout-de-paquets--on-remplit-les-étagères">Ajout de paquets : On Remplit les Étagères</h3>
 <p>Pour ajouter des paquets, c&rsquo;est tout aussi simple que pour SSH.  On ajoute une ligne dans le fichier de configuration, et hop !</p>
 <p>Pour cet article, on va installer un outil qu&rsquo;on connaît tous, <code>nmap</code>. Voici la ligne à rajouter :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>environment<span style="color:#f92672">.</span>systemPackages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> pkgs; [
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>environment<span style="color:#f92672">.</span>systemPackages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> pkgs; [
 </span></span><span style="display:flex;"><span>    nmap
 </span></span><span style="display:flex;"><span>  ];
 </span></span></code></pre></div><p>Avec ça, vous installez <code>nmap</code> globalement sur NixOS, disponible pour tous les utilisateurs.  Mais si vous voulez limiter l&rsquo;installation à un seul utilisateur, vous pouvez utiliser cette ligne :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>users<span style="color:#f92672">.</span>users<span style="color:#f92672">.</span>mohamad<span style="color:#f92672">.</span>packages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> pkgs; [
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>users<span style="color:#f92672">.</span>users<span style="color:#f92672">.</span>mohamad<span style="color:#f92672">.</span>packages <span style="color:#f92672">=</span> <span style="color:#66d9ef">with</span> pkgs; [
 </span></span><span style="display:flex;"><span>    nmap
 </span></span><span style="display:flex;"><span>  ];
 </span></span></code></pre></div><p>Voici ce que ça donne dans mon fichier de configuration avec <code>nmap</code> :</p>
 <p><img src="/images/doc/nix/nmap.png" alt="Nmap"></p>
 <p>Et pour appliquer les changements, toujours la même commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
 </span></span></code></pre></div><p>Admirez la vitesse d&rsquo;installation :</p>
 
 
@@ -337,15 +337,15 @@ graph TD
 <ul>
 <li><strong>Changer le nom de la machine :</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>networking<span style="color:#f92672">.</span>hostName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nixos-homelab&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>networking<span style="color:#f92672">.</span>hostName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nixos-homelab&#34;</span>;
 </span></span></code></pre></div><ul>
 <li><strong>Changer le fuseau horaire :</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>time<span style="color:#f92672">.</span>timeZone <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Europe/Paris&#34;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>time<span style="color:#f92672">.</span>timeZone <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Europe/Paris&#34;</span>;
 </span></span></code></pre></div><ul>
 <li><strong>Configurer un serveur web (basique) :</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>  networking<span style="color:#f92672">.</span>firewall<span style="color:#f92672">.</span>allowedTCPPorts <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">80</span> ]; <span style="color:#75715e"># On ouvre juste le port 80 pour commencer</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>  networking<span style="color:#f92672">.</span>firewall<span style="color:#f92672">.</span>allowedTCPPorts <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">80</span> ]; <span style="color:#75715e"># On ouvre juste le port 80 pour commencer</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  services<span style="color:#f92672">.</span>nginx<span style="color:#f92672">.</span>enable <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>; <span style="color:#75715e"># On active Nginx</span>
 </span></span><span style="display:flex;"><span>  services<span style="color:#f92672">.</span>nginx<span style="color:#f92672">.</span>virtualHosts<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;mon-site.local&#34;</span> <span style="color:#f92672">=</span> { <span style="color:#75715e"># On configure un virtual host</span>
@@ -361,7 +361,7 @@ graph TD
 <h3 id="catastrophe---ou-pas">Catastrophe ! &hellip; ou pas</h3>
 <p>NixOS est un système d&rsquo;exploitation reproductible, je le répète !  Et ça, ça veut dire que si vous faites une boulette dans votre fichier de configuration, pas de panique !  Vous pouvez <strong>toujours revenir en arrière</strong>.  C&rsquo;est un peu comme un bouton &ldquo;undo&rdquo; pour votre système d&rsquo;exploitation.</p>
 <p>Imaginons, je fais une bêtise et je désactive SSH et je verrouille le port 22.  Voici les modifications (volontairement mauvaises !) que je vais faire dans mon fichier de configuration :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>services<span style="color:#f92672">.</span>openssh <span style="color:#f92672">=</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-nix" data-lang="nix"><span style="display:flex;"><span>services<span style="color:#f92672">.</span>openssh <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>  enable <span style="color:#f92672">=</span><span style="color:#66d9ef">false</span>; <span style="color:#75715e"># On désactive SSH (la GROSSE erreur !)</span>
 </span></span><span style="display:flex;"><span>  ports <span style="color:#f92672">=</span> [ <span style="color:#ae81ff">22</span> ];
 </span></span><span style="display:flex;"><span>  settings <span style="color:#f92672">=</span> {
@@ -375,7 +375,7 @@ graph TD
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>networking<span style="color:#f92672">.</span>firewall<span style="color:#f92672">.</span>allowedTCPPorts <span style="color:#f92672">=</span> [ ]; <span style="color:#75715e"># On ferme TOUS les ports TCP (la DOUBLE GROSSE erreur !)</span>
 </span></span></code></pre></div><p>J&rsquo;applique les changements, comme d&rsquo;habitude :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nixos-rebuild switch
 </span></span></code></pre></div><p>Et là&hellip; c&rsquo;est le drame ! Je n&rsquo;ai plus accès à ma machine en SSH.  Panique à bord ?  <strong>Absolument pas !</strong>  Avec NixOS, c&rsquo;est super simple de réparer les erreurs.  Il suffit de redémarrer la machine et de choisir de booter sur la <strong>génération système précédente</strong>.  NixOS garde en mémoire chaque configuration précédente, comme des points de sauvegarde.</p>
 <p>Regardez comme c&rsquo;est facile :</p>
 

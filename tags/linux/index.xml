@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on makhal.fr</title>
-    <link>http://localhost:1313/tags/linux/</link>
+    <link>https://makhal.fr/tags/linux/</link>
     <description>Recent content in Linux on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A la decouverte d&#39;eBPF</title>
-      <link>http://localhost:1313/posts/docs/ebpf/ebpf-1/</link>
+      <title>eBPF, au cœur du kernel Linux</title>
+      <link>https://makhal.fr/posts/docs/ebpf/ebpf-1/</link>
       <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ebpf/ebpf-1/</guid>
-      <description>On explore la techno que tout le monde s&amp;rsquo;arrache en ce moment : eBPF. Mais c&amp;rsquo;est quoi exactement ?</description>
+      <guid>https://makhal.fr/posts/docs/ebpf/ebpf-1/</guid>
+      <description>eBPF est la technologie du kernel Linux qui révolutionne le monitoring, l’observabilité et la sécurité. Découvrons comment et pourquoi.</description>
     </item>
     <item>
       <title>C&#39;est quoi vraiment un conteneur ?</title>
-      <link>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</link>
+      <link>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</link>
       <pubDate>Sat, 14 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</guid>
       <description>Namespaces, cgroups, et plus encore : plongeons dans l&amp;rsquo;anatomie d&amp;rsquo;un conteneur Linux.</description>
     </item>
   </channel>

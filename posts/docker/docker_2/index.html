@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, docker'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docker/docker_2/">
+    <meta property="og:url" content="https://makhal.fr/posts/docker/docker_2/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Docker Partie 2">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Docker Partie 2">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docker/docker_2/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docker/docker_2/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docker/docker_2/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docker/docker_2/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docker/docker_2/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docker/docker_2/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,7 +162,7 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
         </ul>
     </div>
@@ -178,9 +178,9 @@
 <p>Vous devez savoir que Docker utilise ce qu&rsquo;on appelle des <em><strong>&ldquo;images&rdquo;</strong></em> pour créer ces fameux <em>&ldquo;containers&rdquo;</em>. Les images sont des fichiers qui ont tout ce qu&rsquo;il faut pour créer un conteneur, c&rsquo;est-à-dire, le code, les bibliothèques, les variables d&rsquo;environnement, etc.</p>
 <p>Il faut vraiment faire la différence entre une image et un conteneur. Une image c&rsquo;est un fichier, et un conteneur c&rsquo;est un processus qui exécute cette image. On peut créer autant de conteneurs qu&rsquo;on veut à partir d&rsquo;une seule image.</p>
 <p>Pour bien comprendre ce que c&rsquo;est une image et comment on peut l&rsquo;utiliser, on va commencer par télécharger une image déjà prête. Pour ça, on va utiliser la commande <code>docker pull</code> suivi du nom de l&rsquo;image qu&rsquo;on veut télécharger.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker pull alpine
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker pull alpine
 </span></span></code></pre></div><p>La commande ci-dessus va télécharger l&rsquo;image &ldquo;alpine&rdquo; qui est une image très légère de Linux. Vous pouvez vérifier que l&rsquo;image a été téléchargée en utilisant la commande <code>docker images</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
 </span></span></code></pre></div><p>Voilà ce que vous devriez voir :</p>
 <p><img src="/images/Docker/Capture_images_1.png" alt="capture alpine" title="capture Alpine"></p>
 <blockquote>
@@ -191,7 +191,7 @@
 <p>Mais aussi vous pouvez créer vos propres images, cela on le verra dans une autre partie. L&rsquo;utilité de cela est que vous pouvez, en quelque sorte, encapsuler votre application dans une image et la distribuer à n&rsquo;importe qui. Et cette personne pourra créer un conteneur à partir de cette image et exécuter votre application sans avoir à installer quoi que ce soit.</p>
 <h3 id="les-conteneurs">Les conteneurs</h3>
 <p>Avant de vous parler de toutes les options qu&rsquo;on peut utiliser pour créer un conteneur, je vous prie de lancer cette commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run --rm -p  8080:80 nginx
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run --rm -p  8080:80 nginx
 </span></span></code></pre></div><p>Voilà ce que vous devriez voir :</p>
 <p><img src="/images/Docker/demo_image.gif" alt="Texte alternatif" title="Titre de l'image"></p>
 <p>On constate qu&rsquo;en moins de 5 secondes on a un serveur web fonctionnel. C&rsquo;est magique n&rsquo;est-ce pas ??</p>
@@ -218,7 +218,7 @@
 <h3 id="dockerfile">Dockerfile</h3>
 <p>Comme je l&rsquo;ai dit un peu plus haut, un Dockerfile est un fichier de configuration qui permet de définir comment créer une image. Un Dockerfile contient une série d&rsquo;instructions qui permettent de définir l&rsquo;environnement dans lequel l&rsquo;application va être exécutée.</p>
 <p>On va prendre un exemple. J&rsquo;ai dans mon répertoire un fichier <code>site.html</code> qui contient un simple serveur de page web HTML. Voilà le contenu de ce fichier :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
 </span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">body</span>&gt;
 </span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">h1</span>&gt;Docker c&#39;est incroyable !!&lt;/<span style="color:#f92672">h1</span>&gt;
@@ -229,23 +229,23 @@
 <p>serveur web. La communauté Docker nous donne déjà le travail presque fait. On peut utiliser une image qui contient déjà un serveur web et qui est prête à l&rsquo;emploi. On va utiliser l&rsquo;image <code>httpd</code> qui est une image pour un serveur web Apache2.</p>
 <p>Une fois que j&rsquo;aurais créé mon image avec mon Dockerfile, je pourrais créer un conteneur à partir de cette image et exécuter mon serveur web. Et ça, n&rsquo;importe où, sans avoir à refaire tout le travail.</p>
 <p>Voilà le contenu de mon Dockerfile :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">httpd:2.4</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">httpd:2.4</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">COPY</span> site.html /usr/local/apache2/htdocs/index.html<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>La première ligne <code>FROM httpd:2.4</code> permet de définir l&rsquo;image de base à utiliser pour créer notre image. Dans notre cas, on utilise l&rsquo;image <code>httpd</code> qui est. Pour savoir les possibilités qu&rsquo;on a avec cette image, on peut consulter la documentation de l&rsquo;image sur le <em>Docker Hub</em>.</p>
 <p>Également vous pouvez voir que j&rsquo;ai spécifié la version de l&rsquo;image <code>httpd</code> que je veux utiliser. C&rsquo;est pour éviter d&rsquo;avoir des surprises lors de la création de l&rsquo;image. Si je ne spécifie pas la version, Docker va utiliser la dernière version de l&rsquo;image <code>httpd</code> qui est disponible sur le <em>Docker Hub</em>. Donc par défaut, Docker va utiliser le flag <code>:latest</code> pour la version de l&rsquo;image.</p>
 <p>La deuxième ligne <code>COPY site.html /usr/local/apache2/htdocs/index.html</code> permet de copier le fichier <code>site.html</code> dans le répertoire <code>/usr/local/apache2/htdocs/</code> de l&rsquo;image. C&rsquo;est dans ce répertoire que le serveur web Apache2 va chercher les fichiers à servir. Et on a renommé le fichier <code>site.html</code> en <code>index.html</code> pour que le serveur web le serve par défaut.</p>
 <p>Pour créer une image à partir de ce Dockerfile, on utilise la commande <code>docker build</code> suivi du chemin du répertoire où se trouve le Dockerfile. Dans notre cas, le Dockerfile se trouve dans le même répertoire que le fichier <code>site.html</code>. Donc on peut utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -f Dockerfile -t makhal/site_simple .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -f Dockerfile -t makhal/site_simple .
 </span></span></code></pre></div><p>La commande ci-dessus va créer une image avec le tag <code>makhal/site_simple</code> à partir du Dockerfile qui se trouve dans le répertoire courant. Le flag <code>-f</code> permet de spécifier le nom du Dockerfile à utiliser. Si on ne spécifie pas le nom du Dockerfile, Docker va chercher un fichier <code>Dockerfile</code> dans le répertoire courant.</p>
 <p>Le point à la fin de la commande permet de spécifier le chemin du contexte à utiliser pour la construction de l&rsquo;image. Le contexte c&rsquo;est le répertoire où se trouve le Dockerfile et les fichiers qu&rsquo;on veut copier dans l&rsquo;image. Dans notre cas, le contexte c&rsquo;est le répertoire courant.</p>
 <p>Maintenant, votre image est faite si cela s&rsquo;est passé sans erreur. Vous pouvez vérifier que l&rsquo;image a été créée en utilisant la commande <code>docker images</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
 </span></span></code></pre></div><p>Mais si jamais vous vous êtes trompé dans le Dockerfile, vous pouvez toujours supprimer l&rsquo;image en utilisant la commande <code>docker rmi</code> suivi du nom de l&rsquo;image.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker rmi makhal/site_simple
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker rmi makhal/site_simple
 </span></span></code></pre></div><p>Maintenant que notre image est créée, on peut créer un conteneur à partir de cette image et exécuter notre serveur web. Pour cela, on utilise la commande <code>docker run</code> suivi du nom de l&rsquo;image.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -p 8080:80 makhal/site_simple
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -p 8080:80 makhal/site_simple
 </span></span></code></pre></div><p>La commande ci-dessus va créer un conteneur à partir de l&rsquo;image <code>makhal/site_simple</code> et le lancer en utilisant le port 8080 de notre machine hôte. Vous pouvez vérifier que le conteneur a été créé en utilisant la commande <code>docker ps</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps
 </span></span></code></pre></div><p>Voilà ce que vous devriez voir :</p>
 <p><img src="/images/Docker/docker_ps.png" alt="docker ps" title="Docker ps"></p>
 <p>On constate que le conteneur est en train de tourner. Vous pouvez vérifier que le serveur web fonctionne en utilisant un navigateur web et en allant à l&rsquo;adresse <code>http://localhost:8080</code>.</p>

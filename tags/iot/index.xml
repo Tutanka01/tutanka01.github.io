@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IOT on makhal.fr</title>
-    <link>http://localhost:1313/tags/iot/</link>
+    <link>https://makhal.fr/tags/iot/</link>
     <description>Recent content in IOT on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Mon, 15 Sep 2025 08:47:49 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/iot/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LoRaWAN expliqué simplement : le réseau IoT des Smart Cities</title>
-      <link>http://localhost:1313/posts/other/lorawan/</link>
+      <link>https://makhal.fr/posts/other/lorawan/</link>
       <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/posts/other/lorawan/</guid>
+      <guid>https://makhal.fr/posts/other/lorawan/</guid>
       <description>On découvre ensemble c&amp;rsquo;est quoi le protocole Lora et plus précisément LoraWan, très utilisé dans le monde de l&amp;rsquo;IoT</description>
     </item>
   </channel>

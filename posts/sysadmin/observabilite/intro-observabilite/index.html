@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, observabilité, monitoring'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Observabilité : Le pilier oublié du DevOps">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Observabilité : Le pilier oublié du DevOps">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/observabilit%C3%A9">observabilité</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/observabilit%C3%A9">observabilité</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/monitoring">monitoring</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/monitoring">monitoring</a></li>
         
         </ul>
     </div>
@@ -236,7 +236,7 @@ nom_metrique{label=&#34;valeur&#34;} valeur_numerique
 </ul>
 <h4 id="le-code-de-notre-agent">Le Code de notre agent</h4>
 <p>Créez un fichier <code>main.go</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
 </span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
@@ -265,9 +265,9 @@ nom_metrique{label=&#34;valeur&#34;} valeur_numerique
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h4 id="lançons-le-">Lançons-le !</h4>
 <p>Dans un terminal :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go run main.go
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>go run main.go
 </span></span></code></pre></div><p>Dans un autre terminal :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl http://localhost:9091/metrics
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl http://localhost:9091/metrics
 </span></span></code></pre></div><p>Vous devriez voir les métriques s&rsquo;afficher, formatées correctement comme suit :</p>
 <p><img src="/images/sysadmin/observabilite/term1.png" alt="Terminal"></p>
 <h3 id="conclusion">Conclusion</h3>

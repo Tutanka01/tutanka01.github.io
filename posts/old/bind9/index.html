@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, dns, bind9'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/old/bind9/">
+    <meta property="og:url" content="https://makhal.fr/posts/old/bind9/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Bind9">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bind9">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/old/bind9/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/old/bind9/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/old/bind9/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/old/bind9/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/old/bind9/" />
+    <link rel="canonical" href="https://makhal.fr/posts/old/bind9/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,9 +162,9 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/dns">dns</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/dns">dns</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/bind9">bind9</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/bind9">bind9</a></li>
         
         </ul>
     </div>
@@ -184,13 +184,13 @@ Mais tout d&rsquo;abord c&rsquo;est quoi Bind9, c&rsquo;est un serveur DNS tout 
 <h2 id="installation-de-bind9">Installation de Bind9</h2>
 <p>Maintenant que nous avons une idée sur ce qu&rsquo;est un serveur DNS, nous allons passer à l&rsquo;installation de Bind9.
 Pour cela, nous allons utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install bind9 bind9utils bind9-doc
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install bind9 bind9utils bind9-doc
 </span></span></code></pre></div><p>Cette commande va installer Bind9 ainsi que ses utilitaires et sa documentation. Les utilitaires sont des outils qui nous permettent de configurer et de gerer notre serveur DNS. Qui vont nous permettre de faire des requetes DNS, de tester notre serveur DNS, etc.</p>
 <h2 id="configuration-de-bind9">Configuration de Bind9</h2>
 <p>Maintenant que nous avons installé Bind9, nous allons passer à sa configuration. Pour cela, nous allons utiliser l&rsquo;editeur de texte <strong><em>nano</em></strong> pour modifier le fichier de configuration de Bind9 qui se trouve dans le repertoire <strong><em>/etc/bind/named.conf.options</em></strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/bind/named.conf.options
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/bind/named.conf.options
 </span></span></code></pre></div><p>Sur ce fichier nous allons modifier les lignes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>acl LAN <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>acl LAN <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    192.168.1.0/24;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
 </span></span><span style="display:flex;"><span>options <span style="color:#f92672">{</span>
@@ -207,23 +207,23 @@ Pour cela, nous allons utiliser la commande suivante :</p>
 <p><code>directory &quot;/var/cache/bind&quot;;</code> : C&rsquo;est le repertoire ou Bind9 va stocker les fichiers de cache.</p>
 </blockquote>
 <p>Pour verifier que notre configuration est correcte, nous allons utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf
 </span></span></code></pre></div><p>Avec cette commande on peut specifier le fichier de configuration que l&rsquo;on veut verifier, dans notre cas, nous allons verifier le fichier <strong><em>/etc/bind/named.conf.options</em></strong>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf /etc/bind/named.conf.options
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf /etc/bind/named.conf.options
 </span></span></code></pre></div><h2 id="configuration-des-zones">Configuration des zones</h2>
 <p>Nous allons maintenant configurer les zones de notre serveur DNS. Pour cela, nous allons modifier le fichier <strong><em>/etc/bind/named.conf.local</em></strong> avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/bind/named.conf.local
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/bind/named.conf.local
 </span></span></code></pre></div><p>Sur ce fichier, nous allons ajouter les lignes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>zone <span style="color:#e6db74">&#34;makhal.lan&#34;</span> IN <span style="color:#f92672">{</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>zone <span style="color:#e6db74">&#34;makhal.lan&#34;</span> IN <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        type master;
 </span></span><span style="display:flex;"><span>        file <span style="color:#e6db74">&#34;/etc/bind/zones/makhal.lan&#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>;
 </span></span></code></pre></div><p>Sur ce fichier nous avons cree une zone qui s&rsquo;appelle <strong><em>makhal.lan</em></strong> et qui est de type <strong><em>master</em></strong>. Le type <strong><em>master</em></strong> signifie que notre serveur DNS est le serveur primaire pour cette zone. Nous avons aussi specifie le fichier de zone qui se trouve dans le repertoire <strong><em>/etc/bind/zones/makhal.lan</em></strong>.</p>
 <p>Maintenant nous allons creer le repertoire <strong><em>zones</em></strong> et le fichier de zone <strong><em>makhal.lan</em></strong> avec les commandes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /etc/bind/zones
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /etc/bind/zones
 </span></span><span style="display:flex;"><span>sudo nano /etc/bind/zones/makhal.lan
 </span></span></code></pre></div><p>Sur ce fichier nous allons ajouter les lignes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bind" data-lang="bind"><span style="display:flex;"><span><span style="color:#a6e22e">$TTL</span> <span style="color:#e6db74">604800</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bind" data-lang="bind"><span style="display:flex;"><span><span style="color:#a6e22e">$TTL</span> <span style="color:#e6db74">604800</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">@</span>       <span style="color:#66d9ef">IN</span>      <span style="color:#66d9ef">SOA</span>     ns1.makhal.lan. admin.makhal.lan. (
 </span></span><span style="display:flex;"><span>                              <span style="color:#e6db74">3</span>         <span style="color:#75715e">; Serial</span>
 </span></span><span style="display:flex;"><span>                         <span style="color:#e6db74">604800</span>         <span style="color:#75715e">; Refresh</span>
@@ -237,21 +237,21 @@ Pour cela, nous allons utiliser la commande suivante :</p>
 </span></span></code></pre></div><p>Sur ce fichier nous avons specifie le <strong><em>TTL</em></strong> qui est le temps de vie du cache, le <strong><em>SOA</em></strong> qui est le nom du serveur primaire, le <strong><em>Refresh</em></strong> qui est le temps de rafraichissement du cache, le <strong><em>Retry</em></strong> qui est le temps d&rsquo;attente avant de reessayer de contacter le serveur primaire, le <strong><em>Expire</em></strong> qui est le temps d&rsquo;expiration du cache et le <strong><em>Negative Cache TTL</em></strong> qui est le temps de vie du cache negatif.</p>
 <p>Apres ça, nous avons specifie le nom du serveur primaire.</p>
 <p>Pour verifier que notre configuration est correcte, nous allons utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkconf
 </span></span></code></pre></div><p>Avec cette commande on peut specifier le fichier de configuration que l&rsquo;on veut verifier, dans notre cas, nous allons verifier le fichier <strong><em>/etc/bind/named.conf.local</em></strong>.</p>
 <p>Maintenant on va verifier que notre fichier de zone est correcte avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkzone makhal.lan /etc/bind/zones/makhal.lan
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo named-checkzone makhal.lan /etc/bind/zones/makhal.lan
 </span></span></code></pre></div><h2 id="redemarrage-de-bind9">Redemarrage de Bind9</h2>
 <p>Normallement, nous avons fini la configuration de notre serveur DNS, maintenant nous allons redemarrer Bind9 avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart bind9
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart bind9
 </span></span></code></pre></div><h2 id="test-de-notre-serveur-dns">Test de notre serveur DNS</h2>
 <p>Avant toute chose nous devons mettre l&rsquo;addresse DNS du serveur DNS sur les machines clientes. Pour cela, nous allons modifier le fichier <strong><em>/etc/resolv.conf</em></strong> avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/resolv.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/resolv.conf
 </span></span></code></pre></div><p>Sur ce fichier nous allons ajouter la ligne suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nameserver ip_du_serveur_dns
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nameserver ip_du_serveur_dns
 </span></span></code></pre></div><p>Maintenant nous allons tester notre serveur DNS.</p>
 <p>Sur une machine cliente ou vous avez configure votre serveur DNS, nous allons tester notre serveur DNS avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nslookup makhal.lan
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nslookup makhal.lan
 </span></span></code></pre></div><p>Sur ce test, nous avons fait une requete DNS sur notre serveur DNS pour le domaine <strong><em>makhal.lan</em></strong>.</p>
 <p>Et voila, nous avons fini la configuration de notre serveur DNS avec Bind9.</p>
 

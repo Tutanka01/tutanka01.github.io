@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on makhal.fr</title>
-    <link>http://localhost:1313/tags/docs/</link>
+    <link>https://makhal.fr/tags/docs/</link>
     <description>Recent content in Docs on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 27 Dec 2025 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Envoy, le proxy que vous utilisez déjà</title>
-      <link>http://localhost:1313/posts/docs/envoy/envoy-1/</link>
+      <link>https://makhal.fr/posts/docs/envoy/envoy-1/</link>
       <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/envoy/envoy-1/</guid>
+      <guid>https://makhal.fr/posts/docs/envoy/envoy-1/</guid>
       <description>Découverte d&amp;rsquo;Envoy, un proxy open-source devenu incontournable dans le monde des microservices et des architectures cloud-native.</description>
     </item>
   </channel>

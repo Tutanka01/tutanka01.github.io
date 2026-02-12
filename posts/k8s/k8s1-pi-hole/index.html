@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, docker, devops'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s1-pi-hole/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s1-pi-hole/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Déployer Pi-hole sur Kubernetes">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Déployer Pi-hole sur Kubernetes">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s1-pi-hole/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s1-pi-hole/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s1-pi-hole/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s1-pi-hole/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s1-pi-hole/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s1-pi-hole/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
         </ul>
     </div>
@@ -247,7 +247,7 @@ graph TD
 <li>MetalLB Load Balancer : Le Load Balancer qui va distribuer le trafic vers nos Pi-hole.</li>
 </ul>
 <p>Pour travailler dans le confort de mon PC, j&rsquo;ai copié les fichiers de configuration de mon cluster Kubernetes sur mon PC. Cela me permet d&rsquo;utiliser la commande <code>kubectl</code> directement depuis mon PC, grâce à la commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp user@192.168.100.100:/etc/rancher/k3s/k3s.yaml config
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>scp user@192.168.100.100:/etc/rancher/k3s/k3s.yaml config
 </span></span></code></pre></div><h2 id="avant-de-commencer">Avant de commencer</h2>
 <p>Avant de commencer, il y a une multitude de choses à faire. On sait que notre objectif est de déployer Pi-hole sur notre cluster Kubernetes. Mais avant de le faire, il faut comprendre que notre Pi-hole aura besoin de stockage persistant.</p>
 <p>Pourquoi ? Parce que Pi-hole a besoin de stocker des données, comme les listes de blocage, la configuration DNS et les statistiques. Si jamais un Pod est détruit, les données seraient perdues. De plus, notre objectif est que Pi-hole soit sur plusieurs nœuds, donc il faut que les données soient partagées entre les différents nœuds.</p>
@@ -263,11 +263,11 @@ graph TD
 <p>Pourquoi Helmfile ? Eh bien, Helmfile permet de gérer plusieurs charts Helm dans un seul fichier. Ça simplifie la gestion de tes applications Kubernetes, surtout quand on a plusieurs dépendances.</p>
 <p>Il faut également installer le binaire de <strong>Helm</strong>. Pour ça, il suffit de télécharger le binaire depuis le <a href="https://github.com/helm/helm/releases">site officiel</a>, et de le déplacer dans votre PATH.</p>
 <p>Maintenant, avant de faire quoi que ce soit, il faut connaître la dernière version de Longhorn. Pour ça, on va utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ helm search repo longhorn
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ helm search repo longhorn
 </span></span><span style="display:flex;"><span>NAME                    CHART VERSION   APP VERSION     DESCRIPTION
 </span></span><span style="display:flex;"><span>longhorn/longhorn       1.8.0           v1.8.0          Longhorn is a distributed block storage system ...
 </span></span></code></pre></div><p>Donc la dernière version de Longhorn est la 1.8.0. On va donc créer un fichier <code>helmfile.yaml</code> qui va contenir les différents helm charts qu&rsquo;on va utiliser pour ce projet, en commençant bien entendu par Longhorn.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">longhorn</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://charts.longhorn.io</span>
 </span></span><span style="display:flex;"><span>---
@@ -277,11 +277,11 @@ graph TD
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">chart</span>: <span style="color:#ae81ff">longhorn/longhorn</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#ae81ff">1.8.0</span>
 </span></span></code></pre></div><p>Rien de bien compliqué. On définit le repository de Longhorn, et on définit la release de Longhorn. Maintenant, pour que helmfile puisse marcher correctement, il faut lui faire installer certains plugins. Pour ça, on va lancer la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile init
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile init
 </span></span></code></pre></div><p>Il va ensuite vous demander si vous voulez installer tel ou tel plugin, il suffit de répondre <code>y</code> à chaque fois, comme dans l&rsquo;image ci-dessous :</p>
 <p><img src="/images/k8s/k8s4-pihole/install-plugins.png" alt="Install plugins"></p>
 <p>Maintenant, lançons la commande suivante pour installer Longhorn :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
 </span></span></code></pre></div><p>Et vous devriez voir quelque chose comme ça :</p>
 
 
@@ -305,7 +305,7 @@ graph TD
 </div>
 
 <p>Et voilà, Longhorn est installé. Bon, pas tout à fait&hellip; Si on regarde l&rsquo;état des pods, on verra que Longhorn n&rsquo;est pas encore installé correctement et qu&rsquo;il est même en train de crasher en boucle.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n longhorn-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n longhorn-system
 </span></span><span style="display:flex;"><span>NAME                                        READY   STATUS             RESTARTS      AGE
 </span></span><span style="display:flex;"><span>longhorn-driver-deployer-7fc7ffcb7f-qkgnz   0/1     Init:0/1           <span style="color:#ae81ff">0</span>             109s
 </span></span><span style="display:flex;"><span>longhorn-manager-89n8c                      1/2     CrashLoopBackOff   <span style="color:#ae81ff">3</span> <span style="color:#f92672">(</span>37s ago<span style="color:#f92672">)</span>   109s
@@ -314,13 +314,13 @@ graph TD
 </span></span><span style="display:flex;"><span>longhorn-ui-5fcc4bcfc7-c49t4                1/1     Running            <span style="color:#ae81ff">0</span>             109s
 </span></span><span style="display:flex;"><span>longhorn-ui-5fcc4bcfc7-qbrwl                1/1     Running            <span style="color:#ae81ff">0</span>             109s
 </span></span></code></pre></div><p>Pourquoi ? Regardons les logs du pod <code>longhorn-manager-bhsfq</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl logs longhorn-manager-bhsfq -n longhorn-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl logs longhorn-manager-bhsfq -n longhorn-system
 </span></span><span style="display:flex;"><span>Defaulted container <span style="color:#e6db74">&#34;longhorn-manager&#34;</span> out of: longhorn-manager, pre-pull-share-manager-image
 </span></span><span style="display:flex;"><span>time<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;2025-03-01T13:43:57Z&#34;</span> level<span style="color:#f92672">=</span>fatal msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Error starting manager: failed to check environment, please make sure you have iscsiadm/open-iscsi installed on the host: failed to execute: /usr/bin/nsenter [nsenter --mount=/host/proc/10422/ns/mnt --net=/host/proc/10422/ns/net iscsiadm --version], output , stderr nsenter: failed to execute iscsiadm: No such file or directory\n: exit status 127&#34;</span> func<span style="color:#f92672">=</span>main.main.DaemonCmd.func3 file<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;daemon.go:105&#34;</span>
 </span></span></code></pre></div><p>Le message est clair, il manque le package <code>iscsiadm</code> sur le host. Pour l&rsquo;installer, il suffit de lancer la commande suivante sur chaque nœud de votre cluster :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install open-iscsi
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install open-iscsi
 </span></span></code></pre></div><p>Mais bon, aller à la main sur chaque nœud nous enlève cet esprit &ldquo;infrastructure as code&rdquo;. Donc on va utiliser Ansible pour automatiser cette tâche. Pour ça, on va créer un playbook Ansible qui va installer le package <code>open-iscsi</code> sur chaque nœud de notre cluster. Voici le playbook :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span>- <span style="color:#f92672">hosts</span>: <span style="color:#ae81ff">all</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">become</span>: <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">tasks</span>:
@@ -351,10 +351,10 @@ graph TD
 </div>
 
 <p>Ce n&rsquo;est pas mieux comme ça ? Maintenant, juste au cas où, on va supprimer le namespace <code>longhorn-system</code> et on va relancer l&rsquo;installation de Longhorn :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl delete namespace longhorn-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl delete namespace longhorn-system
 </span></span><span style="display:flex;"><span>helmfile apply
 </span></span></code></pre></div><p>Puis, on va vérifier que tout est bien installé :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n longhorn-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n longhorn-system
 </span></span><span style="display:flex;"><span>NAME                                                READY   STATUS              RESTARTS      AGE
 </span></span><span style="display:flex;"><span>csi-attacher-79866cdcf8-66xd9                       1/1     Running             <span style="color:#ae81ff">0</span>             13s
 </span></span><span style="display:flex;"><span>csi-attacher-79866cdcf8-hpd9g                       1/1     Running             <span style="color:#ae81ff">0</span>             13s
@@ -374,7 +374,7 @@ graph TD
 </span></span><span style="display:flex;"><span>...
 </span></span></code></pre></div><p>Donc Longhorn est installé correctement. On peut maintenant passer à l&rsquo;installation de Pi-hole.</p>
 <p>Maintenant qu&rsquo;on a notre stockage persistant, il faut qu&rsquo;on puisse avoir une seule adresse IP pour accéder à notre Pi-hole. Pour ça, on va utiliser un LoadBalancer. On va utiliser <strong>MetalLB</strong>, un LoadBalancer pour Kubernetes. En gros, MetalLB va prendre une IP de notre réseau et la donner au service Pi-hole. Comme ça, on aura toujours la même IP pour accéder à Pi-hole, même si les pods changent de nœud. Pour l&rsquo;installer, on ne va pas changer la méthode qui gagne, on va utiliser Helm. Voici le contenu de notre fichier <code>helmfile.yaml</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">longhorn</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://charts.longhorn.io</span>
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">metallb</span>
@@ -390,9 +390,9 @@ graph TD
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">version</span>: <span style="color:#ae81ff">0.14.9</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">metallb-system</span>
 </span></span></code></pre></div><p>Maintenant, on va lancer la commande suivante pour installer MetalLB :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
 </span></span></code></pre></div><p>Et voilà, MetalLB est installé. Pour vérifier que tout est bien installé, on va lancer la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n metallb-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get pods -n metallb-system
 </span></span><span style="display:flex;"><span>NAME                                 READY   STATUS    RESTARTS   AGE
 </span></span><span style="display:flex;"><span>metallb-controller-dc88974b6-k7wc8   1/1     Running   <span style="color:#ae81ff">0</span>          2m55s
 </span></span><span style="display:flex;"><span>metallb-speaker-5jllp                4/4     Running   <span style="color:#ae81ff">0</span>          2m55s
@@ -404,14 +404,14 @@ graph TD
 <p>Maintenant, on doit configurer MetalLB pour qu&rsquo;il puisse fonctionner correctement, comme par exemple lui donner le range d&rsquo;adresses IP qu&rsquo;il pourra utiliser. Pour faire ça, il existe différentes façons. Pour configurer correctement MetalLB, je vais utiliser <strong>Kustomize</strong>.</p>
 <p>Kustomize va nous permettre de créer un fichier de configuration pour MetalLB et de le déployer sur notre cluster Kubernetes. On peux considérer Kustomize comme un gestionnaire de configuration pour Kubernetes. C&rsquo;est super pratique pour éviter de répéter des configs et pour gérer facilement les différences entre les environnements.</p>
 <p>Tout d&rsquo;abord, il faudra créer un nouveau fichier, le mien je l&rsquo;ai nommé <code>kustomization.yaml</code> et il contient le contenu suivant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kustomize.config.k8s.io/v1beta1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">kustomize.config.k8s.io/v1beta1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Kustomization</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">commonLabels</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">app.kubernetes.io/managed-by</span>: <span style="color:#ae81ff">Kustomize</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">resources</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#ae81ff">./metallb/pool.yaml</span>
 </span></span></code></pre></div><p>Ensuite, on va créer la config en soi, donc créer un dossier <code>metallb</code> et dedans créer un fichier <code>pool.yaml</code> qui contient le contenu suivant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">metallb.io/v1beta1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">IPAddressPool</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
@@ -435,7 +435,7 @@ graph TD
 </ul>
 <p>Également, j&rsquo;ai fait une deuxième ressource de type <code>L2Advertisement</code> qui permet à MetalLB de faire de la pub pour les adresses IP qu&rsquo;il a à disposition. Donc couche 2 qui est la couche mac. MetalLB utilise le protocole ARP (Address Resolution Protocol) pour annoncer ces adresses au réseau local. C&rsquo;est comme ça que notre PC sait que l&rsquo;IP 192.168.100.250 est accessible via MetalLB.</p>
 <p>Une fois qu&rsquo;on a fait, rien de plus compliqué que de lancer la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -k .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -k .
 </span></span></code></pre></div><blockquote>
 <p>Il faut être dans le même dossier que le fichier <code>kustomization.yaml</code> :)</p>
 </blockquote>
@@ -465,7 +465,7 @@ graph TD
 <h2 id="installation-de-pi-hole">Installation de Pi-hole</h2>
 <p>Pour l&rsquo;installation de notre Pi-hole, on va continuer sur notre lancée, et on va utiliser Helm. Pour ça, on va modifier notre fichier <code>helmfile.yaml</code> pour ajouter la release de Pi-hole :</p>
 <p>Voilà à quoi va ressembler notre fichier <code>helmfile.yaml</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">repositories</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">longhorn</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://charts.longhorn.io</span>
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">metallb</span>
@@ -489,7 +489,7 @@ graph TD
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">values</span>:
 </span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./values/pihole.values.yaml</span>
 </span></span></code></pre></div><p>Également, j&rsquo;ai dû ajouter un fichier <code>values.yaml</code> qui contient certains paramètres qui seront utilisés pour lancer Pi-hole. Voici le contenu de ce fichier :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
 </span></span><span style="display:flex;"><span><span style="color:#f92672">persistenVolumeClaim</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">serviceWeb</span>:
@@ -505,9 +505,9 @@ graph TD
 </span></span><span style="display:flex;"><span><span style="color:#f92672">replicaCount</span>: <span style="color:#ae81ff">1</span>
 </span></span></code></pre></div><p>Donc rien de très compliqué, on dit simplement qu&rsquo;on veut qu&rsquo;il y ait du persistent storage. On définit l&rsquo;adresse IP qu&rsquo;on veut utiliser pour le LoadBalancer. L&rsquo;annotation <code>metallb.universe.tf/allow-shared-ip: pihole-svc</code> est importante. Elle permet à MetalLB de partager la même IP entre plusieurs services. Ici, on l&rsquo;utilise pour partager l&rsquo;IP entre le service web (pour l&rsquo;interface d&rsquo;administration) et le service DNS.</p>
 <p>Maintenant, on va lancer la commande suivante pour installer Pi-hole :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>helmfile apply
 </span></span></code></pre></div><p>Et voilà, Pi-hole est installé. Pour vérifier que tout est bien installé, on va lancer la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get svc -n pihole-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@debian:~$ kubectl get svc -n pihole-system
 </span></span><span style="display:flex;"><span>NAME             TYPE           CLUSTER-IP      EXTERNAL-IP       PORT<span style="color:#f92672">(</span>S<span style="color:#f92672">)</span>                      AGE
 </span></span><span style="display:flex;"><span>pihole-dhcp      NodePort       10.43.227.177   &lt;none&gt;            67:30868/UDP                 7m59s
 </span></span><span style="display:flex;"><span>pihole-dns-tcp   LoadBalancer   10.43.57.10     192.168.100.250   53:30898/TCP                 7m59s

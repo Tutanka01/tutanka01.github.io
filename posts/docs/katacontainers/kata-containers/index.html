@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, containers, virtualisation, cloud'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/katacontainers/kata-containers/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/katacontainers/kata-containers/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kata Containers : La sécurité des VM avec la vitesse des conteneurs">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kata Containers : La sécurité des VM avec la vitesse des conteneurs">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/katacontainers/kata-containers/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/katacontainers/kata-containers/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/katacontainers/kata-containers/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/katacontainers/kata-containers/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/katacontainers/kata-containers/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/katacontainers/kata-containers/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/containers">containers</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/containers">containers</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/virtualisation">virtualisation</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/virtualisation">virtualisation</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cloud">cloud</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cloud">cloud</a></li>
         
         </ul>
     </div>
@@ -188,14 +188,14 @@
 <p>Pour installer Kata Containers, vous pouvez suivre les instructions officielles sur le <a href="https://katacontainers.io/">site du projet</a>. Voici un aperçu rapide des étapes d&rsquo;installation :</p>
 <p>Tout d&rsquo;abord il vous faut bien entendu un système qui supporte la virtualisation, car Kata Containers utilise des hyperviseurs légers et qui dit hyperviseur dit virtualisation. Donc assurez-vous que votre CPU supporte la virtualisation (VT-x pour Intel, AMD-V pour AMD).</p>
 <p>Une fois cela OK, vous pouvez installer Kata Containers avec les commandes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Télécharger le script d&#39;installation</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Télécharger le script d&#39;installation</span>
 </span></span><span style="display:flex;"><span>wget https://raw.githubusercontent.com/kata-containers/kata-containers/main/utils/kata-manager.sh
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Rendre le script exécutable</span>
 </span></span><span style="display:flex;"><span>chmod +x kata-manager.sh
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Lancer le script d&#39;installation</span>
 </span></span><span style="display:flex;"><span>sudo ./kata-manager.sh
 </span></span></code></pre></div><p>Une fois l&rsquo;installation terminée, vous pouvez vérifier que Kata Containers est bien installé en exécutant la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./kata-manager.sh -l
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./kata-manager.sh -l
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Output</span>
 </span></span><span style="display:flex;"><span>INFO: Getting version details
@@ -212,11 +212,11 @@
 <p>Pour tester les kata conteneurs on va faire un test simple, comme vous savez, les conteneurs partagent le même noyau du système d&rsquo;exploitation du host, donc si dans un conteneur je lance la commande <code>uname -a</code>, je vais obtenir le noyau du host.</p>
 <p>Et donc au contraire si je lance la même commande dans un conteneur Kata, je devrais obtenir le noyau de la VM. Qui sera très probablement différent de celui du host.</p>
 <p>Pour lancer un conteneur Kata, vous pouvez utiliser la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@pc-mohamad:~# ctr run --runtime io.containerd.kata.v2 --rm docker.io/rockylinux/rockylinux:latest rocky-kata uname -a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@pc-mohamad:~# ctr run --runtime io.containerd.kata.v2 --rm docker.io/rockylinux/rockylinux:latest rocky-kata uname -a
 </span></span><span style="display:flex;"><span>Linux localhost 6.12.13 ...
 </span></span></code></pre></div><p>On utilise <code>ctr</code> car par défaut, kata containers utilise containerd comme runtime. Mais si jamais aussi on aurait pu l&rsquo;installer avec docker, mais en utilisant le flag <code>-D</code> lors de l&rsquo;installation.</p>
 <p>Maintenant sur un conteneur classique, si je lance la même commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@pc-mohamad:~# ctr run --rm docker.io/rockylinux/rockylinux:latest rocky-défaut uname -a
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@pc-mohamad:~# ctr run --rm docker.io/rockylinux/rockylinux:latest rocky-défaut uname -a
 </span></span><span style="display:flex;"><span>Linux dev-master 6.8.0-57-generic
 </span></span></code></pre></div><p>Donc un noyau différent, et donc on a bien un conteneur Kata qui s&rsquo;exécute dans une VM !</p>
 <h2 id="conclusion">Conclusion</h2>

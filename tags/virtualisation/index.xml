@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Virtualisation on makhal.fr</title>
-    <link>http://localhost:1313/tags/virtualisation/</link>
+    <link>https://makhal.fr/tags/virtualisation/</link>
     <description>Recent content in Virtualisation on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 06 Jul 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/virtualisation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/virtualisation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kata Containers : La sécurité des VM avec la vitesse des conteneurs</title>
-      <link>http://localhost:1313/posts/docs/katacontainers/kata-containers/</link>
+      <link>https://makhal.fr/posts/docs/katacontainers/kata-containers/</link>
       <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/katacontainers/kata-containers/</guid>
+      <guid>https://makhal.fr/posts/docs/katacontainers/kata-containers/</guid>
       <description>Découvrez Kata Containers, le projet open source qui réconcilie le meilleur des deux mondes</description>
     </item>
     <item>
       <title>Proxmox Cloud-Init le guide complet</title>
-      <link>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</link>
+      <link>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</link>
       <pubDate>Tue, 21 Jan 2025 18:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</guid>
       <description>Un guide complet pour lancer une VM avec Cloud-Init sur Proxmox</description>
     </item>
   </channel>

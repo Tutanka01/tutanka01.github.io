@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, IA, n8n'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/ia/n8n-cyber/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/ia/n8n-cyber/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Agent IA n8n : Analysez les URLs (Partie 1)">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agent IA n8n : Analysez les URLs (Partie 1)">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/ia/n8n-cyber/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/ia/n8n-cyber/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/ia/n8n-cyber/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/ia/n8n-cyber/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/ia/n8n-cyber/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/ia/n8n-cyber/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ia">IA</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ia">IA</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/n8n">n8n</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/n8n">n8n</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
         </ul>
     </div>
@@ -252,7 +252,7 @@ graph TD
     class LB loadbalancer
 </div>
 <p>Pour installer n8n, rien de plus simple. Il suffit de créer un fichier <code>compose.yaml</code> (ou <code>docker-compose.yaml</code>) avec le contenu suivant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">n8n</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">n8nio/n8n</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">always</span>
@@ -275,7 +275,7 @@ graph TD
 </span></span></code></pre></div><p>Donc on a un service <code>n8n</code> qui utilise l&rsquo;image officielle <code>n8nio/n8n</code> et qui expose le port interne <code>5678</code> sur le port <code>80</code> de notre serveur hôte.
 <strong>Attention :</strong> Le paramètre <code>WEBHOOK_URL</code> est <strong>super important</strong>. Il permet à n8n de savoir quelle est son adresse publique pour générer correctement les URLs (notamment pour les webhooks). <strong>Il faut absolument le remplacer par l&rsquo;URL ou l&rsquo;adresse IP publique de votre serveur n8n</strong>, par exemple <code>http://mon-super-serveur.com/</code> ou <code>http://192.168.1.XX/</code>.</p>
 <p>Ensuite, placez-vous dans le dossier où vous avez créé le fichier <code>compose.yaml</code> et lancez la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose compose.yaml up -d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose compose.yaml up -d
 </span></span></code></pre></div><p>Et voilà ! n8n est installé et devrait être en train de démarrer en arrière-plan (<code>-d</code>). Il suffit de vous rendre sur l&rsquo;URL que vous avez configurée (celle de votre serveur, sur le port 80 si vous avez gardé le mapping par défaut) pour accéder à l&rsquo;interface web.</p>
 <p>La première fois, n8n va vous demander de créer un compte &ldquo;Owner&rdquo;. Ce compte est local à votre instance et vous permettra de sauvegarder vos workflows et de gérer votre n8n.</p>
 <p>Une fois connecté(e), vous devriez voir une interface qui ressemble à ça :</p>

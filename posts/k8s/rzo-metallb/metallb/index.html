@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, metallb, loadbalancer'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/rzo-metallb/metallb/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/rzo-metallb/metallb/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Réseau Kubernetes et MetalLB.">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Réseau Kubernetes et MetalLB.">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/rzo-metallb/metallb/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/rzo-metallb/metallb/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/rzo-metallb/metallb/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/rzo-metallb/metallb/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/rzo-metallb/metallb/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/rzo-metallb/metallb/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/metallb">metallb</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/metallb">metallb</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/loadbalancer">loadbalancer</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/loadbalancer">loadbalancer</a></li>
         
         </ul>
     </div>
@@ -278,7 +278,7 @@ graph TD
 
 </div>
 <p>Voilà un exemple de définition simple d&rsquo;un service lorsque on veut exposer une application en NodePort :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mon-service-nodeport</span>
@@ -313,12 +313,12 @@ graph TD
 <ol>
 <li><strong>Appliquer les manifests de MetalLB</strong> :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/config/manifests/metallb-native.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/config/manifests/metallb-native.yaml
 </span></span></code></pre></div><ol start="2">
 <li><strong>Configurer MetalLB</strong> :
 Vous devez créer un ConfigMap pour configurer MetalLB. Voici un exemple de configuration en mode Layer 2 :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">metallb.io/v1beta1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">metallb.io/v1beta1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">IPAddressPool</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">first-pool</span>
@@ -334,21 +334,21 @@ Vous devez créer un ConfigMap pour configurer MetalLB. Voici un exemple de conf
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">metallb-system</span>
 </span></span></code></pre></div><p>Il faut bien vérifier que les adresses IP que vous avez spécifiées dans la configuration sont disponibles sur votre réseau.</p>
 <p>Enregistrez ce fichier sous le nom <code>metallb-config.yaml</code> et appliquez-le avec la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f metallb-config.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f metallb-config.yaml
 </span></span></code></pre></div><ol start="3">
 <li><strong>Vérifier l&rsquo;installation</strong> :
 Vous pouvez vérifier que MetalLB est bien installé et fonctionne en exécutant la commande suivante :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get pods -n metallb-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl get pods -n metallb-system
 </span></span></code></pre></div><p>Vous devriez voir les pods <code>controller</code> et <code>speaker</code> de MetalLB en cours d&rsquo;exécution.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@Mohamad-PC:~$ kubectl get pods -n metallb-system
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mohamad@Mohamad-PC:~$ kubectl get pods -n metallb-system
 </span></span><span style="display:flex;"><span>NAME                          READY   STATUS    RESTARTS   AGE
 </span></span><span style="display:flex;"><span>controller-58fdf44d87-4f7fm   1/1     Running   <span style="color:#ae81ff">0</span>          38h
 </span></span><span style="display:flex;"><span>speaker-46pkk                 1/1     Running   <span style="color:#ae81ff">0</span>          38h
 </span></span><span style="display:flex;"><span>speaker-kc4hg                 1/1     Running   <span style="color:#ae81ff">0</span>          38h
 </span></span><span style="display:flex;"><span>speaker-n9xs2                 1/1     Running   <span style="color:#ae81ff">0</span>          38h
 </span></span></code></pre></div><p>Maintenant on va tester MetalLB en créant un service de type LoadBalancer. Mais avant ça, on va déployer une application simple pour pouvoir l&rsquo;exposer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">app1-deploy</span>
@@ -384,13 +384,13 @@ Vous pouvez vérifier que MetalLB est bien installé et fonctionne en exécutant
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">targetPort</span>: <span style="color:#ae81ff">80</span>
 </span></span></code></pre></div><p>Donc cette application est un simple serveur HTTP qui va répondre aux requêtes HTTP sur le port 80. On va l&rsquo;exposer en tant que service de type LoadBalancer, ce qui va permettre à MetalLB de lui attribuer une adresse IP externe.</p>
 <p>Pour appliquer cette configuration, enregistrez-la dans un fichier <code>app1.yaml</code> et exécutez la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f app1.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f app1.yaml
 </span></span></code></pre></div><p>Vous pouvez vérifier que le service a bien été créé et que MetalLB lui a attribué une adresse IP externe en exécutant la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># kubectl get svc loadbalancer-app1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># kubectl get svc loadbalancer-app1</span>
 </span></span><span style="display:flex;"><span>NAME                TYPE           CLUSTER-IP     EXTERNAL-IP    PORT<span style="color:#f92672">(</span>S<span style="color:#f92672">)</span>        AGE
 </span></span><span style="display:flex;"><span>loadbalancer-app1   LoadBalancer   10.43.51.195   192.168.9.41   80:32370/TCP   26h
 </span></span></code></pre></div><p>Et si on fait un curl sur l&rsquo;adresse IP :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl http://192.168.9.41
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl http://192.168.9.41
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># curl http://192.168.9.41</span>
 </span></span><span style="display:flex;"><span>

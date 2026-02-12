@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Souveraineté Numérique on makhal.fr</title>
+    <link>http://localhost:1313/tags/souverainet%C3%A9-num%C3%A9rique/</link>
+    <description>Recent content in Souveraineté Numérique on makhal.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 28 Mar 2025 06:40:45 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/souverainet%C3%A9-num%C3%A9rique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Midjourney, DALL-E... Superbes, mais où vont vos données ?</title>
+      <link>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</link>
+      <pubDate>Fri, 28 Mar 2025 06:40:45 +0200</pubDate>
+      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</guid>
+      <description>Face aux questions de confidentialité posées par les IA cloud (DALL-E, Midjourney), explorons les alternatives open source pour générer des images en local sur votre propre machine.</description>
+    </item>
+  </channel>
+</rss>

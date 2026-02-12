@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, Wazuh, SecOPS'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/decouverte_siem_2/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/decouverte_siem_2/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Découverte de Wazuh Partie 2">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Découverte de Wazuh Partie 2">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/decouverte_siem_2/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/decouverte_siem_2/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/decouverte_siem_2/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/decouverte_siem_2/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/decouverte_siem_2/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/decouverte_siem_2/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/siem">SIEM</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/siem">SIEM</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/wazuh">Wazuh</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/wazuh">Wazuh</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/secops">SecOPS</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/secops">SecOPS</a></li>
         
         </ul>
     </div>
@@ -179,23 +179,23 @@
 <p>On va s&rsquo;attaquer dans cette partie à l&rsquo;optimisation de notre nœud Wazuh-Indexer. Il faut noter que les optimisations que je vais vous montrer sont très basiques, et que si jamais vous avez un très grand cluster avec beaucoup de IO, il faudra ajouter à cela des étapes supplémentaires. Mais pour ne pas allonger ce post, nous allons nous arrêter là.</p>
 <p>Tout d&rsquo;abord, dans le fichier <code>/etc/wazuh-indexer/opensearch.yml</code></p>
 <p>On ajoute la directive suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bootstrap.memory_lock: true
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>bootstrap.memory_lock: true
 </span></span></code></pre></div><p>Cette directive permet de verrouiller la mémoire de la JVM, ce qui signifie que la mémoire allouée à la JVM ne sera pas échangée sur le disque. Cela peut améliorer les performances, mais cela signifie également que si la JVM a besoin de plus de mémoire que ce qui est disponible, elle peut planter, donc faites bien attention à la quantité de RAM que vous allouez à votre JVM.</p>
 <p>Ensuite, on suit les étapes suivantes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /usr/lib/systemd/system/wazuh-indexer.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano /usr/lib/systemd/system/wazuh-indexer.service
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>LimitMEMLOCK<span style="color:#f92672">=</span>infinity
 </span></span></code></pre></div><p>Cela permet de définir la limite de verrouillage de la mémoire (en octets) pour le processus. Cette directive permet de contrôler combien de mémoire un processus peut verrouiller dans la RAM, empêchant ainsi cette mémoire d&rsquo;être échangée (swappée) sur le disque.</p>
 <p>Ensuite, une des étapes les plus importantes est de modifier le fichier :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/etc/wazuh-indexer/jvm.options
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/etc/wazuh-indexer/jvm.options
 </span></span></code></pre></div><p>Ici, on va le modifier pour permettre au runner Java d&rsquo;utiliser la MOITIÉ de la RAM de notre serveur ! (exemple avec une VM de 8 Go de RAM)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Xms represents the initial size of total heap space</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Xms represents the initial size of total heap space</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Xmx represents the maximum size of total heap space</span>
 </span></span><span style="display:flex;"><span>-Xms4g
 </span></span><span style="display:flex;"><span>-Xmx4g
 </span></span></code></pre></div><p>Enfin, pour appliquer les changements, on redémarre le service :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
 </span></span><span style="display:flex;"><span>systemctl restart wazuh-indexer
 </span></span></code></pre></div><p>Maintenant que notre Wazuh-Indexer est bien optimisé, on va passer à l&rsquo;installation du Wazuh-Manager et du Wazuh-Dashboard.</p>
 <h2 id="wazuh-dashboard">Wazuh-Dashboard</h2>
@@ -206,15 +206,15 @@
 <blockquote>
 <p>Je continue en supposant que tout est fait sur la même VM, mais si jamais vous voulez le faire sur différents nœuds, il faudra bien entendu ré-importer tous les certificats et dépôts !</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install wazuh-dashboard
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install wazuh-dashboard
 </span></span></code></pre></div><p>Une fois que l&rsquo;installation de Wazuh-Dashboard est terminée, nous allons modifier ce fichier <code>/etc/wazuh-dashboard/opensearch_dashboards.yml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">server.host: 192.168.222.145</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">server.host: 192.168.222.145</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">server.port: 443</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">opensearch.hosts: https://192.168.222.145:9200</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">opensearch.ssl.verificationMode: certificate</span>
 </span></span></code></pre></div><p>Ici, rien de compliqué. On indique quelle est l&rsquo;adresse IP de notre serveur Wazuh-Dashboard, et ensuite on met l&rsquo;adresse IP du nœud Wazuh-Indexer.</p>
 <p>Et vu qu&rsquo;on est toujours sur la même VM, on n&rsquo;a pas besoin de ré-importer les certificats, donc :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /etc/wazuh-dashboard/certs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /etc/wazuh-dashboard/certs
 </span></span><span style="display:flex;"><span>tar -xf ./wazuh-certificates.tar -C /etc/wazuh-dashboard/certs/ ./$NODE_NAME.pem ./$NODE_NAME-key.pem ./root-ca.pem
 </span></span><span style="display:flex;"><span>mv -n /etc/wazuh-dashboard/certs/$NODE_NAME.pem /etc/wazuh-dashboard/certs/dashboard.pem
 </span></span><span style="display:flex;"><span>mv -n /etc/wazuh-dashboard/certs/$NODE_NAME-key.pem /etc/wazuh-dashboard/certs/dashboard-key.pem
@@ -222,13 +222,13 @@
 </span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">400</span> /etc/wazuh-dashboard/certs/*
 </span></span><span style="display:flex;"><span>chown -R wazuh-dashboard:wazuh-dashboard /etc/wazuh-dashboard/certs
 </span></span></code></pre></div><p>Et voilà, rien de compliqué, on a fini d&rsquo;installer notre Wazuh-Dashboard. Il faut maintenant activer et démarrer le service :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
 </span></span><span style="display:flex;"><span>systemctl enable wazuh-dashboard
 </span></span><span style="display:flex;"><span>systemctl start wazuh-dashboard
 </span></span></code></pre></div><p>Maintenant qu&rsquo;on a installé notre Wazuh-Dashboard, il faut lui indiquer où sera situé notre futur nœud Wazuh-Manager. Pour cela :</p>
 <p>On ouvre ce fichier et on modifie les paramètres suivants :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">hosts</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">hosts</span>:
 </span></span><span style="display:flex;"><span>  - <span style="color:#f92672">default</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://10.40.120.172</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">port</span>: <span style="color:#ae81ff">55000</span>
@@ -241,20 +241,20 @@
 <blockquote>
 <p>Vu qu&rsquo;on est toujours sur la même VM, pas la peine de ré-importer les dépôts :)</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install wazuh-manager
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install wazuh-manager
 </span></span></code></pre></div><p>Et on le démarre avec systemctl :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
 </span></span><span style="display:flex;"><span>systemctl enable wazuh-manager
 </span></span><span style="display:flex;"><span>systemctl start wazuh-manager
 </span></span></code></pre></div><p>Et voilà !! Ce n&rsquo;est pas compliqué, n&rsquo;est-ce pas ?</p>
 <p>Mais nous n&rsquo;avons pas fini encore&hellip;</p>
 <p>Tout d&rsquo;abord, nous devons installer quelques dépendances supplémentaires :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get install gnupg apt-transport-https
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get install gnupg apt-transport-https
 </span></span></code></pre></div><p>Puis, nous devons installer Filebeat, c&rsquo;est le logiciel qui va nous permettre de rediriger les alertes émises par notre Wazuh-Server vers notre indexer :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install filebeat
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>apt-get -y install filebeat
 </span></span></code></pre></div><p>Ensuite, nous allons télécharger et modifier le fichier de configuration, déjà pré-rempli par l&rsquo;équipe Wazuh :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so /etc/filebeat/filebeat.yml https://packages.wazuh.com/4.8/tpl/wazuh/filebeat/filebeat.yml
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#75715e"># Wazuh - Filebeat configuration file</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so /etc/filebeat/filebeat.yml https://packages.wazuh.com/4.8/tpl/wazuh/filebeat/filebeat.yml
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#75715e"># Wazuh - Filebeat configuration file</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">output.elasticsearch:</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">hosts: [&#34;10.0.0.1:9200&#34;] </span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">protocol: https</span>
@@ -262,16 +262,16 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">password: ${password}</span>
 </span></span></code></pre></div><p>À l&rsquo;étape ci-dessous, si jamais vous avez changé les mots de passe de votre Wazuh-Indexer, il faudra les saisir à la place de <code>admin</code>.</p>
 <p>Ici, nous allons créer des emplacements pour stocker de manière sécurisée nos mots de passe :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>filebeat keystore create
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>filebeat keystore create
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>echo admin | filebeat keystore add username --stdin --force
 </span></span><span style="display:flex;"><span>echo admin | filebeat keystore add password --stdin --force
 </span></span></code></pre></div><p>Une fois cela fait, on télécharge le template des alertes Wazuh déjà pré-remplies. Ce sont des alertes déjà faites qui vont nous faciliter la vie, car l&rsquo;équipe de Wazuh aura déjà fait une grande partie du travail, il faudra simplement adapter ces alertes à notre environnement DOC :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/v4.8.1/extensions/elasticsearch/7.x/wazuh-template.json
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/v4.8.1/extensions/elasticsearch/7.x/wazuh-template.json
 </span></span><span style="display:flex;"><span>chmod go+r /etc/filebeat/wazuh-template.json
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.4.tar.gz | tar -xvz -C /usr/share/filebeat/module
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -s https://packages.wazuh.com/4.x/filebeat/wazuh-filebeat-0.4.tar.gz | tar -xvz -C /usr/share/filebeat/module
 </span></span></code></pre></div><p>Maintenant, nous allons déployer les certificats, comme fait avant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /etc/filebeat/certs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir /etc/filebeat/certs
 </span></span><span style="display:flex;"><span>tar -xf ./wazuh-certificates.tar -C /etc/filebeat/certs/ ./$NODE_NAME.pem ./$NODE_NAME-key.pem ./root-ca.pem
 </span></span><span style="display:flex;"><span>mv -n /etc/filebeat/certs/$NODE_NAME.pem /etc/filebeat/certs/filebeat.pem
 </span></span><span style="display:flex;"><span>mv -n /etc/filebeat/certs/$NODE_NAME-key.pem /etc/filebeat/certs/filebeat-key.pem
@@ -281,13 +281,13 @@
 </span></span><span style="display:flex;"><span>/*
 </span></span><span style="display:flex;"><span>chown -R root:root /etc/filebeat/certs
 </span></span></code></pre></div><p>Maintenant, nous allons connecter notre Wazuh-Server à notre indexer. Pour ce faire, voici les étapes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/var/ossec/bin/wazuh-keystore -f indexer -k username -v &lt;INDEXER_USERNAME&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/var/ossec/bin/wazuh-keystore -f indexer -k username -v &lt;INDEXER_USERNAME&gt;
 </span></span><span style="display:flex;"><span>/var/ossec/bin/wazuh-keystore -f indexer -k password -v &lt;INDEXER_PASSWORD&gt;
 </span></span></code></pre></div><blockquote>
 <p>Le mot de passe par défaut est admin:admin</p>
 </blockquote>
 <p>On édite le fichier : <code>/var/ossec/etc/ossec.conf</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">&lt;indexer&gt;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">&lt;indexer&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">&lt;enabled&gt;yes&lt;/enabled&gt;</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">&lt;hosts&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">&lt;host&gt;https://0.0.0.0:9200&lt;/host&gt;</span>
@@ -302,10 +302,10 @@
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">&lt;/indexer&gt;</span>
 </span></span></code></pre></div><p>Ici, la seule valeur qu&rsquo;il faudra modifier est le <code>&lt;host&gt;</code> où l&rsquo;on va devoir saisir l&rsquo;adresse IP de notre nœud.</p>
 <p>Une fois tout cela fait, on redémarre les services :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
 </span></span><span style="display:flex;"><span>systemctl enable wazuh-manager
 </span></span><span style="display:flex;"><span>systemctl start wazuh-manager
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>systemctl daemon-reload
 </span></span><span style="display:flex;"><span>systemctl enable filebeat
 </span></span><span style="display:flex;"><span>systemctl start filebeat
 </span></span></code></pre></div><p>Et voilà !! Maintenant, c&rsquo;est pour de vrai, on a fini. Si on se dirige maintenant vers l&rsquo;interface web de notre Wazuh-Dashboard :</p>

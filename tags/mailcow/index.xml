@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mailcow on makhal.fr</title>
-    <link>http://localhost:1313/tags/mailcow/</link>
+    <link>https://makhal.fr/tags/mailcow/</link>
     <description>Recent content in Mailcow on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 08 Feb 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mailcow/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/mailcow/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mailcow le serveur mail tout-en-un</title>
-      <link>http://localhost:1313/posts/sysadmin/mailcow/</link>
+      <link>https://makhal.fr/posts/sysadmin/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/mailcow/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/mailcow/</guid>
       <description>Un guide complet pour déployer un serveur mail complet avec Mailcow dans votre HomeLab.</description>
     </item>
   </channel>

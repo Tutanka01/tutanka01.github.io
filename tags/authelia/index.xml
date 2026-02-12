@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authelia on makhal.fr</title>
-    <link>http://localhost:1313/tags/authelia/</link>
+    <link>https://makhal.fr/tags/authelia/</link>
     <description>Recent content in Authelia on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 28 May 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/authelia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/authelia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Authelia &#43; Traefik : sécurisez tous vos services web</title>
-      <link>http://localhost:1313/posts/sysadmin/authelia/authelia/</link>
+      <link>https://makhal.fr/posts/sysadmin/authelia/authelia/</link>
       <pubDate>Wed, 28 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/authelia/authelia/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/authelia/authelia/</guid>
       <description>Dans cet article, nous allons découvrir et mettre en place Authelia avec Traefik</description>
     </item>
   </channel>

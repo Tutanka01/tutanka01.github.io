@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, proxmox, cloud-init, sysadmin, virtualisation'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/proxmox-cloud-init/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/proxmox-cloud-init/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Proxmox Cloud-Init le guide complet">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Proxmox Cloud-Init le guide complet">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/proxmox-cloud-init/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/proxmox-cloud-init/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/proxmox-cloud-init/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/proxmox-cloud-init/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/proxmox-cloud-init/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/proxmox-cloud-init/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,13 +162,13 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/proxmox">proxmox</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/proxmox">proxmox</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cloud-init">cloud-init</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cloud-init">cloud-init</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/virtualisation">virtualisation</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/virtualisation">virtualisation</a></li>
         
         </ul>
     </div>
@@ -203,26 +203,26 @@
 <p><img src="/images/sysadmin/proxmox1.png" alt="Proxmox 1"></p>
 <p>Habituellement, vous créeriez une nouvelle VM, sélectionneriez l&rsquo;ISO, et lanceriez l&rsquo;installation. Mais aujourd&rsquo;hui, nous allons emprunter une voie différente : la ligne de commande (CLI) de Proxmox. Vous allez vite comprendre pourquoi !</p>
 <p>Commençons par créer notre VM :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm create <span style="color:#ae81ff">1000</span> --memory <span style="color:#ae81ff">2048</span> --core <span style="color:#ae81ff">2</span> --name ubuntu-init --net0 virtio,bridge<span style="color:#f92672">=</span>vmbr0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm create <span style="color:#ae81ff">1000</span> --memory <span style="color:#ae81ff">2048</span> --core <span style="color:#ae81ff">2</span> --name ubuntu-init --net0 virtio,bridge<span style="color:#f92672">=</span>vmbr0
 </span></span></code></pre></div><p>Pas de panique ! Cette commande crée une VM avec l&rsquo;ID 1000, 2 Go de RAM, 2 cœurs, le nom &ldquo;ubuntu-init&rdquo;, et une interface réseau. Simple, non ?</p>
 <p>Après avoir exécuté cette commande, une nouvelle VM apparaîtra dans votre interface Proxmox :</p>
 <p><img src="/images/sysadmin/proxmox2.png" alt="Proxmox 2"></p>
 <p>Maintenant, ajoutons notre template Cloud-Init à cette VM, c&rsquo;est-à-dire le disque dur. Naviguez vers le répertoire où vous avez téléchargé le template (normalement <code>/var/lib/vz/template/iso</code>), et exécutez la commande suivante :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm importdisk <span style="color:#ae81ff">1000</span> noble-server-cloudimg-amd64.img local-lvm
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>qm importdisk <span style="color:#ae81ff">1000</span> noble-server-cloudimg-amd64.img local-lvm
 </span></span></code></pre></div><p>Cette commande importe le disque dur dans la VM 1000, en utilisant le stockage &ldquo;local-lvm&rdquo; (adaptez si votre stockage se nomme différemment).</p>
 <p>Après l&rsquo;exécution, vous obtiendrez un retour similaire à celui-ci :</p>
 <p><img src="/images/sysadmin/proxmox3.png" alt="Proxmox 3"></p>
 <p>Avec a la fin bien entendu :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>....
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>....
 </span></span><span style="display:flex;"><span>transferred 3.5 GiB of 3.5 GiB <span style="color:#f92672">(</span>100.00%<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>unused0: successfully imported disk <span style="color:#e6db74">&#39;local-lvm:vm-1000-disk-0&#39;</span>
 </span></span><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso#
 </span></span></code></pre></div><p>Maintenant, attachons le disque à la VM :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0
 </span></span><span style="display:flex;"><span>update VM 1000: -scsi0 local-lvm:vm-1000-disk-0 -scsihw virtio-scsi-pci
 </span></span><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso#
 </span></span></code></pre></div><p>Il faut ensuite ajouter un lecteur CD-ROM virtuel à la VM pour que Proxmox puisse injecter la configuration Cloud-Init :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --ide2 local-lvm:cloudinit
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --ide2 local-lvm:cloudinit
 </span></span><span style="display:flex;"><span>update VM 1000: -ide2 local-lvm:cloudinit
 </span></span><span style="display:flex;"><span>  Logical volume <span style="color:#e6db74">&#34;vm-1000-cloudinit&#34;</span> created.
 </span></span><span style="display:flex;"><span>ide2: successfully created disk <span style="color:#e6db74">&#39;local-lvm:vm-1000-cloudinit,media=cdrom&#39;</span>
@@ -230,11 +230,11 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso#
 </span></span></code></pre></div><p>Définissons le démarrage de la VM sur le disque dur :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --boot c --bootdisk scsi0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --boot c --bootdisk scsi0
 </span></span><span style="display:flex;"><span>update VM 1000: -boot c -bootdisk scsi0
 </span></span><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso#
 </span></span></code></pre></div><p>Enfin, assurons-nous d&rsquo;avoir une console série pour interagir avec la VM :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --serial0 socket --vga serial0
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso# qm set <span style="color:#ae81ff">1000</span> --serial0 socket --vga serial0
 </span></span><span style="display:flex;"><span>update VM 1000: -serial0 socket -vga serial0
 </span></span><span style="display:flex;"><span>root@pxmx-1:/var/lib/vz/template/iso#
 </span></span></code></pre></div><p>Vérifions dans l&rsquo;interface Proxmox que notre VM est correctement configurée :</p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, Wazuh, SecOPS'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Découverte de Wazuh Partie 4">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Découverte de Wazuh Partie 4">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/decouverte_siem_4/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/decouverte_siem_4/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/siem">SIEM</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/siem">SIEM</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/wazuh">Wazuh</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/wazuh">Wazuh</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/secops">SecOPS</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/secops">SecOPS</a></li>
         
         </ul>
     </div>
@@ -183,7 +183,7 @@
 Tout d&rsquo;abord, il faut savoir que chaque ligne de log importée depuis un Wazuh-Agent passe forcément par un décodeur, et au besoin elle passe également par une règle. Mais c&rsquo;est quoi un décodeur ?</p>
 <p>Un décodeur, c&rsquo;est tout simplement une regex que le Wazuh-Server va essayer de faire passer à chaque ligne de log. Ces décodeurs permettent d&rsquo;extraire tout type d&rsquo;information à propos d&rsquo;un log donné.</p>
 <p>Par exemple, une ligne de log SSH peut ressembler à cela :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>May <span style="color:#ae81ff">21</span> 20:22:28 slacker2 sshd<span style="color:#f92672">[</span>8813<span style="color:#f92672">]</span>: Accepted password <span style="color:#66d9ef">for</span> root from 192.168.20.185 port <span style="color:#ae81ff">1066</span> ssh2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>May <span style="color:#ae81ff">21</span> 20:22:28 slacker2 sshd<span style="color:#f92672">[</span>8813<span style="color:#f92672">]</span>: Accepted password <span style="color:#66d9ef">for</span> root from 192.168.20.185 port <span style="color:#ae81ff">1066</span> ssh2
 </span></span><span style="display:flex;"><span>May <span style="color:#ae81ff">21</span> 20:22:28 sol2 sshd<span style="color:#f92672">[</span>23857<span style="color:#f92672">]</span>: <span style="color:#f92672">[</span>ID <span style="color:#ae81ff">702911</span> auth.notice<span style="color:#f92672">]</span> User test1, coming from 192.168.2.185,  -  authenticated.
 </span></span><span style="display:flex;"><span>Oct <span style="color:#ae81ff">11</span> 08:05:46 hostname auth|security:info sshd<span style="color:#f92672">[</span>323808<span style="color:#f92672">]</span>: Accepted publickey <span style="color:#66d9ef">for</span> usr1 from 2.3.4.5 port <span style="color:#ae81ff">37909</span> ssh2
 </span></span></code></pre></div><p>Lorsque ce groupe de lignes de log va arriver vers notre Wazuh-Server, il va les faire passer une par une par des décodeurs (des regex) et récupérer des infos telles que :</p>
@@ -237,7 +237,7 @@ Tout d&rsquo;abord, il faut savoir que chaque ligne de log importée depuis un W
 <p>Cette configuration fait partie d&rsquo;un repository Github très connu, qui va pré-paramétrer notre sysmon avec toutes les alertes de base nécessaires pour pouvoir détecter tout ce qui se passe dans une machine, tout cela en les mettant en relation avec des Mitre ATTACK, ce qui est très utile.</p>
 <p>Vous pouvez bien entendu créer votre propre fichier de configuration Sysmon, mais je ne vais pas m&rsquo;attarder sur cela, pour faire en sorte que le post soit le plus concis possible.</p>
 <p>Une fois que vous aurez téléchargé votre exécutable sysmon, il faudra l&rsquo;extraire et lancer la commande suivante dans un <em><strong>Powershell</strong></em> avec les droits Admin :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>sysmon.exe -accepteula -i sysmonconfig.xml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>sysmon.exe -accepteula -i sysmonconfig.xml
 </span></span></code></pre></div><p><img src="/images/SIEM/Partie4/Wazuh3.gif" alt="Gif Wazuh"></p>
 <p>Avec cette commande, on va juste dire à Sysmon quelles sont les choses qu&rsquo;il doit surveiller (il y en a vraiment beaucoup) et une fois qu&rsquo;il connaît ça, il va se mettre en mode <em><strong>daemon</strong></em> et normalement démarrer automatiquement à tous les prochains redémarrages.</p>
 <p>Ensuite, je vous invite à aller au canal de journalisation suivant dans <em><strong>l&rsquo;observateur d&rsquo;événements</strong></em> :</p>
@@ -258,7 +258,7 @@ Tout d&rsquo;abord, il faut savoir que chaque ligne de log importée depuis un W
 <p>On va également surveiller de près le comportement de certains <em><strong>.exe</strong></em>, surveiller certaines entrées <em><strong>Regedit</strong></em> qui sont sensibles, entre autres choses. C&rsquo;est un fichier de config vraiment très très complet.</p>
 <p>Une fois qu&rsquo;on a déployé ce fichier de config, on va maintenant importer les nouvelles règles sur notre Wazuh-Manager qui vont nous servir pour traiter ces nouvelles informations. Je vous donne ci-dessous un script bash qu&rsquo;il faut lancer sur le serveur où se trouve le <em><strong>Wazuh-Manager</strong></em>. C&rsquo;est un script qui va récupérer pas mal de règles faites par l&rsquo;équipe <em><strong>SOC-Fortress</strong></em>, qui sont bien faites et très optimisées.</p>
 <p>Pour les importer on lance ce script dans le serveur :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so ~/wazuh_socfortress_rules.sh https://raw.githubusercontent.com/socfortress/Wazuh-Rules/main/wazuh_socfortress_rules.sh <span style="color:#f92672">&amp;&amp;</span> bash ~/wazuh_socfortress_rules.sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -so ~/wazuh_socfortress_rules.sh https://raw.githubusercontent.com/socfortress/Wazuh-Rules/main/wazuh_socfortress_rules.sh <span style="color:#f92672">&amp;&amp;</span> bash ~/wazuh_socfortress_rules.sh
 </span></span></code></pre></div><p>Une fois lance, vous devriez voir quelque chose qui ressemble a ceci :</p>
 <p><img src="/images/SIEM/Partie4/Install_rules.png" alt="Import rules Wazuh"></p>
 <p>Et voilà ! Maintenant, on a nos règles custom qui sont installées dans notre <em><strong>Wazuh-Server</strong></em>. Si vous voulez aller voir ces règles, vous savez déjà comment faire ;)</p>

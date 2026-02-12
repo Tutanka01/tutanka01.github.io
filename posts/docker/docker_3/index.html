@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, docker'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docker/docker_3/">
+    <meta property="og:url" content="https://makhal.fr/posts/docker/docker_3/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Docker Partie 3">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Docker Partie 3">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docker/docker_3/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docker/docker_3/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docker/docker_3/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docker/docker_3/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docker/docker_3/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docker/docker_3/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,7 +162,7 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
         </ul>
     </div>
@@ -179,7 +179,7 @@
 </blockquote>
 <h2 id="un-exemple-simple">Un exemple simple</h2>
 <p>Pour commencer, je vais vous montrer un exemple simple. Nous allons créer un fichier <code>compose.yaml</code> qui va lancer un conteneur <code>nginx</code> et un conteneur <code>mysql</code>. Voici le contenu du fichier <code>docker-compose.yml</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">web</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">nginx:latest</span>
@@ -191,17 +191,17 @@
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">MYSQL_ROOT_PASSWORD</span>: <span style="color:#ae81ff">example</span>
 </span></span></code></pre></div><p>Pour le moment rien de complique, nous avons juste deux services, <code>web</code> et <code>db</code>. Le service <code>web</code> utilise l&rsquo;image <code>nginx:latest</code>, et il expose le port <code>80</code> du conteneur sur le port <code>8080</code> de l&rsquo;hôte. Le service <code>db</code> utilise l&rsquo;image <code>mysql:latest</code>, et il définit la variable d&rsquo;environnement <code>MYSQL_ROOT_PASSWORD</code> à <code>example</code>.</p>
 <p>Ce Docker-Compose, est la traduction exacte de ce que une commande <code>docker run</code> ferait. :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8080:80 nginx:latest
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8080:80 nginx:latest
 </span></span><span style="display:flex;"><span>docker run -d -e MYSQL_ROOT_PASSWORD<span style="color:#f92672">=</span>example mysql:latest
 </span></span></code></pre></div><p>C&rsquo;est juste qu&rsquo;avec Docker-Compose, vous pouvez lancer les deux services en même temps. Et en plus vous pouvez envoyer ce fichier à un autre développeur, et il pourra lancer les mêmes services avec la même configuration. C&rsquo;est très pratique.</p>
 <p>Comme je l&rsquo;ai ai dit dans la partie 2. Chaque image a ses propres variables d&rsquo;environnement. Vous pouvez les trouver dans la documentation de l&rsquo;image. Par exemple, pour l&rsquo;image <code>mysql</code>, vous pouvez trouver les variables d&rsquo;environnement <a href="https://hub.docker.com/_/mysql">ici</a>.</p>
 <p>Du coup, pour lancer ces deux services, vous pouvez utiliser la commande suivante:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up
 </span></span></code></pre></div><p>Et voila ! Vous avez lancé deux conteneurs en même temps. Cela dans cet exemple ne semble pas très utile, mais imaginez que vous avez une application qui utilise plusieurs services. Vous pouvez les lancer tous en même temps avec une seule commande. C&rsquo;est très pratique.</p>
 <h2 id="exemple-plus-complique">Exemple plus complique</h2>
 <p>Pour vous expliquer toutes les options qu&rsquo;on peut utiliser avec Docker-Compose, je vais vous donner un exemple plus complique. Nous allons créer un fichier <code>docker-compose.yml</code> qui va lancer un tres fameux gestionnaire de logs, Graylog. Graylog est un outil open-source qui permet de collecter, d&rsquo;analyser et de stocker des logs. Il est très utile pour les administrateurs système. Je ne vais pas vous expliquer comment utiliser Graylog, mais je vais vous montrer comment le lancer avec Docker-Compose.</p>
 <p>Voici le contenu du fichier <code>docker-compose.yml</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">mongodb</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">mongo:4</span>

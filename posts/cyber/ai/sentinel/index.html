@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, proxmox, sentinelbox, IA, machine learning'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/ai/sentinel/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/ai/sentinel/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Détecteur d&#39;anomalies réseau IA pour Proxmox">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Détecteur d&#39;anomalies réseau IA pour Proxmox">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/ai/sentinel/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/ai/sentinel/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/ai/sentinel/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/ai/sentinel/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/ai/sentinel/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/ai/sentinel/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,13 +162,13 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/proxmox">proxmox</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/proxmox">proxmox</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sentinelbox">sentinelbox</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sentinelbox">sentinelbox</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ia">IA</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ia">IA</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/machine-learning">machine learning</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/machine-learning">machine learning</a></li>
         
         </ul>
     </div>
@@ -247,14 +247,14 @@ graph LR
 <p><img src="/images/AI/ai1.png" alt="AI 1"></p>
 <p>Avant de commencer a capturer des paquets pour notre modele IA, on va d&rsquo;abord configurer la VM.</p>
 <p>On va installer Docker dessus, c&rsquo;est ce qui va nous permettre d&rsquo;heberger notre modele IA ainsi que grafana et prometheus. Pour cela on va suivre la documentation officielle de Docker, et on va l&rsquo;installer en utilisant le script officiel :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://get.docker.com -o get-docker.sh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -fsSL https://get.docker.com -o get-docker.sh
 </span></span><span style="display:flex;"><span>sudo sh get-docker.sh
 </span></span></code></pre></div><p>Et juste avec cela, vous avez docker et meme docker compose de installer sur votre VM !</p>
 <h2 id="capturer-les-paquets-réseau">Capturer les paquets réseau</h2>
 <p>Maintenant passons a une etape un peu plus drole, nous devons maintenant capturer les paquets réseau qui circulent, pour essayer de definir ce qui est normal pour que apres notre modele IA puisse detecter ce qui n&rsquo;est pas normal.</p>
 <p>Pour cela on va utiliser l&rsquo;outil incontestable <em><strong>tcpdump</strong></em>, c&rsquo;est un outil qui permet de capturer les paquets réseau sur une interface donnee. On va donc capturer les paquets réseau sur l&rsquo;interface reseau du <em><strong>Proxmox</strong></em>, c&rsquo;est a dire <em><strong>vmbr0</strong></em>. Puis cette capture on va la sauvegarder dans un fichier <em><strong>.pcap</strong></em> pour pouvoir l&rsquo;analyser et utiliser plus tard.</p>
 <p>La syntaxe de tcpdump n&rsquo;est pas complique, on va juste lui dire de capturer les paquets sur l&rsquo;interface <em><strong>vmbr0</strong></em> et de les sauvegarder dans un fichier <em><strong>.pcap</strong></em> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tcpdump -i vmbr0 -s <span style="color:#ae81ff">0</span> -w capture.pcap
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo tcpdump -i vmbr0 -s <span style="color:#ae81ff">0</span> -w capture.pcap
 </span></span></code></pre></div><p>Lorsque on lance cette commande vous verrez quelque chose qui ressemble a cela :</p>
 <p><img src="/images/AI/ai2.png" alt="AI 2"></p>
 <p>Comme vous voyez dans l&rsquo;image j&rsquo;ai laisse tourner la commande pendant quelques minutes et j&rsquo;ai reussi a recuperer <em><strong>10414</strong></em> paquets.</p>
@@ -280,7 +280,7 @@ graph LR
 <p>Et après ça, on a notre dataset nickel pour commencer à entraîner notre IA !</p>
 <h3 id="le-code-python-pour-entraîner-notre-ia">Le code Python pour entraîner notre IA</h3>
 <p>Le code Python que nous allons utiliser ressemble a cela :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> tensorflow <span style="color:#66d9ef">as</span> tf
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> tensorflow_decision_forests <span style="color:#66d9ef">as</span> tfdf
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
@@ -338,7 +338,7 @@ graph LR
 </ol>
 <p>Ce code nous allons le lancer dans google collab (Un genre de jupyter notebook ou google nous donne gratuitement une grande puissance de calcul, c&rsquo;est beaucoup utilise par les gens qui font du Data science et meme de l&rsquo;IA). Ce qui va nous permettre de profiter de la puissance de google collab pour entrainer notre modele.</p>
 <p>Avant de lancer le code bien entendu il faut installer les dependances, pour cela il va suffir de mettre un bloc de code au dessus du code python qui ressemble a cela :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!pip install tensorflow_decision_forests pyarrow scikit-learn
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!pip install tensorflow_decision_forests pyarrow scikit-learn
 </span></span></code></pre></div><p>Et voila, il va suffir maintenant d&rsquo;executer le code de toutes les cellules, dans le menu <em>Execution</em>. Et vous devriez voir quelque chome comme cela :</p>
 <p><img src="/images/AI/ai3.png" alt="AI 3"></p>
 <p>Ici on peut voir que notre modele a une Précision Globale (accuracy) de <em><strong>99.97%</strong></em>, ce qui est excellent !! Donc Seulement 7 erreurs sur 23 905 tests. Ce qui est juste incroyble.</p>
@@ -346,16 +346,16 @@ graph LR
 <p>Maintenant, la prochaine grosse étape, c&rsquo;est de <strong>sortir notre modèle IA de Google Colab et de le mettre au travail dans notre VM Proxmox</strong>.  Parce que pour l&rsquo;instant, il est un peu au chaud dans le cloud de Google, mais nous, on veut qu&rsquo;il surveille <em>notre</em> réseau, <em>notre</em> Proxmox.</p>
 <h2 id="déploiement-du-modèle-dans-notre-vm">Déploiement du modèle dans notre VM</h2>
 <p>Alors, la première chose qu&rsquo;on va faire, c&rsquo;est de se connecter en SSH à notre VM Ubuntu qu&rsquo;on a préparée.  Une fois qu&rsquo;on est connecté en ligne de commande dans notre VM, on va commencer par créer un petit coin où ranger tous les fichiers de notre projet SentinelBox. On va faire ça avec une commande toute simple :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir sentinelbox <span style="color:#f92672">&amp;&amp;</span> cd sentinelbox
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir sentinelbox <span style="color:#f92672">&amp;&amp;</span> cd sentinelbox
 </span></span></code></pre></div><p>En gros, avec cette ligne, on crée un dossier qu&rsquo;on a appelé <code>sentinelbox</code>.</p>
 <p>Maintenant, on va utiliser Docker pour heberger tous les outils qu&rsquo;on va utiliser. Si vous n&rsquo;avez jamais entendu de docker de votre vie, j&rsquo;ai une serie ou je presente Docker :</p>
 <p><a href="/posts/docker/docker_1/">Docker partie 1</a></p>
 <p>En résumé si jamais vous ne voulez pas aller voir mon post, Docker, c&rsquo;est un peu comme des boîtes, des &ldquo;containers&rdquo;, dans lesquelles on va pouvoir mettre notre modèle IA, Prometheus, Grafana, et tout ce dont on a besoin pour SentinelBox.  L&rsquo;avantage, c&rsquo;est que chaque boîte est isolée, bien rangée, et surtout, <strong>super facile à installer et à lancer</strong>.  Plus besoin de se prendre la tête avec des installations compliquées, Docker fait presque tout le boulot pour nous.</p>
 <p>Pour piloter tout ça avec Docker, on va utiliser un outil qui s&rsquo;appelle <strong>Docker Compose</strong>.  Docker Compose, c&rsquo;est un peu le chef d&rsquo;orchestre de nos containers Docker.  Avec un simple fichier de configuration, qu&rsquo;on va créer juste après, Docker Compose va se charger de lancer tous nos containers dans le bon ordre, de les connecter entre eux, et de faire en sorte que tout fonctionne ensemble comme sur des roulettes.</p>
 <p>Alors, la première chose à faire, c&rsquo;est de créer ce fameux fichier de configuration pour Docker Compose.  On va l&rsquo;appeler <code>compose.yaml</code>. Dans le dossier <code>sentinelbox</code> qu&rsquo;on vient de créer :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano compose.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano compose.yaml
 </span></span></code></pre></div><p>Et là, dans ce fichier vide, on va coller notre docker compose. Accroche-vous, je vous montre le code, et après je vous explique ce que ça fait :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">tensorflow-serving</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">tensorflow/serving:latest</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
@@ -420,7 +420,7 @@ graph LR
 </ul>
 <p>Bon, je sais, ça fait beaucoup d&rsquo;infos d&rsquo;un coup.  Mais l&rsquo;idée principale, c&rsquo;est que ce fichier <code>docker-compose.yml</code>, c&rsquo;est la recette complète pour lancer notre SentinelBox avec Docker.  On va avoir trois containers qui tournent ensemble : TensorFlow Serving (avec notre IA), Prometheus (pour la surveillance), et Grafana (pour la visualisation).</p>
 <p>Maintenant on va <em><strong>pull</strong></em> toutes les images de notre compose, pour cela il faut simplement taper la commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose pull
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose pull
 </span></span></code></pre></div><p>Vous aurez quelque chose quiva ressembler a cela :</p>
 
 
@@ -449,7 +449,7 @@ graph LR
 <p>Si vous avez bien suivi, nous avons entraîné notre modèle IA dans Google Colab et nous l&rsquo;avons sauvegardé dans un dossier nommé <code>saved_model</code>.  Il faut maintenant <strong>copier le contenu du dossier <code>saved_model</code> (tout le contenu, pas le dossier lui-même)</strong> dans le dossier <code>models/sentinel_model/1/</code> de votre VM.</p>
 <p>Vous pouvez utiliser <code>scp</code>, ou votre outil de transfert de fichiers préféré pour réaliser cette opération.  Assurez-vous de bien copier tous les fichiers et dossiers qui se trouvent à l&rsquo;intérieur de <code>saved_model</code> dans <code>models/1/</code>.</p>
 <p>Une fois cette copie effectuée, vérifiez que la structure de vos dossiers ressemble bien à ceci :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>├── compose.yaml
 </span></span><span style="display:flex;"><span>├── models
 </span></span><span style="display:flex;"><span>│   └── sentinel_model
@@ -469,7 +469,7 @@ graph LR
 </span></span><span style="display:flex;"><span>└── prometheus.yml
 </span></span></code></pre></div><p>(La présence du dossier <code>assets</code> peut varier en fonction de votre modèle et de la manière dont il a été sauvegardé).  L&rsquo;important est de voir <code>saved_model.pb</code> et le dossier <code>variables</code> dans <code>models/1/</code>.</p>
 <p>Bien entendu il ne faut oublier le <code>prometheus.yml</code> sinon le container prometheus va refuser de demarrer le contenu de ce fichier sera le suivant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>     <span style="color:#f92672">global</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>     <span style="color:#f92672">global</span>:
 </span></span><span style="display:flex;"><span>       <span style="color:#f92672">scrape_interval</span>:     <span style="color:#ae81ff">15s</span>
 </span></span><span style="display:flex;"><span>       <span style="color:#f92672">evaluation_interval</span>: <span style="color:#ae81ff">15s</span>
 </span></span><span style="display:flex;"><span>
@@ -480,7 +480,7 @@ graph LR
 </span></span></code></pre></div><p>Rien de bien complique donc je me reserve le fait de le commenter :) &hellip;</p>
 <p><strong>Lancement de SentinelBox avec Docker Compose</strong></p>
 <p>Dans le même répertoire <code>sentinelbox</code> où se trouvent votre fichier <code>compose.yaml</code> et votre dossier <code>models</code>, il suffit de lancer la commande magique :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose up -d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose up -d
 </span></span></code></pre></div><p><code>docker compose up</code>, c&rsquo;est la commande qui dit à Docker Compose de démarrer tous les services définis dans <code>compose.yaml</code>.  L&rsquo;option <code>-d</code> permet de lancer les containers en mode &ldquo;detached&rdquo;, c&rsquo;est-à-dire en arrière-plan.  Votre terminal sera donc libéré, et les containers continueront de tourner en tâche de fond.</p>
 <p>Docker Compose va maintenant se charger de :</p>
 <ol>
@@ -490,9 +490,9 @@ graph LR
 <li>Lancer le container <code>grafana</code> en utilisant l&rsquo;image <code>grafana/grafana:latest</code>, en utilisant le volume <code>grafana-data</code> et en s&rsquo;assurant qu&rsquo;il démarre après <code>prometheus</code>.</li>
 </ol>
 <p>Vous devriez voir un affichage dans votre terminal qui indique la création des containers et leur démarrage.  Pour vérifier que tout s&rsquo;est bien passé, vous pouvez utiliser la commande :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose ps
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo docker compose ps
 </span></span></code></pre></div><p>Et vous devriez voir quelque chose qui ressemble a cela :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                               IMAGE                       COMMAND                  SERVICE              CREATED          STATUS          PORTS
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                               IMAGE                       COMMAND                  SERVICE              CREATED          STATUS          PORTS
 </span></span><span style="display:flex;"><span>sentinelbox-grafana-1              grafana/grafana:latest      <span style="color:#e6db74">&#34;/run.sh&#34;</span>                grafana              <span style="color:#ae81ff">22</span> minutes ago   Up <span style="color:#ae81ff">21</span> minutes   0.0.0.0:3000-&gt;3000/tcp, :::3000-&gt;3000/tcp
 </span></span><span style="display:flex;"><span>sentinelbox-prometheus-1           prom/prometheus:latest      <span style="color:#e6db74">&#34;/bin/prometheus --c…&#34;</span>   prometheus           <span style="color:#ae81ff">22</span> minutes ago   Up <span style="color:#ae81ff">21</span> minutes   0.0.0.0:9090-&gt;9090/tcp, :::9090-&gt;9090/tcp
 </span></span><span style="display:flex;"><span>sentinelbox-tensorflow-serving-1   tensorflow/serving:latest   <span style="color:#e6db74">&#34;/usr/bin/tf_serving…&#34;</span>   tensorflow-serving   <span style="color:#ae81ff">22</span> minutes ago   Up <span style="color:#ae81ff">21</span> minutes   8500/tcp, 0.0.0.0:8501-&gt;8501/tcp, :::8501-&gt;8501/tcp
@@ -505,7 +505,7 @@ graph LR
 <p>Pour cela, nous avons une magnifique API qui va nous permettre de discuter avec notre modèle d’IA et ainsi obtenir une réponse pour savoir s’il détecte ce type de trafic comme malicieux ou non.</p>
 <p>Pour le tester, nous allons utiliser une commande curl. Cette commande va envoyer un paquet créé par nous-mêmes, uniquement à des fins de test.</p>
 <p>Voici à quoi ressemble la commande curl :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -X POST <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>    -H <span style="color:#e6db74">&#34;Content-Type: application/json&#34;</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>    -d <span style="color:#e6db74">&#39;{
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;instances&#34;: [

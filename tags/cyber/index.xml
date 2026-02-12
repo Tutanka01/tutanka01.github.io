@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cyber on makhal.fr</title>
-    <link>http://localhost:1313/tags/cyber/</link>
+    <link>https://makhal.fr/tags/cyber/</link>
     <description>Recent content in Cyber on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/cyber/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A la decouverte d&#39;eBPF</title>
-      <link>http://localhost:1313/posts/docs/ebpf/ebpf-1/</link>
+      <title>eBPF, au cœur du kernel Linux</title>
+      <link>https://makhal.fr/posts/docs/ebpf/ebpf-1/</link>
       <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ebpf/ebpf-1/</guid>
-      <description>On explore la techno que tout le monde s&amp;rsquo;arrache en ce moment : eBPF. Mais c&amp;rsquo;est quoi exactement ?</description>
+      <guid>https://makhal.fr/posts/docs/ebpf/ebpf-1/</guid>
+      <description>eBPF est la technologie du kernel Linux qui révolutionne le monitoring, l’observabilité et la sécurité. Découvrons comment et pourquoi.</description>
     </item>
     <item>
       <title>Mais en fait, on a rien compris au Zero Trust</title>
-      <link>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</link>
+      <link>https://makhal.fr/posts/cyber/zerotrust/intro-zerotrust/</link>
       <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</guid>
+      <guid>https://makhal.fr/posts/cyber/zerotrust/intro-zerotrust/</guid>
       <description>On a rien compris au Zero Trust, on se mélange les pinceaux avec les définitions et on finit par construire des infra fragiles.</description>
     </item>
     <item>
       <title>Twingate : Le Zero Trust, enfin simplifié</title>
-      <link>http://localhost:1313/posts/cyber/twingate/twingate/</link>
+      <link>https://makhal.fr/posts/cyber/twingate/twingate/</link>
       <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/twingate/twingate/</guid>
+      <guid>https://makhal.fr/posts/cyber/twingate/twingate/</guid>
       <description>On découvre Twingate, une solution de sécurité réseau qui remplace les VPN traditionnels avec une approche Zero Trust Network Access (ZTNA).</description>
     </item>
     <item>
       <title>Authelia &#43; Traefik : sécurisez tous vos services web</title>
-      <link>http://localhost:1313/posts/sysadmin/authelia/authelia/</link>
+      <link>https://makhal.fr/posts/sysadmin/authelia/authelia/</link>
       <pubDate>Wed, 28 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/authelia/authelia/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/authelia/authelia/</guid>
       <description>Dans cet article, nous allons découvrir et mettre en place Authelia avec Traefik</description>
     </item>
     <item>
       <title>Sandbox Evasion : Théorie, techniques et pratique</title>
-      <link>http://localhost:1313/posts/cyber/sandbox-evasion/sandbox-evasion-1/</link>
+      <link>https://makhal.fr/posts/cyber/sandbox-evasion/sandbox-evasion-1/</link>
       <pubDate>Mon, 07 Apr 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/sandbox-evasion/sandbox-evasion-1/</guid>
+      <guid>https://makhal.fr/posts/cyber/sandbox-evasion/sandbox-evasion-1/</guid>
       <description>On découvre le concept de l&amp;rsquo;évasion de sandbox, et on fait un peu de pratique</description>
     </item>
     <item>
       <title>Agent IA n8n prend vie avec VirusTotal (Partie 2)</title>
-      <link>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</link>
+      <link>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</guid>
+      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</guid>
       <description>Intégration de VirusTotal pour l&amp;rsquo;analyse d&amp;rsquo;URL par chat, avec un agent IA.</description>
     </item>
     <item>
       <title>Agent IA n8n : Analysez les URLs (Partie 1)</title>
-      <link>http://localhost:1313/posts/docs/ia/n8n-cyber/</link>
+      <link>https://makhal.fr/posts/docs/ia/n8n-cyber/</link>
       <pubDate>Wed, 26 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber/</guid>
+      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber/</guid>
       <description>Un agent IA avec n8n qui va analyser les urls des sites louches que je croise</description>
     </item>
     <item>
       <title>Kiwix - Le savoir à portée de main</title>
-      <link>http://localhost:1313/posts/docs/kiwix/kiwix/</link>
+      <link>https://makhal.fr/posts/docs/kiwix/kiwix/</link>
       <pubDate>Sun, 23 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docs/kiwix/kiwix/</guid>
+      <guid>https://makhal.fr/posts/docs/kiwix/kiwix/</guid>
       <description>Imaginez : tout le savoir humain dans votre poche, sans Wi-Fi ni 4G. Possible ? Oui, avec Kiwix.</description>
     </item>
     <item>
       <title>Booster Defender gratuitement avec Defender UI</title>
-      <link>http://localhost:1313/posts/cyber/poc/defenderui/</link>
+      <link>https://makhal.fr/posts/cyber/poc/defenderui/</link>
       <pubDate>Fri, 14 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/poc/defenderui/</guid>
+      <guid>https://makhal.fr/posts/cyber/poc/defenderui/</guid>
       <description>Les antivirus c&amp;rsquo;est cher, Defender c&amp;rsquo;est gratuit. Mais comment l&amp;rsquo;ameliorer ?</description>
     </item>
     <item>
       <title>Anatomie d&#39;une attaque ransomware</title>
-      <link>http://localhost:1313/posts/cyber/poc/ransom-poc/</link>
+      <link>https://makhal.fr/posts/cyber/poc/ransom-poc/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/poc/ransom-poc/</guid>
+      <guid>https://makhal.fr/posts/cyber/poc/ransom-poc/</guid>
       <description>Dans cet article nous allons voir toutes les etapes qui composent une attaque de ransomware</description>
     </item>
   </channel>

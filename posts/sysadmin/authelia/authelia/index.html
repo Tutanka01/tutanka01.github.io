@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, authelia'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Authelia &#43; Traefik : sécurisez tous vos services web">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Authelia &#43; Traefik : sécurisez tous vos services web">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/authelia/authelia/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/authelia/authelia/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/authelia">authelia</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/authelia">authelia</a></li>
         
         </ul>
     </div>
@@ -194,7 +194,7 @@
 <p>Le seul prérequis pour ce tuto est d&rsquo;avoir Traefik installé et fonctionnel ; je ferai très bientôt un article sur comment installer Traefik.</p>
 <p>Pour installer Authelia, nous allons utiliser Docker et Docker Compose. Si vous n&rsquo;avez pas encore installé Docker ou même si vous ne savez pas ce qu&rsquo;est Docker, je vous recommande de suivre <a href="/posts/docker/docker_1/">ce guide</a> que j&rsquo;ai écrit.</p>
 <p>Voilà le <code>docker-compose.yaml</code> pour installer Authelia :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">authelia</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">authelia</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">authelia/authelia:latest</span>
@@ -254,17 +254,17 @@
 </ul>
 <h3 id="configuration-dauthelia">Configuration d&rsquo;Authelia</h3>
 <p>D&rsquo;abord, commençons par créer le dossier de configuration d&rsquo;Authelia :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd authelia  <span style="color:#75715e"># Assurez-vous d&#39;être dans le bon répertoire parent si besoin</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd authelia  <span style="color:#75715e"># Assurez-vous d&#39;être dans le bon répertoire parent si besoin</span>
 </span></span><span style="display:flex;"><span>mkdir -p ./data/authelia/config
 </span></span><span style="display:flex;"><span>mkdir -p ./data/authelia/secrets
 </span></span></code></pre></div><p>Ensuite, on va créer nos secrets JWT, SESSION et ENCRYPTION_KEY. Vous pouvez utiliser <code>openssl</code> pour générer des secrets aléatoires :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openssl rand -base64 <span style="color:#ae81ff">32</span> &gt; ./data/authelia/secrets/JWT_SECRET
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>openssl rand -base64 <span style="color:#ae81ff">32</span> &gt; ./data/authelia/secrets/JWT_SECRET
 </span></span><span style="display:flex;"><span>openssl rand -base64 <span style="color:#ae81ff">32</span> &gt; ./data/authelia/secrets/SESSION_SECRET
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Pensez à générer également ENCRYPTION_KEY si vous utilisez le stockage local chiffré</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># openssl rand -base64 64 &gt; ./data/authelia/secrets/ENCRYPTION_KEY</span>
 </span></span></code></pre></div><p>Ces secrets seront utilisés par Authelia pour signer les tokens JWT et les sessions. Et donc logiquement, la clé de chiffrement doit être suffisamment longue pour garantir la sécurité des données stockées.</p>
 <p>Maintenant, on va créer le fichier de configuration <code>configuration.yml</code> dans le dossier <code>./data/authelia/config</code>. Voici un exemple de configuration de base :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#ae81ff">auto</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">theme</span>: <span style="color:#ae81ff">auto</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">default_redirection_url</span>: <span style="color:#ae81ff">https://makhal.tuto</span> <span style="color:#75715e"># Ou https://auth.makhal.tuto par exemple</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">server</span>:
@@ -326,7 +326,7 @@
 </ul>
 <h3 id="création-des-utilisateurs">Création des utilisateurs</h3>
 <p>Maintenant, nous allons créer le fichier <code>users.yml</code> dans le dossier <code>./data/authelia/config</code>. Ce fichier contiendra les utilisateurs et leurs mots de passe. Voici un exemple de contenu pour ce fichier :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">users</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">users</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">alice</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">displayname</span>: <span style="color:#ae81ff">Alice</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">password</span>: <span style="color:#e6db74">&#34;$argon2id$v=19$m=1024,t=1,p=8$eW91cl9zYWx0$eW91cl9zYWx0&#34;</span> <span style="color:#75715e"># Remplacez par votre hash</span>
@@ -335,13 +335,13 @@
 </span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">admins</span>
 </span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">dev</span>
 </span></span></code></pre></div><p>Pour générer le mot de passe, vous pouvez utiliser la commande suivante (si vous avez installé Authelia localement ou via Docker exec) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it authelia authelia hash-password <span style="color:#e6db74">&#34;votre_mot_de_passe&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker exec -it authelia authelia hash-password <span style="color:#e6db74">&#34;votre_mot_de_passe&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Ou si vous avez un binaire Authelia localement :</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># authelia hash-password &#34;votre_mot_de_passe&#34;</span>
 </span></span></code></pre></div><p>Cette commande va générer un mot de passe haché que vous pouvez copier dans le fichier <code>users.yml</code>. Assurez-vous de remplacer <code>&quot;votre_mot_de_passe&quot;</code> par le mot de passe réel que vous souhaitez utiliser.</p>
 <h3 id="lancement-dauthelia">Lancement d&rsquo;Authelia</h3>
 <p>Normalement, vous avez tout configuré, il ne reste plus qu&rsquo;à lancer Authelia avec Docker Compose :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up -d
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker compose up -d
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># dans le répertoire où se trouve le fichier docker-compose.yaml</span>
 </span></span></code></pre></div><p>Et si vous avez bien configuré Traefik, vous devriez pouvoir accéder à Authelia via <code>https://auth.makhal.tuto</code>. Vous serez redirigé vers la page de connexion d&rsquo;Authelia, comme suit :</p>
 <p><img src="/images/sysadmin/authelia/page-login.png" alt="alt text"></p>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, docker, devops'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s1-3/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s1-3/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Le debut d&#39;une grande aventure K8s">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Le debut d&#39;une grande aventure K8s">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s1-3/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s1-3/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s1-3/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s1-3/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s1-3/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s1-3/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
         </ul>
     </div>
@@ -183,13 +183,13 @@
 <p>La création de notre application sera notre première étape. Car, comme vous le savez, <em><strong>avant de déployer, il faut d&rsquo;abord créer</strong></em>. Sans application à déployer, à quoi bon Kubernetes ?</p>
 <p>L&rsquo;application idéale pour débuter avec Kubernetes est un serveur web simple. Cette simplicité nous permettra de nous concentrer sur les concepts fondamentaux avant d’augmenter la complexité au fil des articles.</p>
 <p>Pour cette démonstration, nous allons créer un serveur web basique en PHP. Voici le code de la page web qui sera servie par notre application :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;Kubernetes, c&#39;est trop facile ! ;) &#34;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><p>Un message simple pour un début prometteur.</p>
 <h2 id="2-conteneurisation-de-l"><strong>2. Conteneurisation de l&rsquo;application</strong></h2>
 <p>Pour exécuter notre serveur web sur Kubernetes, nous avons besoin d&rsquo;une image Docker. Cette image inclura un serveur web <strong>Apache2</strong> avec le support de <strong>PHP</strong>. Voici le contenu du <code>Dockerfile</code> qui nous permettra de construire cette image :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">php:8.3-apache</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#66d9ef">FROM</span> <span style="color:#e6db74">php:8.3-apache</span><span style="color:#960050;background-color:#1e0010">
 </span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">COPY</span> src/ /var/www/html/<span style="color:#960050;background-color:#1e0010">
 </span></span></span></code></pre></div><h3 id="explication-"><strong>Explication :</strong></h3>
 <ol>
@@ -199,7 +199,7 @@
 <p>Si vous avez suivi mon tutoriel sur Docker <a href="https://makhal.fr/posts/docker/docker_2/">ici</a>, vous savez déjà comment ce processus fonctionne. Pour les nouveaux arrivants, pas d’inquiétude, tout sera expliqué en détail !</p>
 <h3 id="structure-du-projet-"><strong>Structure du projet :</strong></h3>
 <p>Voici à quoi ressemble la structure du projet pour l&rsquo;instant :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.
 </span></span><span style="display:flex;"><span>├── Dockerfile
 </span></span><span style="display:flex;"><span>└── src
 </span></span><span style="display:flex;"><span>    └── index.php
@@ -209,14 +209,14 @@
 </ol>
 <h3 id="construction-de-l"><strong>Construction de l&rsquo;image Docker :</strong></h3>
 <p>Pour construire l&rsquo;image, exécutez la commande suivante depuis la racine de votre projet :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t tutanka01/k8s:art3 .
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build -t tutanka01/k8s:art3 .
 </span></span></code></pre></div><blockquote>
 <p>(Pensez à remplacer <code>tutanka01/k8s:art3</code> par votre nom d&rsquo;utilisateur Docker Hub, egalement il faudra sur dockerhub avoir créé un repository nommé <code>k8s</code>)</p>
 </blockquote>
 <p>Une fois l&rsquo;image faite, vous allez voir quelque chose qui resseble a ça :
 <img src="/images/k8s/k8s3/docker-build-1.png" alt="docker-build-1"></p>
 <p>Une fois que tout est prêt, vous pouvez exécuter la commande suivante pour tester votre image :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8060:80 tutanka01/k8s:art3
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8060:80 tutanka01/k8s:art3
 </span></span></code></pre></div><p>Accédez ensuite à <a href="http://localhost:8060">http://localhost:8060</a> pour voir votre application en action.</p>
 <p><img src="/images/k8s/k8s3/web-test-docker-1.png" alt="web-test-docker-1"></p>
 <p>Enfin, pensez à pousser votre image sur Docker Hub. Cette étape est tres importante pour la suite de l&rsquo;article ! Si vous ne voulez pas vous embêter, vous pouvez directement utiliser mon image déjà disponible <a href="https://hub.docker.com/repository/docker/tutanka01/k8s">ici</a></p>
@@ -285,7 +285,7 @@ graph TD
 </ul>
 <p>Je vais omettre les étapes d&rsquo;installation d&rsquo;Ubuntu, mais si vous avez besoin d&rsquo;aide, n&rsquo;hésitez pas à me contacter. Une fois vos machines prêtes, vous pouvez procéder à l&rsquo;installation de K3s. Pour cela, rendez-vous sur la <a href="https://k3s.io/">page officielle de K3s</a> de K3s et suivez les instructions.</p>
 <p>Selon la documentation officielle, pour installer K3s, il suffit de lancer la commande suivante sur le master :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sfL https://get.k3s.io | sh -
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sfL https://get.k3s.io | sh -
 </span></span></code></pre></div><p>Vous verrez normalement quelque chose qui ressemble a ça :</p>
 
 
@@ -317,16 +317,16 @@ graph TD
 </ul>
 <p>Donc en a peine 40Mo, vous avez installé tout ça ! C&rsquo;est pas beau ça ?</p>
 <p>Pour tester si tout s&rsquo;est bien initialisé, vous pouvez lancer cette commande sur le master :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo kubectl get nodes
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo kubectl get nodes
 </span></span></code></pre></div><p><img src="/images/k8s/k8s3/get-nodes.png" alt="get-nodes"></p>
 <p>Vous devriez voir quelque chose ressemblant à l&rsquo;image ci-dessus. Si c&rsquo;est le cas, c&rsquo;est que tout s&rsquo;est bien passé. Passons maintenant à l&rsquo;ajout des nœuds workers.</p>
 <h3 id="ajout-des-noeuds-workers-"><strong>Ajout des noeuds workers :</strong></h3>
 <p>Une fois que nous avons créé le nœud maître, nous devons obtenir ce qu&rsquo;on appelle un <em><strong>token</strong></em> pour pouvoir ajouter des nœuds workers. En plus de ce token, il nous faut l&rsquo;adresse IP du nœud maître. C&rsquo;est pour cela qu&rsquo;il est tres important d&rsquo;avoir une adresse IP fixe pour tous les nœuds du cluster.</p>
 <p>Pour obtenir le token de votre nœud maître, vous devez simplement chercher dans le fichier <code>/var/lib/rancher/k3s/server/node-token</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cat /var/lib/rancher/k3s/server/node-token
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo cat /var/lib/rancher/k3s/server/node-token
 </span></span></code></pre></div><p><img src="/images/k8s/k8s3/k3s-token.png" alt="k3s-token"></p>
 <p>Voici à quoi ressemble le token, vous pouvez le copier pour l&rsquo;utiliser plus tard. Une fois que vous avez le token, vous pouvez utiliser cette commande sur vos deux nœuds workers pour les ajouter au cluster :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sfL https://get.k3s.io | K3S_URL<span style="color:#f92672">=</span>https://192.168.9.200 K3S_TOKEN<span style="color:#f92672">=</span>&lt;votretoken&gt; sh -s - 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -sfL https://get.k3s.io | K3S_URL<span style="color:#f92672">=</span>https://192.168.9.200 K3S_TOKEN<span style="color:#f92672">=</span>&lt;votretoken&gt; sh -s - 
 </span></span></code></pre></div><p>Une fois cette commande lancée, en moins de 20 secondes, vos nœuds workers seront installés et prêts à rejoindre le cluster.</p>
 
 
@@ -350,7 +350,7 @@ graph TD
 </div>
 
 <p>Pour vérifier que tout a été bien installé, vous pouvez lancer la commande suivante sur le nœud maître :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo kubectl get nodes -o wide
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo kubectl get nodes -o wide
 </span></span></code></pre></div><p><img src="/images/k8s/k8s3/get-nodes-all.png" alt="Get nodes all"></p>
 <p>Vous devriez voir vos 2 nœuds workers ajoutés à votre cluster, comme montré sur la capture d&rsquo;écran ci-dessus.</p>
 <h2 id="conclusion--on-sarrête-là-pour-linstant-">Conclusion : On s’arrête là… pour l’instant !</h2>

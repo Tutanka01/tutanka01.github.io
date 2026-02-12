@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mail on makhal.fr</title>
-    <link>http://localhost:1313/tags/mail/</link>
+    <link>https://makhal.fr/tags/mail/</link>
     <description>Recent content in Mail on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 08 Feb 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mail/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/mail/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mailcow le serveur mail tout-en-un</title>
-      <link>http://localhost:1313/posts/sysadmin/mailcow/</link>
+      <link>https://makhal.fr/posts/sysadmin/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/mailcow/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/mailcow/</guid>
       <description>Un guide complet pour déployer un serveur mail complet avec Mailcow dans votre HomeLab.</description>
     </item>
     <item>
       <title>DMARC - SPF - DKIM</title>
-      <link>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</link>
+      <link>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</link>
       <pubDate>Sun, 28 Jan 2024 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</guid>
+      <guid>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</guid>
       <description>Au cours de ce post, je vais vous montrer comment mettre en place le DMARC, DKIM et SPF sur votre serveur de messagerie.</description>
     </item>
   </channel>

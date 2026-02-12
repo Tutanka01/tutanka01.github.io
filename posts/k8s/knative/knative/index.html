@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, serverless, knative, kubernetes'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/knative/knative/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/knative/knative/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="AWS Lambda open source avec Knative">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AWS Lambda open source avec Knative">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/knative/knative/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/knative/knative/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/knative/knative/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/knative/knative/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/knative/knative/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/knative/knative/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/serverless">serverless</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/serverless">serverless</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/knative">knative</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/knative">knative</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
         </ul>
     </div>
@@ -213,7 +213,7 @@
 <p>Voilà ! Fin de la parenthèse. Donc, la requête arrive chez Kourier. Et c&rsquo;est là que la magie commence&hellip;</p>
 <h4 id="1-le-pod-22-et-le-queue-proxy">1. Le &ldquo;Pod 2/2&rdquo; et le <code>queue-proxy</code></h4>
 <p>Quand j&rsquo;ai déployé ma première application &ldquo;Hello World&rdquo;, j&rsquo;ai tout de suite remarqué un truc bizarre en faisant <code>kubectl get pods</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                                      READY   STATUS    RESTARTS   AGE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                                      READY   STATUS    RESTARTS   AGE
 </span></span><span style="display:flex;"><span>hello-00001-deployment-798c574845-9zp7f   2/2     Running   <span style="color:#ae81ff">0</span>          33s
 </span></span></code></pre></div><p>Pourquoi <strong><code>READY 2/2</code></strong> ? J&rsquo;ai juste déployé un &ldquo;Hello World&rdquo; !</p>
 <p>Le conteneur n°1, c&rsquo;est bien mon application (un <code>nginx</code> ou un <code>helloworld-go</code>). Mais le n°2, c&rsquo;est un &ldquo;sidecar&rdquo; (un acolyte) injecté automatiquement par Knative : le <strong><code>queue-proxy</code></strong>.</p>
@@ -228,7 +228,7 @@
 <li>Hop ! Il modifie l&rsquo;objet <code>Deployment</code> Kubernetes et passe le nombre de <code>replicas</code> de 1 à <strong>0</strong>.</li>
 </ul>
 <p>Le pod disparaît. C&rsquo;est ça, le <strong>Scale-to-Zero</strong>. Plus de pod, plus de consommation de RAM ou de CPU. Le silence total.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                                      READY   STATUS        RESTARTS   AGE
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>NAME                                      READY   STATUS        RESTARTS   AGE
 </span></span><span style="display:flex;"><span>hello-00001-deployment-798c574845-9zp7f   2/2     Terminating   <span style="color:#ae81ff">0</span>          98s
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># ... et puis plus rien</span>
 </span></span></code></pre></div><h3 id="le-cold-start-démarrage-à-froid">Le &ldquo;Cold Start&rdquo; (Démarrage à froid)</h3>
@@ -252,7 +252,7 @@
 <li>Dans <code>kubectl get pods -w</code>, je vois le nouveau pod passer de <code>Pending</code> à <code>Running</code>&hellip;</li>
 <li>&hellip;et <strong>seulement là</strong>, mon <code>curl</code> reçoit enfin la réponse !</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Je lance le curl, il attend...</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Je lance le curl, il attend...</span>
 </span></span><span style="display:flex;"><span>$ curl http://hello.default.192.168.100.135.sslip.io
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Pendant ce temps, dans un autre terminal :</span>
@@ -271,20 +271,20 @@
 <h3 id="étape-1--installer-k3s-sans-traefik-">Étape 1 : Installer K3s&hellip; sans Traefik !</h3>
 <p>C&rsquo;est <strong>L&rsquo;ÉTAPE LA PLUS IMPORTANTE</strong>. K3s est génial et vient avec l&rsquo;ingress Traefik pré-installé. Sauf que, comme on l&rsquo;a vu, Knative a besoin de son <em>propre</em> ingress (Kourier) pour gérer la magie du &ldquo;scale-to-zero&rdquo;. Les deux vont se battre pour le port 80.</p>
 <p>Donc, on installe K3s en disant gentiment à Traefik de ne pas venir :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># On installe k3s en désactivant traefik</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># On installe k3s en désactivant traefik</span>
 </span></span><span style="display:flex;"><span>curl -sfL https://get.k3s.io | sh -s - --disable traefik
 </span></span></code></pre></div><h3 id="étape-2--installer-knative-serving-le-cerveau">Étape 2 : Installer Knative Serving (Le Cerveau)</h3>
 <p>Maintenant qu&rsquo;on a un cluster vide, on installe les deux parties de Knative Serving : les définitions (CRDs) et les contrôleurs (le code).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 1. Les définitions (pour que K8s comprenne les &#34;ksvc&#34;)</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 1. Les définitions (pour que K8s comprenne les &#34;ksvc&#34;)</span>
 </span></span><span style="display:flex;"><span>kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.20.0/serving-crds.yaml
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Le coeur de Knative (Autoscaler, Activator, etc.)</span>
 </span></span><span style="display:flex;"><span>kubectl apply -f https://github.com/knative/serving/releases/download/knative-v1.20.0/serving-core.yaml
 </span></span></code></pre></div><h3 id="étape-3--installer-kourier-la-porte-dentrée">Étape 3 : Installer Kourier (La Porte d&rsquo;Entrée)</h3>
 <p>On installe notre fameux Ingress Kourier, qui va s&rsquo;occuper du réseau.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://github.com/knative-extensions/net-kourier/releases/download/knative-v1.20.0/kourier.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl apply -f https://github.com/knative-extensions/net-kourier/releases/download/knative-v1.20.0/kourier.yaml
 </span></span></code></pre></div><p>Puis, on dit à Knative Serving : &ldquo;Hey, ton Ingress par défaut, c&rsquo;est Kourier !&rdquo;</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-network <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-network <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --namespace knative-serving <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --type merge <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;ingress-class&#34;:&#34;kourier.ingress.networking.knative.dev&#34;}}&#39;</span>
@@ -293,14 +293,14 @@
 <p>On va utiliser <code>sslip.io</code>, un service DNS public qui résout une IP&hellip; à partir de l&rsquo;IP elle-même !</p>
 <p>Il suffit de dire à Knative : &ldquo;Toutes tes URLs finiront par <code>[MON-IP].sslip.io</code>&rdquo;.</p>
 <p>(Remplacez <code>192.168.100.135</code> par l&rsquo;IP de votre nœud K3s)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-domain <span style="color:#ae81ff">\
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kubectl patch configmap/config-domain <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --namespace knative-serving <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --type merge <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span>  --patch <span style="color:#e6db74">&#39;{&#34;data&#34;:{&#34;192.168.100.135.sslip.io&#34;:&#34;&#34;}}&#39;</span>
 </span></span></code></pre></div><h3 id="étape-5--déployer-">Étape 5 : Déployer !</h3>
 <p>C&rsquo;est fini. On n&rsquo;écrit PAS de <code>Deployment</code>, pas de <code>Service</code>, pas d&rsquo;<code>Ingress</code>. On écrit un seul objet : un <code>Service</code> Knative (<code>ksvc</code>).</p>
 <p>Créez <code>hello.yaml</code> :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">serving.knative.dev/v1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">serving.knative.dev/v1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Service</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">hello</span>
@@ -313,7 +313,7 @@
 </span></span><span style="display:flex;"><span>            - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">TARGET</span>
 </span></span><span style="display:flex;"><span>              <span style="color:#f92672">value</span>: <span style="color:#e6db74">&#34;Blog Knative sur K3s&#34;</span>
 </span></span></code></pre></div><p>Appliquez-le :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ kubectl apply -f hello.yaml
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ kubectl apply -f hello.yaml
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>$ kubectl get ksvc hello
 </span></span><span style="display:flex;"><span>NAME    URL                                              LATESTCREATED   LATESTREADY   READY   REASON

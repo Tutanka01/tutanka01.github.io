@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, postfix, mail'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/">
+    <meta property="og:url" content="https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="DMARC - SPF - DKIM">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="DMARC - SPF - DKIM">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/" />
+    <link rel="canonical" href="https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,9 +162,9 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/postfix">postfix</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/postfix">postfix</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/mail">mail</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/mail">mail</a></li>
         
         </ul>
     </div>
@@ -191,7 +191,7 @@
 <p>Créez un nouvel enregistrement TXT et ajoutez la valeur SPF. Par exemple :</p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>v<span style="color:#f92672">=</span>spf1 a mx ip4:192.0.2.1 include:_spf.makhal.fr ~all
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>v<span style="color:#f92672">=</span>spf1 a mx ip4:192.0.2.1 include:_spf.makhal.fr ~all
 </span></span></code></pre></div><p>Explication des éléments de l&rsquo;enregistrement SPF :</p>
 <ul>
 <li><code>v=spf1</code> : Indique que c&rsquo;est un enregistrement SPF de version 1.</li>
@@ -220,11 +220,11 @@
 <ol>
 <li>Installez OpenDKIM si ce n&rsquo;est pas déjà fait :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install opendkim opendkim-tools
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install opendkim opendkim-tools
 </span></span></code></pre></div><ol start="2">
 <li>Générez les paires de clés DKIM :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo opendkim-genkey -b <span style="color:#ae81ff">2048</span> -d votredomaine.com -D /etc/opendkim/keys -s mail
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo opendkim-genkey -b <span style="color:#ae81ff">2048</span> -d votredomaine.com -D /etc/opendkim/keys -s mail
 </span></span></code></pre></div><blockquote>
 <p>Remarque: Vous pouvez utiliser votre propre wildcard si vous le voulez.</p>
 </blockquote>
@@ -235,7 +235,7 @@
 <ol>
 <li>Ouvrez le fichier de configuration d&rsquo;OpenDKIM :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/opendkim.conf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/opendkim.conf
 </span></span></code></pre></div><ol start="2">
 <li>Assurez-vous que les lignes suivantes sont correctement configurées :</li>
 </ol>
@@ -246,7 +246,7 @@ Selector                mail
 <ol>
 <li>Ouvrez le fichier de configuration principal de Postfix :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/postfix/main.cf
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/postfix/main.cf
 </span></span></code></pre></div><ol start="2">
 <li>Ajoutez les directives suivantes pour activer OpenDKIM :</li>
 </ol>
@@ -257,7 +257,7 @@ non_smtpd_milters = inet:localhost:12301
 </code></pre><ol start="3">
 <li>Redémarrez OpenDKIM et Postfix :</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart opendkim
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart opendkim
 </span></span><span style="display:flex;"><span>sudo systemctl restart postfix
 </span></span></code></pre></div><h3 id="dkim-pour-les-pros">DKIM pour les pros&hellip;</h3>
 <p>DKIM repose sur un système de clés publiques et privées. Lorsqu&rsquo;un serveur de messagerie envoie un e-mail, il signe l&rsquo;e-mail avec sa clé privée. Le destinataire peut ensuite vérifier la signature à l&rsquo;aide de la clé publique publiée dans l&rsquo;enregistrement DNS du domaine expéditeur.</p>
@@ -269,7 +269,7 @@ non_smtpd_milters = inet:localhost:12301
 <h4 id="étape-1--ajout-de-lenregistrement-dmarc-dns">Étape 1 : Ajout de l&rsquo;Enregistrement DMARC DNS</h4>
 <p>La première étape pour mettre en place DMARC est d&rsquo;ajouter un enregistrement DNS DMARC à votre domaine.</p>
 <p>Voici un exemple d&rsquo;enregistrement DMARC :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_dmarc.votredomaine.com IN TXT <span style="color:#e6db74">&#34;v=DMARC1; p=quarantine; rua=mailto:rapports@votredomaine.com&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>_dmarc.votredomaine.com IN TXT <span style="color:#e6db74">&#34;v=DMARC1; p=quarantine; rua=mailto:rapports@votredomaine.com&#34;</span>
 </span></span></code></pre></div><p>Explications des éléments de l&rsquo;enregistrement DMARC :</p>
 <ul>
 <li><code>v=DMARC1</code> : Indique qu&rsquo;il s&rsquo;agit d&rsquo;un enregistrement DMARC de version 1.</li>

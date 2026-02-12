@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, IA, n8n'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/ia/n8n-cyber-2/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/ia/n8n-cyber-2/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Agent IA n8n prend vie avec VirusTotal (Partie 2)">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Agent IA n8n prend vie avec VirusTotal (Partie 2)">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/ia/n8n-cyber-2/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/ia/n8n-cyber-2/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/ia/n8n-cyber-2/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/ia/n8n-cyber-2/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/ia/n8n-cyber-2/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/ia/n8n-cyber-2/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ia">IA</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ia">IA</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/n8n">n8n</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/n8n">n8n</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
         </ul>
     </div>
@@ -295,7 +295,7 @@ L&rsquo;idée :</p>
 <h3 id="dire-à-lagent-ia-quoi-faire-avec-le-rapport">Dire à l&rsquo;Agent IA quoi faire avec le Rapport</h3>
 <p>Il suffit maintenant de connecter la sortie du nœud &ldquo;Get Report&rdquo; à l&rsquo;entrée du nœud &ldquo;AI Agent&rdquo; que nous avions configuré dans la Partie 1. L&rsquo;agent recevra donc le JSON complet de VirusTotal comme donnée d&rsquo;entrée (<code>input data</code>).</p>
 <p>Il faut juste adapter un tout petit peu le début de notre super prompt pour qu&rsquo;il colle à cette réalité :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>You will receive a URL analysis report in JSON format AS INPUT.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>You will receive a URL analysis report in JSON format AS INPUT.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Your task is to provide the user with a clear and simplified summary of the key information about this URL, including:
 </span></span><span style="display:flex;"><span>
@@ -338,7 +338,7 @@ L&rsquo;idée :</p>
 
 <p>Comme on le voit dans la vidéo, le workflow se déroule : l&rsquo;URL est envoyée, analysée par les deux nœuds VT, le résultat JSON est passé à l&rsquo;IA, et l&rsquo;IA nous sort un résumé et des conseils clairs en français, basés sur le prompt !</p>
 <p>Voici le genre de résultat qu&rsquo;on obtient (testé avec une URL d&rsquo;URLHaus) :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Voici un résumé de l&#39;analyse de l&#39;URL fournie :
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Voici un résumé de l&#39;analyse de l&#39;URL fournie :
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>Résumé de l&#39;Analyse VirusTotal
 </span></span><span style="display:flex;"><span>

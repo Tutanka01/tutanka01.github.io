@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on makhal.fr</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://makhal.fr/tags/docker/</link>
     <description>Recent content in Docker on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Mon, 01 Sep 2025 08:05:49 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</link>
+      <link>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</link>
       <pubDate>Mon, 01 Sep 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</guid>
       <description>Expliquer k8s c&amp;rsquo;est complexe, et ça prend du temps. Et si on prenait un autre angle ?</description>
     </item>
     <item>
       <title>Kubernetes ne suffit pas</title>
-      <link>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
+      <link>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
       <pubDate>Wed, 06 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
+      <guid>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
       <description>Dans le landscape actuel de la CNCF, Kubernetes est omniprésent, mais il ne suffit pas à lui seul pour une infrastructure complète.</description>
     </item>
     <item>
       <title>Introduction à Ingress dans Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/ingress/wingress/</link>
+      <link>https://makhal.fr/posts/k8s/ingress/wingress/</link>
       <pubDate>Tue, 05 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/ingress/wingress/</guid>
+      <guid>https://makhal.fr/posts/k8s/ingress/wingress/</guid>
       <description>Dans ce post, je vous présente Ingress, une ressource Kubernetes qui gère l&amp;rsquo;accès externe aux services dans un cluster.</description>
     </item>
     <item>
       <title>Swarm vs Kubernetes : lequel choisir ?</title>
-      <link>http://localhost:1313/posts/docker/swarm_vs_k8s/</link>
+      <link>https://makhal.fr/posts/docker/swarm_vs_k8s/</link>
       <pubDate>Sat, 26 Apr 2025 06:49:38 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docker/swarm_vs_k8s/</guid>
+      <guid>https://makhal.fr/posts/docker/swarm_vs_k8s/</guid>
       <description>Kubernetes est partout, mais est-ce toujours le bon choix ? Explorons Docker Swarm, une alternative plus simple.</description>
     </item>
     <item>
       <title>Déployer Pi-hole sur Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-pi-hole/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-pi-hole/</link>
       <pubDate>Sun, 02 Mar 2025 07:09:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-pi-hole/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-pi-hole/</guid>
       <description>Déploiement de Pi-hole sur k8s avec MetalLB et Longhorn pour un filtrage DNS efficace et sécurisé</description>
     </item>
     <item>
       <title>Mailcow le serveur mail tout-en-un</title>
-      <link>http://localhost:1313/posts/sysadmin/mailcow/</link>
+      <link>https://makhal.fr/posts/sysadmin/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/mailcow/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/mailcow/</guid>
       <description>Un guide complet pour déployer un serveur mail complet avec Mailcow dans votre HomeLab.</description>
     </item>
     <item>
       <title>Le debut d&#39;une grande aventure K8s</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-3/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-3/</link>
       <pubDate>Mon, 02 Dec 2024 04:12:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-3/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-3/</guid>
       <description>Nous allons déployer une application simple sur un cluster K8s</description>
     </item>
     <item>
       <title>Kubernetes Partie 2</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-2/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-2/</link>
       <pubDate>Sat, 21 Sep 2024 13:56:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-2/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-2/</guid>
       <description>Ici vous trouverez une explication plus detaille a propos des elements qui composent K8s</description>
     </item>
     <item>
       <title>Kubernetes Partie 1</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-1/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-1/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-1/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-1/</guid>
       <description>Dans ce post, je vous présente Kubernetes :D</description>
     </item>
     <item>
       <title>Docker Partie 3</title>
-      <link>http://localhost:1313/posts/docker/docker_3/</link>
+      <link>https://makhal.fr/posts/docker/docker_3/</link>
       <pubDate>Sun, 18 Feb 2024 11:49:38 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_3/</guid>
+      <guid>https://makhal.fr/posts/docker/docker_3/</guid>
       <description>La suite de la partie 2, ou je vais vous montrer comment utiliser Docker-Compose</description>
     </item>
     <item>
       <title>Docker Partie 2</title>
-      <link>http://localhost:1313/posts/docker/docker_2/</link>
+      <link>https://makhal.fr/posts/docker/docker_2/</link>
       <pubDate>Sun, 11 Feb 2024 11:49:38 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_2/</guid>
+      <guid>https://makhal.fr/posts/docker/docker_2/</guid>
       <description>La suite de la partie 1, ou je vais vous montrer comment utiliser Docker</description>
     </item>
     <item>
       <title>Docker partie 1</title>
-      <link>http://localhost:1313/posts/docker/docker_1/</link>
+      <link>https://makhal.fr/posts/docker/docker_1/</link>
       <pubDate>Sat, 10 Feb 2024 06:16:53 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker_1/</guid>
+      <guid>https://makhal.fr/posts/docker/docker_1/</guid>
       <description>Je vais vous montrer comment utiliser Docker et pourquoi est-ce que c&amp;rsquo;est si populaire.</description>
     </item>
     <item>
       <title>Docker Swarm</title>
-      <link>http://localhost:1313/posts/docker/docker-swarm/</link>
+      <link>https://makhal.fr/posts/docker/docker-swarm/</link>
       <pubDate>Mon, 23 Oct 2023 06:16:53 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker-swarm/</guid>
+      <guid>https://makhal.fr/posts/docker/docker-swarm/</guid>
       <description>Dans ce post, je vais vous montrer comment utiliser Docker et Docker Swarm.</description>
     </item>
   </channel>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, devops, docker'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s-os/k8s-os/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s-os/k8s-os/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
         </ul>
     </div>
@@ -201,7 +201,7 @@
 <p>Dans un système d&rsquo;exploitation classique, on a des processus. Ces petits programmes qui tournent en arrière-plan ou au premier plan, qui consomment du CPU, de la RAM et qui font leur petit travail tranquilllement.</p>
 <p>Et bien dans Kubernetes, on a quelque chose de très similaire : les Pods. Un Pod c&rsquo;est en gros l&rsquo;équivalent d&rsquo;un processus, mais en mode distribué. Il peut contenir un ou plusieurs conteneurs qui travaillent ensemble, exactement comme un processus peut avoir plusieurs threads.</p>
 <p>La différence ? Un processus tourne sur une seule machine, un Pod peut être déplacé d&rsquo;un nœud à un autre selon les besoins. C&rsquo;est comme si votre processus Word pouvait magiquement sauter de votre PC portable vers votre PC fixe sans que vous vous en rendiez compte.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Pod</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mon-app</span>
@@ -226,7 +226,7 @@
 <h3 id="les-api--vos-nouveaux-appels-système">Les API : vos nouveaux Appels Système</h3>
 <p>Rappelez-vous, tout à l&rsquo;heure je parlais des appels système. En Python quand vous faites <code>open(&quot;fichier.txt&quot;)</code>, en réalité votre code fait appel au kernel via des syscalls pour accéder au disque.</p>
 <p>Avec Kubernetes, c&rsquo;est pareil ! Quand vous faites <code>kubectl apply -f deployment.yaml</code>, vous ne faites rien d&rsquo;autre qu&rsquo;un appel à l&rsquo;API Kubernetes. C&rsquo;est votre nouveau syscall.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># L&#39;équivalent d&#39;un appel système, mais pour Kubernetes</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># L&#39;équivalent d&#39;un appel système, mais pour Kubernetes</span>
 </span></span><span style="display:flex;"><span>kubectl get pods
 </span></span><span style="display:flex;"><span>kubectl create deployment mon-app --image<span style="color:#f92672">=</span>nginx
 </span></span><span style="display:flex;"><span>kubectl scale deployment mon-app --replicas<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>
@@ -234,7 +234,7 @@
 <h3 id="la-gestion-des-ressources-distribuées">La Gestion des Ressources Distribuées</h3>
 <p>Là où ça devient vraiment intéressant, c&rsquo;est que Kubernetes ne gère pas les ressources d&rsquo;une seule machine, mais d&rsquo;un cluster entier. Imaginez un OS qui pourrait utiliser la RAM de votre PC, celle de votre voisin, et celle du bureau d&rsquo;à côté de manière transparente.</p>
 <p>C&rsquo;est exactement ce que fait Kubernetes :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">apps/v1</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Deployment</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mon-app-scalable</span>

@@ -2,87 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sysadmin on makhal.fr</title>
-    <link>http://localhost:1313/tags/sysadmin/</link>
+    <link>https://makhal.fr/tags/sysadmin/</link>
     <description>Recent content in Sysadmin on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 27 Sep 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/sysadmin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/sysadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring pour les nuls</title>
-      <link>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</link>
+      <link>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</link>
       <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est le monitoring, pourquoi c&amp;rsquo;est important et quelques outils pour commencer.</description>
     </item>
     <item>
       <title>Observabilité : Le pilier oublié du DevOps</title>
-      <link>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</link>
+      <link>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</link>
       <pubDate>Sat, 21 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</guid>
       <description>On oublie souvent de parler de l&amp;rsquo;observabilité, ici on va faire un petit tour d&amp;rsquo;horizon de ce que c&amp;rsquo;est et pourquoi c&amp;rsquo;est important.</description>
     </item>
     <item>
       <title>C&#39;est quoi vraiment un conteneur ?</title>
-      <link>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</link>
+      <link>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</link>
       <pubDate>Sat, 14 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</guid>
       <description>Namespaces, cgroups, et plus encore : plongeons dans l&amp;rsquo;anatomie d&amp;rsquo;un conteneur Linux.</description>
     </item>
     <item>
       <title>Authelia &#43; Traefik : sécurisez tous vos services web</title>
-      <link>http://localhost:1313/posts/sysadmin/authelia/authelia/</link>
+      <link>https://makhal.fr/posts/sysadmin/authelia/authelia/</link>
       <pubDate>Wed, 28 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/authelia/authelia/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/authelia/authelia/</guid>
       <description>Dans cet article, nous allons découvrir et mettre en place Authelia avec Traefik</description>
     </item>
     <item>
       <title>Unikernels : OS ultra-léger, ultra-sécurisé</title>
-      <link>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</link>
+      <link>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</link>
       <pubDate>Sat, 03 May 2025 08:15:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</guid>
       <description>On explore ce que sont les unikernels, comment ils fonctionnent, et pourquoi ils méritent une place dans nos architectures</description>
     </item>
     <item>
       <title>MicroVM - À la découverte</title>
-      <link>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</link>
+      <link>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</link>
       <pubDate>Sun, 13 Apr 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</guid>
       <description>On découvre ensemble les microVMs, une alternative aux VMs classiques et quelques applications.</description>
     </item>
     <item>
       <title>NixOS mon homelab reproductible</title>
-      <link>http://localhost:1313/posts/docs/nix/nixos-1/</link>
+      <link>https://makhal.fr/posts/docs/nix/nixos-1/</link>
       <pubDate>Thu, 20 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/nix/nixos-1/</guid>
+      <guid>https://makhal.fr/posts/docs/nix/nixos-1/</guid>
       <description>Partons a la decouverte de NixOS, un systeme d&amp;rsquo;exploitation reproductible et declaratif</description>
     </item>
     <item>
       <title>KASM - Navigateur et OS jetables</title>
-      <link>http://localhost:1313/posts/sysadmin/kasm-post/</link>
+      <link>https://makhal.fr/posts/sysadmin/kasm-post/</link>
       <pubDate>Wed, 19 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/kasm-post/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/kasm-post/</guid>
       <description>On va découvrir comment mettre en place un navigateur et un OS jetable avec Kasm</description>
     </item>
     <item>
       <title>C&#39;est quoi un système distribué ?</title>
-      <link>http://localhost:1313/posts/sysadmin/distibuted-systems/</link>
+      <link>https://makhal.fr/posts/sysadmin/distibuted-systems/</link>
       <pubDate>Sat, 15 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/distibuted-systems/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/distibuted-systems/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est un système distribué. Et quelques exemples.</description>
     </item>
     <item>
       <title>Mailcow le serveur mail tout-en-un</title>
-      <link>http://localhost:1313/posts/sysadmin/mailcow/</link>
+      <link>https://makhal.fr/posts/sysadmin/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/mailcow/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/mailcow/</guid>
       <description>Un guide complet pour déployer un serveur mail complet avec Mailcow dans votre HomeLab.</description>
     </item>
     <item>
       <title>Proxmox Cloud-Init le guide complet</title>
-      <link>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</link>
+      <link>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</link>
       <pubDate>Tue, 21 Jan 2025 18:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</guid>
       <description>Un guide complet pour lancer une VM avec Cloud-Init sur Proxmox</description>
     </item>
   </channel>

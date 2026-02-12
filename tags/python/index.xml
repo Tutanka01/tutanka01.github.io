@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on makhal.fr</title>
-    <link>http://localhost:1313/tags/python/</link>
+    <link>https://makhal.fr/tags/python/</link>
     <description>Recent content in Python on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 08 Dec 2024 11:01:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Anatomie d&#39;une attaque ransomware</title>
-      <link>http://localhost:1313/posts/cyber/poc/ransom-poc/</link>
+      <link>https://makhal.fr/posts/cyber/poc/ransom-poc/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/poc/ransom-poc/</guid>
+      <guid>https://makhal.fr/posts/cyber/poc/ransom-poc/</guid>
       <description>Dans cet article nous allons voir toutes les etapes qui composent une attaque de ransomware</description>
     </item>
   </channel>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,26 +17,26 @@
     
 
     
-    <title>A la decouverte d&#39;eBPF</title>
+    <title>eBPF, au cœur du kernel Linux</title>
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, ebpf, linux'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/ebpf/ebpf-1/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="A la decouverte d&#39;eBPF">
+    <meta property="og:title" content="eBPF, au cœur du kernel Linux">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="A la decouverte d&#39;eBPF">
+    <meta name="twitter:title" content="eBPF, au cœur du kernel Linux">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/ebpf/ebpf-1/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/ebpf/ebpf-1/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/ebpf/ebpf-1/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/ebpf/ebpf-1/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/ebpf/ebpf-1/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -72,30 +72,30 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/pages/about/"> Bio </a>
+                    <a href="https://about.makhal.fr/"> Bio </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,15 +125,15 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/pages/about/"> Bio </a>
+                        <a href="https://about.makhal.fr/"> Bio </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,7 +154,7 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
-        <h1>A la decouverte d&#39;eBPF</h1>
+        <h1>eBPF, au cœur du kernel Linux</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
             janvier 21, 2026
@@ -162,11 +162,11 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ebpf">ebpf</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ebpf">ebpf</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/linux">linux</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/linux">linux</a></li>
         
         </ul>
     </div>
@@ -182,14 +182,42 @@
 <p>Vous l&rsquo;aurez deviné, Linux est roi dans ce domaine, c&rsquo;est l&rsquo;OS standard des datacenters. Pour avoir une visibilité parfaite, il faut donc s&rsquo;approcher au plus près du Kernel Linux. Mais il y a un petit probleme, on ne touche pas au Kernel n&rsquo;importe comment. Ce que l&rsquo;on peut y faire est très limité (et tant mieux !), car le Kernel est le cœur du système. Si on laisse n&rsquo;importe qui y exécuter du code, on risque de tout casser, et pas qu&rsquo;un peu&hellip;</p>
 <p>C&rsquo;est là que nous avons besoin d&rsquo;un moyen sécurisé, performant et dynamique pour interagir avec le Kernel. C&rsquo;est exactement là qu&rsquo;eBPF entre en scène.</p>
 <h2 id="le-kernel-linux">Le Kernel Linux</h2>
-<p>Avant de plonger dans eBPF et pourquoi c&rsquo;est une révolution (et croyez-moi, ça l&rsquo;est), faisons un petit rappel sur le Kernel Linux.</p>
-<p>Le kernel selon wikipedia est defini comme :</p>
-<p><img src="/images/doc/ebpf/def-kernel.png" alt="Un noyau de système d’exploitation, ou simplement noyau, ou kernel en anglais[1], est une des parties fondamentales de certains systèmes d’exploitation. Il gère les ressources de l’ordinateur et permet aux différents composants — matériels et logiciels — de communiquer entre eux."></p>
-<p>En bref, un kernel est un programme qui fait la traduction entre ce que nous on veut (espace utilisateur) et ce que le matériel peut faire (espace noyau). C&rsquo;est lui qui gère les ressources, les processus, le réseau et le stockage.</p>
-<p>Lorsqu&rsquo;on cree un fichier, lance une application, ou envoie une requête réseau, en fait ce qu&rsquo;il se passe, c&rsquo;est quon demande au noyau de faire quelque chose pour nous. Par exemple ecrire un fichier sur le disque. Mon explorateur de fichier c&rsquo;est juste une interface graphique qui me permet de demander au kernel d&rsquo;ecrire un fichier. C&rsquo;est le kernel qui va faire le sale boulot de communiquer avec le disque dur, c&rsquo;est a dire aller chercher l&rsquo;emplacement libre, ecrire les données, mettre a jour la table d&rsquo;allocation, etc&hellip;</p>
-<p>Tant de choses que si on laissait chaque developpeur faire a sa sauce, on aurait un systeme instable, lent et plein de bugs. C&rsquo;est pour ca que le kernel est si important.</p>
-<p>Linux n&rsquo;est pas le seul OS a avoir un kernel, Windows, MacOS, BSD, tous ont un kernel. Mais Linux est special car c&rsquo;est un kernel totalement open source, ce qui veut dire, qu&rsquo;on peut regarder son code source, le modifier, et meme profiter des ventes qu&rsquo;on fait avec. Et ça c&rsquo;est enorme !</p>
-<p>C&rsquo;est pour cela que Linux est devenu le kernel de reference pour les serveurs, les datacenters, et meme les smartphones (Android est base sur Linux).</p>
+<p>Avant de plonger dans eBPF et de comprendre pourquoi c&rsquo;est une révolution (et croyez-moi, ça l&rsquo;est), faisons un petit rappel sur ce que c&rsquo;est le Kernel Linux.</p>
+<p>Le kernel (ou noyau), selon Wikipédia, est défini comme suit :
+<img src="/images/doc/ebpf/def-kernel.png" alt="alt text"></p>
+<blockquote>
+<p>Un noyau de système d’exploitation, ou simplement noyau, ou kernel en anglais, est une des parties fondamentales de certains systèmes d’exploitation. Il gère les ressources de l’ordinateur et permet aux différents composants — matériels et logiciels — de communiquer entre eux.</p>
+</blockquote>
+<p>En bref, un kernel est un programme qui fait la traduction entre ce que nous voulons faire (l&rsquo;espace utilisateur ou user space) et ce que le matériel peut faire (l&rsquo;espace noyau ou kernel space).</p>
+<p>Lorsqu&rsquo;on crée un fichier, qu&rsquo;on lance une application ou qu&rsquo;on envoie une requête réseau, on ne parle pas directement au matériel. En réalité, on demande au noyau de faire quelque chose pour nous via ce qu&rsquo;on appelle un appel système (ou syscall).</p>
+<p>Prenons l&rsquo;exemple de l&rsquo;écriture d&rsquo;un fichier sur le disque. Votre explorateur de fichiers n&rsquo;est qu&rsquo;une &ldquo;simple&rdquo; interface graphique. Quand vous sauvegardez, il demande poliment au Kernel d&rsquo;écrire les données. C&rsquo;est le Kernel qui va faire le &ldquo;sale boulot&rdquo; c&rsquo;est a dire, communiquer avec le disque dur, chercher un emplacement libre, écrire les bits, mettre à jour la table d&rsquo;allocation&hellip; Tout ça de manière transparente pour vous.</p>
+<p>Imaginez si l&rsquo;on laissait chaque développeur gérer ça &ldquo;à sa sauce&rdquo; ! On aurait un système catastrophiquement lent, bourré de bugs et surtout très peu sécurisé. C&rsquo;est pour ça que le rôle du Kernel est si crucial, il est le garant de la stabilité et de la sécurité.</p>
+<p>Linux n&rsquo;est pas le seul OS à avoir un kernel. Windows, MacOS, BSD en ont tous un. Mais Linux est spécial car c&rsquo;est un kernel totalement Open Source. Cela veut dire qu&rsquo;on peut consulter son code source, le modifier, et l&rsquo;adapter à nos besoins spécifiques sans contrainte majeure. Et ça, c&rsquo;est énorme !</p>
+<p>C&rsquo;est pour cela que Linux est devenu le kernel de référence pour les serveurs, les datacenters, et même nos smartphones et frigos (Android est basé sur Linux).</p>
+<h2 id="ebpf--pourquoi-et-comment-">eBPF : Pourquoi et comment ?</h2>
+<p>Si vous avez suivi jusqu&rsquo;a la, j&rsquo;ai dit precedemment que le Kernel Linux est : <em><strong>&ldquo;est le garant de la stabilité et de la sécurité&rdquo;</strong></em>.</p>
+<p>Ce qui veut dire que pour interagir avec lui, il faut respecter des règles strictes. C&rsquo;est comme essayer de rentrer dans une banque, il y a des protocoles de sécurité très stricts qu&rsquo;on doit absolument respecter. On ne peut pas juste entrer et commencer à faire ce qu&rsquo;on veut.</p>
+<p>Et donc pour notre besoin essentiel de monitoring, on doit quand meme pouvoir, capturer, analyser, agir (bloquer, alerter, etc) sur des événements qui se passent dans le Kernel.</p>
+<blockquote>
+<p>Peut etre c&rsquo;est pas clair, mais on veut &ldquo;monitorer&rdquo; le kernel, car tout ce qui se passe la-a-dedans est crucial pour comprendre le comportement de notre système. Dans l&rsquo;espace application un attaquant peut plus ou moins cacher ces traces, mais toute actions qu&rsquo;il fait doit absolument passer par le kernel. Donc si on peut &ldquo;monitorer&rdquo; le kernel, on a une visibilité quasi totale sur ce qui se passe dans notre système.</p>
+</blockquote>
+<p>Historiquement, pour faire ça, on utilisait des modules Kernel. Ce sont des morceaux de code qu&rsquo;on peut charger dynamiquement dans le kernel pour lui ajouter des fonctionnalités. C&rsquo;est puissant, mais aussi très risqué. Un module mal écrit peut planter tout le système, causer des fuites de mémoire, ou pire, ouvrir des failles de sécurité.</p>
+<p>L&rsquo;autre solution un peu plus classique est de faire une Pull Request (PR) directement dans le code source du kernel maintenu par la communaute Linux. C&rsquo;est la méthode la plus sûre, car le code est revu par des experts avant d&rsquo;être intégré. Mais c&rsquo;est aussi la plus lente et la moins flexible. Si on a besoin de quelque chose rapidement, on est bloqué.</p>
+<p>Voila une image qui résume bien le cycle de vie d&rsquo;une Pull Request dans le kernel Linux :</p>
+<p><img src="/images/doc/ebpf/kernel.png" alt="alt text"></p>
+<p>C&rsquo;est la qu&rsquo;eBPF (extended Berkeley Packet Filter) entre en jeu. eBPF est venue pour revolutionner la façon dont on interagit avec le kernel Linux.</p>
+<p>eBPF est une technologie qui permet d&rsquo;exécuter du code dans le kernel de manière sécurisée et performante, sans avoir besoin de charger des modules kernel ou de faire des PRs. C&rsquo;est comme avoir une &ldquo;sandbox&rdquo; dans le kernel où on peut exécuter du code personnalisé. C&rsquo;est en fait un genre de machine virtuelle intégrée au kernel Linux.</p>
+<p>Avec eBPF, on peut écrire des programmes en C (ou d&rsquo;autres langages via des compilateurs spécifiques) qui sont ensuite compilés en bytecode eBPF. Ce bytecode est vérifié par le kernel pour s&rsquo;assurer qu&rsquo;il est sûr à exécuter. Si tout est bon, le programme est chargé dans le kernel et peut interagir avec divers points d&rsquo;attache (hooks) pour capturer des événements, analyser des données, ou même modifier le comportement du système.</p>
+<p>Je sais pas si vous vous rendez compte, mais c&rsquo;est une révolution ! On peut maintenant faire quasiment tout ce qu&rsquo;on veut dans le kernel, de manière dynamique, sans risque de planter le système.</p>
+<p>Ce point que je viens de ecrire, &ldquo;sans risque de planter le système&rdquo;, est crucial. eBPF a été conçu avec la sécurité en tête. Le bytecode est soumis à un processus de vérification rigoureux avant d&rsquo;être exécuté. Cela garantit que le programme ne peut pas faire de choses dangereuses comme accéder à la mémoire non autorisée ou entrer dans des boucles infinies. Donc meme si on fait une erreur dans notre code eBPF, le kernel reste protégé. Et le code ebpf ne sera jamais executé s&rsquo;il n&rsquo;est pas validé par le verificateur.</p>
+<p><img src="/images/doc/ebpf/ebpf.png" alt="alt text"></p>
+<h2 id="et-alors-">Et alors ?</h2>
+<p>Ce genre de technologie ouvre des possibilités incroyables. Mais on ne va pas se voiler la face, eBPF n&rsquo;est pas une technologie facile à maîtriser ni faite pour tout le monde.</p>
+<p>Deja il faut avoir une tres forte culture du monitoring, du kernel Linux, et de la programmation bas niveau. Ce n&rsquo;est pas quelque chose qu&rsquo;on apprend en un jour.</p>
+<p>Mais pour ceux qui s&rsquo;y investissent, les récompenses sont énormes. eBPF permet de créer des outils de monitoring ultra-performants, des systèmes de sécurité avancés, et même des solutions de réseau innovantes.</p>
+<p>Meme Windows est en train de developper son propre eBPF pour apporter ces avantages a son kernel ! C&rsquo;est dire a quel point cette technologie est prometteuse.
+Donc c&rsquo;est absolument quelque chose a garder a l&rsquo;esprit si vous travaillez dans le domaine du systeme, du reseau, ou de la securite. eBPF est en train de changer la donne, et ceux qui sauront l&rsquo;exploiter auront un avantage significatif.</p>
+<p>Et sur ce, je vous remercie de m&rsquo;avoir lu jusqu&rsquo;au bout ! N&rsquo;hésitez pas à partager vos pensées, questions ou expériences avec eBPF par message Linkedin !!</p>
 
         </p>
         

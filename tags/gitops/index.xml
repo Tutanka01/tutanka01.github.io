@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gitops on makhal.fr</title>
-    <link>http://localhost:1313/tags/gitops/</link>
+    <link>https://makhal.fr/tags/gitops/</link>
     <description>Recent content in Gitops on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Fri, 16 May 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/gitops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C&#39;est quoi GitOps au juste ?</title>
-      <link>http://localhost:1313/posts/sysadmin/gitops/gitops/</link>
+      <link>https://makhal.fr/posts/sysadmin/gitops/gitops/</link>
       <pubDate>Fri, 16 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/gitops/gitops/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/gitops/gitops/</guid>
       <description>On découvre ensemble le concept de GitOps, de la théorie à la pratique, et comment il révolutionne la gestion des systemes modernes</description>
     </item>
   </channel>

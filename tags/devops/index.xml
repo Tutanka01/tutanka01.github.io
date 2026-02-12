@@ -2,115 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Devops on makhal.fr</title>
-    <link>http://localhost:1313/tags/devops/</link>
+    <link>https://makhal.fr/tags/devops/</link>
     <description>Recent content in Devops on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 27 Sep 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring pour les nuls</title>
-      <link>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</link>
+      <link>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</link>
       <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est le monitoring, pourquoi c&amp;rsquo;est important et quelques outils pour commencer.</description>
     </item>
     <item>
       <title>L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</link>
+      <link>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</link>
       <pubDate>Mon, 01 Sep 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</guid>
       <description>Expliquer k8s c&amp;rsquo;est complexe, et ça prend du temps. Et si on prenait un autre angle ?</description>
     </item>
     <item>
       <title>K3sup: k3s tout simplement</title>
-      <link>http://localhost:1313/posts/k8s/cncf/k3sup/</link>
+      <link>https://makhal.fr/posts/k8s/cncf/k3sup/</link>
       <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/cncf/k3sup/</guid>
+      <guid>https://makhal.fr/posts/k8s/cncf/k3sup/</guid>
       <description>k3sup est un outil open-source qui facilite l&amp;rsquo;installation de K3s, une distribution légère de Kubernetes, sur n&amp;rsquo;importe quel serveur distant.</description>
     </item>
     <item>
       <title>Kubernetes ne suffit pas</title>
-      <link>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
+      <link>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
       <pubDate>Wed, 06 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
+      <guid>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
       <description>Dans le landscape actuel de la CNCF, Kubernetes est omniprésent, mais il ne suffit pas à lui seul pour une infrastructure complète.</description>
     </item>
     <item>
       <title>Introduction à Ingress dans Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/ingress/wingress/</link>
+      <link>https://makhal.fr/posts/k8s/ingress/wingress/</link>
       <pubDate>Tue, 05 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/ingress/wingress/</guid>
+      <guid>https://makhal.fr/posts/k8s/ingress/wingress/</guid>
       <description>Dans ce post, je vous présente Ingress, une ressource Kubernetes qui gère l&amp;rsquo;accès externe aux services dans un cluster.</description>
     </item>
     <item>
       <title>C&#39;est quoi vraiment un conteneur ?</title>
-      <link>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</link>
+      <link>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</link>
       <pubDate>Sat, 14 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</guid>
       <description>Namespaces, cgroups, et plus encore : plongeons dans l&amp;rsquo;anatomie d&amp;rsquo;un conteneur Linux.</description>
     </item>
     <item>
       <title>C&#39;est quoi GitOps au juste ?</title>
-      <link>http://localhost:1313/posts/sysadmin/gitops/gitops/</link>
+      <link>https://makhal.fr/posts/sysadmin/gitops/gitops/</link>
       <pubDate>Fri, 16 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/gitops/gitops/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/gitops/gitops/</guid>
       <description>On découvre ensemble le concept de GitOps, de la théorie à la pratique, et comment il révolutionne la gestion des systemes modernes</description>
     </item>
     <item>
       <title>Déployer Pi-hole sur Kubernetes</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-pi-hole/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-pi-hole/</link>
       <pubDate>Sun, 02 Mar 2025 07:09:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-pi-hole/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-pi-hole/</guid>
       <description>Déploiement de Pi-hole sur k8s avec MetalLB et Longhorn pour un filtrage DNS efficace et sécurisé</description>
     </item>
     <item>
       <title>KASM - Navigateur et OS jetables</title>
-      <link>http://localhost:1313/posts/sysadmin/kasm-post/</link>
+      <link>https://makhal.fr/posts/sysadmin/kasm-post/</link>
       <pubDate>Wed, 19 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/kasm-post/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/kasm-post/</guid>
       <description>On va découvrir comment mettre en place un navigateur et un OS jetable avec Kasm</description>
     </item>
     <item>
       <title>C&#39;est quoi un système distribué ?</title>
-      <link>http://localhost:1313/posts/sysadmin/distibuted-systems/</link>
+      <link>https://makhal.fr/posts/sysadmin/distibuted-systems/</link>
       <pubDate>Sat, 15 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/distibuted-systems/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/distibuted-systems/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est un système distribué. Et quelques exemples.</description>
     </item>
     <item>
       <title>Le debut d&#39;une grande aventure K8s</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-3/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-3/</link>
       <pubDate>Mon, 02 Dec 2024 04:12:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-3/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-3/</guid>
       <description>Nous allons déployer une application simple sur un cluster K8s</description>
     </item>
     <item>
       <title>Decouverte de l&#39;IAC avec Pulumi</title>
-      <link>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</link>
+      <link>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</guid>
+      <guid>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</guid>
       <description>Dans ce post, nous allons decouvrir l&amp;rsquo;IAC avec Pulumi sur Azure</description>
     </item>
     <item>
       <title>Kubernetes Partie 2</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-2/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-2/</link>
       <pubDate>Sat, 21 Sep 2024 13:56:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-2/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-2/</guid>
       <description>Ici vous trouverez une explication plus detaille a propos des elements qui composent K8s</description>
     </item>
     <item>
       <title>Comment monitorer un cluster Kubernetes ?</title>
-      <link>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</link>
+      <link>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</guid>
+      <guid>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</guid>
       <description>Dans ce post, je vous explique comment mettre en place un système de monitoring pour votre cluster Kubernetes avec Prometheus et Grafana.</description>
     </item>
     <item>
       <title>Kubernetes Partie 1</title>
-      <link>http://localhost:1313/posts/k8s/k8s1-1/</link>
+      <link>https://makhal.fr/posts/k8s/k8s1-1/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/k8s1-1/</guid>
+      <guid>https://makhal.fr/posts/k8s/k8s1-1/</guid>
       <description>Dans ce post, je vous présente Kubernetes :D</description>
     </item>
   </channel>

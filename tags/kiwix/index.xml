@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kiwix on makhal.fr</title>
-    <link>http://localhost:1313/tags/kiwix/</link>
+    <link>https://makhal.fr/tags/kiwix/</link>
     <description>Recent content in Kiwix on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 23 Mar 2025 06:01:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/kiwix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/kiwix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kiwix - Le savoir à portée de main</title>
-      <link>http://localhost:1313/posts/docs/kiwix/kiwix/</link>
+      <link>https://makhal.fr/posts/docs/kiwix/kiwix/</link>
       <pubDate>Sun, 23 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docs/kiwix/kiwix/</guid>
+      <guid>https://makhal.fr/posts/docs/kiwix/kiwix/</guid>
       <description>Imaginez : tout le savoir humain dans votre poche, sans Wi-Fi ni 4G. Possible ? Oui, avec Kiwix.</description>
     </item>
   </channel>
