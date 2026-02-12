@@ -2,395 +2,395 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>makhal.fr</title>
-    <link>https://makhal.fr/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 21 Jan 2026 06:40:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>eBPF, au cœur du kernel Linux</title>
-      <link>https://makhal.fr/posts/docs/ebpf/ebpf-1/</link>
+      <link>http://localhost:1313/posts/docs/ebpf/ebpf-1/</link>
       <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ebpf/ebpf-1/</guid>
+      <guid>http://localhost:1313/posts/docs/ebpf/ebpf-1/</guid>
       <description>eBPF est la technologie du kernel Linux qui révolutionne le monitoring, l’observabilité et la sécurité. Découvrons comment et pourquoi.</description>
     </item>
     <item>
       <title>Envoy, le proxy que vous utilisez déjà</title>
-      <link>https://makhal.fr/posts/docs/envoy/envoy-1/</link>
+      <link>http://localhost:1313/posts/docs/envoy/envoy-1/</link>
       <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/envoy/envoy-1/</guid>
+      <guid>http://localhost:1313/posts/docs/envoy/envoy-1/</guid>
       <description>Découverte d&amp;rsquo;Envoy, un proxy open-source devenu incontournable dans le monde des microservices et des architectures cloud-native.</description>
     </item>
     <item>
       <title>Mais en fait, on a rien compris au Zero Trust</title>
-      <link>https://makhal.fr/posts/cyber/zerotrust/intro-zerotrust/</link>
+      <link>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</link>
       <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/zerotrust/intro-zerotrust/</guid>
+      <guid>http://localhost:1313/posts/cyber/zerotrust/intro-zerotrust/</guid>
       <description>On a rien compris au Zero Trust, on se mélange les pinceaux avec les définitions et on finit par construire des infra fragiles.</description>
     </item>
     <item>
       <title>AWS Lambda open source avec Knative</title>
-      <link>https://makhal.fr/posts/k8s/knative/knative/</link>
+      <link>http://localhost:1313/posts/k8s/knative/knative/</link>
       <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/knative/knative/</guid>
+      <guid>http://localhost:1313/posts/k8s/knative/knative/</guid>
       <description>On découvre et deploie notre propre plateforme serverless avec Knative sur un cluster Kubernetes</description>
     </item>
     <item>
       <title>Twingate : Le Zero Trust, enfin simplifié</title>
-      <link>https://makhal.fr/posts/cyber/twingate/twingate/</link>
+      <link>http://localhost:1313/posts/cyber/twingate/twingate/</link>
       <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/twingate/twingate/</guid>
+      <guid>http://localhost:1313/posts/cyber/twingate/twingate/</guid>
       <description>On découvre Twingate, une solution de sécurité réseau qui remplace les VPN traditionnels avec une approche Zero Trust Network Access (ZTNA).</description>
     </item>
     <item>
       <title>Monitoring pour les nuls</title>
-      <link>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</link>
+      <link>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</link>
       <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est le monitoring, pourquoi c&amp;rsquo;est important et quelques outils pour commencer.</description>
     </item>
     <item>
       <title>LoRaWAN expliqué simplement : le réseau IoT des Smart Cities</title>
-      <link>https://makhal.fr/posts/other/lorawan/</link>
+      <link>http://localhost:1313/posts/other/lorawan/</link>
       <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
-      <guid>https://makhal.fr/posts/other/lorawan/</guid>
+      <guid>http://localhost:1313/posts/other/lorawan/</guid>
       <description>On découvre ensemble c&amp;rsquo;est quoi le protocole Lora et plus précisément LoraWan, très utilisé dans le monde de l&amp;rsquo;IoT</description>
     </item>
     <item>
       <title>Sommes-nous devenus accros au cloud ?</title>
-      <link>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</link>
+      <link>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</link>
       <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</guid>
+      <guid>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</guid>
       <description>Accros ou dépendants du cloud ? Entre innovation, coûts et risques, où placer la limite ?</description>
     </item>
     <item>
       <title>L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes</title>
-      <link>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</link>
+      <link>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</link>
       <pubDate>Mon, 01 Sep 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/k8s-os/k8s-os/</guid>
+      <guid>http://localhost:1313/posts/k8s/k8s-os/k8s-os/</guid>
       <description>Expliquer k8s c&amp;rsquo;est complexe, et ça prend du temps. Et si on prenait un autre angle ?</description>
     </item>
     <item>
       <title>K3sup: k3s tout simplement</title>
-      <link>https://makhal.fr/posts/k8s/cncf/k3sup/</link>
+      <link>http://localhost:1313/posts/k8s/cncf/k3sup/</link>
       <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/cncf/k3sup/</guid>
+      <guid>http://localhost:1313/posts/k8s/cncf/k3sup/</guid>
       <description>k3sup est un outil open-source qui facilite l&amp;rsquo;installation de K3s, une distribution légère de Kubernetes, sur n&amp;rsquo;importe quel serveur distant.</description>
     </item>
     <item>
       <title>Kubernetes ne suffit pas</title>
-      <link>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
+      <link>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</link>
       <pubDate>Wed, 06 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
+      <guid>http://localhost:1313/posts/k8s/cncf/k8s-ne-suffit-pas/</guid>
       <description>Dans le landscape actuel de la CNCF, Kubernetes est omniprésent, mais il ne suffit pas à lui seul pour une infrastructure complète.</description>
     </item>
     <item>
       <title>Introduction à Ingress dans Kubernetes</title>
-      <link>https://makhal.fr/posts/k8s/ingress/wingress/</link>
+      <link>http://localhost:1313/posts/k8s/ingress/wingress/</link>
       <pubDate>Tue, 05 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/ingress/wingress/</guid>
+      <guid>http://localhost:1313/posts/k8s/ingress/wingress/</guid>
       <description>Dans ce post, je vous présente Ingress, une ressource Kubernetes qui gère l&amp;rsquo;accès externe aux services dans un cluster.</description>
     </item>
     <item>
       <title>Réseau Kubernetes et MetalLB.</title>
-      <link>https://makhal.fr/posts/k8s/rzo-metallb/metallb/</link>
+      <link>http://localhost:1313/posts/k8s/rzo-metallb/metallb/</link>
       <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/rzo-metallb/metallb/</guid>
+      <guid>http://localhost:1313/posts/k8s/rzo-metallb/metallb/</guid>
       <description>On décortique le réseau Kubernetes et on met en place MetalLB, la solution pour exposer vos applications hors du cloud..</description>
     </item>
     <item>
       <title>Kata Containers : La sécurité des VM avec la vitesse des conteneurs</title>
-      <link>https://makhal.fr/posts/docs/katacontainers/kata-containers/</link>
+      <link>http://localhost:1313/posts/docs/katacontainers/kata-containers/</link>
       <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/katacontainers/kata-containers/</guid>
+      <guid>http://localhost:1313/posts/docs/katacontainers/kata-containers/</guid>
       <description>Découvrez Kata Containers, le projet open source qui réconcilie le meilleur des deux mondes</description>
     </item>
     <item>
       <title>Authentik : Self-Hosted IAM</title>
-      <link>https://makhal.fr/posts/docs/authentik/authentik-1/</link>
+      <link>http://localhost:1313/posts/docs/authentik/authentik-1/</link>
       <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/authentik/authentik-1/</guid>
+      <guid>http://localhost:1313/posts/docs/authentik/authentik-1/</guid>
       <description>Et si on parlait d&amp;rsquo;IAM ? Authentik est une solution self-hosted qui permet de gérer l&amp;rsquo;authentification et l&amp;rsquo;autorisation de vos applications.</description>
     </item>
     <item>
       <title>Observabilité : Le pilier oublié du DevOps</title>
-      <link>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</link>
+      <link>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</link>
       <pubDate>Sat, 21 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</guid>
       <description>On oublie souvent de parler de l&amp;rsquo;observabilité, ici on va faire un petit tour d&amp;rsquo;horizon de ce que c&amp;rsquo;est et pourquoi c&amp;rsquo;est important.</description>
     </item>
     <item>
       <title>C&#39;est quoi vraiment un conteneur ?</title>
-      <link>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</link>
+      <link>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</link>
       <pubDate>Sat, 14 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/</guid>
       <description>Namespaces, cgroups, et plus encore : plongeons dans l&amp;rsquo;anatomie d&amp;rsquo;un conteneur Linux.</description>
     </item>
     <item>
       <title>Authelia &#43; Traefik : sécurisez tous vos services web</title>
-      <link>https://makhal.fr/posts/sysadmin/authelia/authelia/</link>
+      <link>http://localhost:1313/posts/sysadmin/authelia/authelia/</link>
       <pubDate>Wed, 28 May 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/authelia/authelia/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/authelia/authelia/</guid>
       <description>Dans cet article, nous allons découvrir et mettre en place Authelia avec Traefik</description>
     </item>
     <item>
       <title>C&#39;est quoi GitOps au juste ?</title>
-      <link>https://makhal.fr/posts/sysadmin/gitops/gitops/</link>
+      <link>http://localhost:1313/posts/sysadmin/gitops/gitops/</link>
       <pubDate>Fri, 16 May 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/gitops/gitops/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/gitops/gitops/</guid>
       <description>On découvre ensemble le concept de GitOps, de la théorie à la pratique, et comment il révolutionne la gestion des systemes modernes</description>
     </item>
     <item>
       <title>Unikernels : OS ultra-léger, ultra-sécurisé</title>
-      <link>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</link>
+      <link>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</link>
       <pubDate>Sat, 03 May 2025 08:15:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</guid>
       <description>On explore ce que sont les unikernels, comment ils fonctionnent, et pourquoi ils méritent une place dans nos architectures</description>
     </item>
     <item>
       <title>Swarm vs Kubernetes : lequel choisir ?</title>
-      <link>https://makhal.fr/posts/docker/swarm_vs_k8s/</link>
+      <link>http://localhost:1313/posts/docker/swarm_vs_k8s/</link>
       <pubDate>Sat, 26 Apr 2025 06:49:38 +0100</pubDate>
-      <guid>https://makhal.fr/posts/docker/swarm_vs_k8s/</guid>
+      <guid>http://localhost:1313/posts/docker/swarm_vs_k8s/</guid>
       <description>Kubernetes est partout, mais est-ce toujours le bon choix ? Explorons Docker Swarm, une alternative plus simple.</description>
     </item>
     <item>
       <title>MicroVM - À la découverte</title>
-      <link>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</link>
+      <link>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</link>
       <pubDate>Sun, 13 Apr 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</guid>
       <description>On découvre ensemble les microVMs, une alternative aux VMs classiques et quelques applications.</description>
     </item>
     <item>
       <title>Sandbox Evasion : Théorie, techniques et pratique</title>
-      <link>https://makhal.fr/posts/cyber/sandbox-evasion/sandbox-evasion-1/</link>
+      <link>http://localhost:1313/posts/cyber/sandbox-evasion/sandbox-evasion-1/</link>
       <pubDate>Mon, 07 Apr 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/sandbox-evasion/sandbox-evasion-1/</guid>
+      <guid>http://localhost:1313/posts/cyber/sandbox-evasion/sandbox-evasion-1/</guid>
       <description>On découvre le concept de l&amp;rsquo;évasion de sandbox, et on fait un peu de pratique</description>
     </item>
     <item>
       <title>Agent IA n8n prend vie avec VirusTotal (Partie 2)</title>
-      <link>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</link>
+      <link>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</guid>
+      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</guid>
       <description>Intégration de VirusTotal pour l&amp;rsquo;analyse d&amp;rsquo;URL par chat, avec un agent IA.</description>
     </item>
     <item>
       <title>Midjourney, DALL-E... Superbes, mais où vont vos données ?</title>
-      <link>https://makhal.fr/posts/docs/ia/images-ia/</link>
+      <link>http://localhost:1313/posts/docs/ia/images-ia/</link>
       <pubDate>Fri, 28 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ia/images-ia/</guid>
+      <guid>http://localhost:1313/posts/docs/ia/images-ia/</guid>
       <description>On va voir les alternatives OpenSource du monde de la generation d&amp;rsquo;images par IA.</description>
     </item>
     <item>
       <title>Agent IA n8n : Analysez les URLs (Partie 1)</title>
-      <link>https://makhal.fr/posts/docs/ia/n8n-cyber/</link>
+      <link>http://localhost:1313/posts/docs/ia/n8n-cyber/</link>
       <pubDate>Wed, 26 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber/</guid>
+      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber/</guid>
       <description>Un agent IA avec n8n qui va analyser les urls des sites louches que je croise</description>
     </item>
     <item>
       <title>Kiwix - Le savoir à portée de main</title>
-      <link>https://makhal.fr/posts/docs/kiwix/kiwix/</link>
+      <link>http://localhost:1313/posts/docs/kiwix/kiwix/</link>
       <pubDate>Sun, 23 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/docs/kiwix/kiwix/</guid>
+      <guid>http://localhost:1313/posts/docs/kiwix/kiwix/</guid>
       <description>Imaginez : tout le savoir humain dans votre poche, sans Wi-Fi ni 4G. Possible ? Oui, avec Kiwix.</description>
     </item>
     <item>
       <title>NixOS mon homelab reproductible</title>
-      <link>https://makhal.fr/posts/docs/nix/nixos-1/</link>
+      <link>http://localhost:1313/posts/docs/nix/nixos-1/</link>
       <pubDate>Thu, 20 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/nix/nixos-1/</guid>
+      <guid>http://localhost:1313/posts/docs/nix/nixos-1/</guid>
       <description>Partons a la decouverte de NixOS, un systeme d&amp;rsquo;exploitation reproductible et declaratif</description>
     </item>
     <item>
       <title>Booster Defender gratuitement avec Defender UI</title>
-      <link>https://makhal.fr/posts/cyber/poc/defenderui/</link>
+      <link>http://localhost:1313/posts/cyber/poc/defenderui/</link>
       <pubDate>Fri, 14 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/poc/defenderui/</guid>
+      <guid>http://localhost:1313/posts/cyber/poc/defenderui/</guid>
       <description>Les antivirus c&amp;rsquo;est cher, Defender c&amp;rsquo;est gratuit. Mais comment l&amp;rsquo;ameliorer ?</description>
     </item>
     <item>
       <title>Déployer Pi-hole sur Kubernetes</title>
-      <link>https://makhal.fr/posts/k8s/k8s1-pi-hole/</link>
+      <link>http://localhost:1313/posts/k8s/k8s1-pi-hole/</link>
       <pubDate>Sun, 02 Mar 2025 07:09:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/k8s1-pi-hole/</guid>
+      <guid>http://localhost:1313/posts/k8s/k8s1-pi-hole/</guid>
       <description>Déploiement de Pi-hole sur k8s avec MetalLB et Longhorn pour un filtrage DNS efficace et sécurisé</description>
     </item>
     <item>
       <title>KASM - Navigateur et OS jetables</title>
-      <link>https://makhal.fr/posts/sysadmin/kasm-post/</link>
+      <link>http://localhost:1313/posts/sysadmin/kasm-post/</link>
       <pubDate>Wed, 19 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/kasm-post/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/kasm-post/</guid>
       <description>On va découvrir comment mettre en place un navigateur et un OS jetable avec Kasm</description>
     </item>
     <item>
       <title>C&#39;est quoi un système distribué ?</title>
-      <link>https://makhal.fr/posts/sysadmin/distibuted-systems/</link>
+      <link>http://localhost:1313/posts/sysadmin/distibuted-systems/</link>
       <pubDate>Sat, 15 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/distibuted-systems/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/distibuted-systems/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est un système distribué. Et quelques exemples.</description>
     </item>
     <item>
       <title>Mailcow le serveur mail tout-en-un</title>
-      <link>https://makhal.fr/posts/sysadmin/mailcow/</link>
+      <link>http://localhost:1313/posts/sysadmin/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/mailcow/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/mailcow/</guid>
       <description>Un guide complet pour déployer un serveur mail complet avec Mailcow dans votre HomeLab.</description>
     </item>
     <item>
       <title>Détecteur d&#39;anomalies réseau IA pour Proxmox</title>
-      <link>https://makhal.fr/posts/cyber/ai/sentinel/</link>
+      <link>http://localhost:1313/posts/cyber/ai/sentinel/</link>
       <pubDate>Sun, 26 Jan 2025 08:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/ai/sentinel/</guid>
+      <guid>http://localhost:1313/posts/cyber/ai/sentinel/</guid>
       <description>Un détecteur d’anomalies réseau entraîné par IA pour sécuriser ton cluster Proxmox</description>
     </item>
     <item>
       <title>Proxmox Cloud-Init le guide complet</title>
-      <link>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</link>
+      <link>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</link>
       <pubDate>Tue, 21 Jan 2025 18:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</guid>
       <description>Un guide complet pour lancer une VM avec Cloud-Init sur Proxmox</description>
     </item>
     <item>
       <title>Anatomie d&#39;une attaque ransomware</title>
-      <link>https://makhal.fr/posts/cyber/poc/ransom-poc/</link>
+      <link>http://localhost:1313/posts/cyber/poc/ransom-poc/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/poc/ransom-poc/</guid>
+      <guid>http://localhost:1313/posts/cyber/poc/ransom-poc/</guid>
       <description>Dans cet article nous allons voir toutes les etapes qui composent une attaque de ransomware</description>
     </item>
     <item>
       <title>Le debut d&#39;une grande aventure K8s</title>
-      <link>https://makhal.fr/posts/k8s/k8s1-3/</link>
+      <link>http://localhost:1313/posts/k8s/k8s1-3/</link>
       <pubDate>Mon, 02 Dec 2024 04:12:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/k8s1-3/</guid>
+      <guid>http://localhost:1313/posts/k8s/k8s1-3/</guid>
       <description>Nous allons déployer une application simple sur un cluster K8s</description>
     </item>
     <item>
       <title>Decouverte de l&#39;IAC avec Pulumi</title>
-      <link>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</link>
+      <link>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</guid>
+      <guid>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</guid>
       <description>Dans ce post, nous allons decouvrir l&amp;rsquo;IAC avec Pulumi sur Azure</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://makhal.fr/pages/about/</link>
+      <link>http://localhost:1313/pages/about/</link>
       <pubDate>Wed, 25 Sep 2024 17:29:57 +0200</pubDate>
-      <guid>https://makhal.fr/pages/about/</guid>
+      <guid>http://localhost:1313/pages/about/</guid>
       <description>&lt;h1 id=&#34;mohamad-el-akhal-el-bouzidi&#34;&gt;Mohamad El Akhal El Bouzidi&lt;/h1&gt;&#xA;&lt;p&gt;Salut ! Je m&amp;rsquo;appelle &lt;strong&gt;Mohamad El Akhal El Bouzidi&lt;/strong&gt;, passionné d’informatique, de cloud, et de cybersécurité.&#xA;Actuellement en &lt;strong&gt;Master Systèmes d’Information Avancés (SIGLIS)&lt;/strong&gt; à l’&lt;strong&gt;Université de Pau et des Pays de l’Adour&lt;/strong&gt;, je travaille en alternance au &lt;strong&gt;FabLab Ingénierie Numérique&lt;/strong&gt;, où je conçois et déploie des infrastructures &lt;strong&gt;cloud natives&lt;/strong&gt; (Kubernetes, CI/CD, DevOps) au service des étudiants, chercheurs et entreprises.&lt;/p&gt;&#xA;&lt;p&gt;Mon parcours est guidé par une double envie :&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kubernetes Partie 2</title>
-      <link>https://makhal.fr/posts/k8s/k8s1-2/</link>
+      <link>http://localhost:1313/posts/k8s/k8s1-2/</link>
       <pubDate>Sat, 21 Sep 2024 13:56:10 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/k8s1-2/</guid>
+      <guid>http://localhost:1313/posts/k8s/k8s1-2/</guid>
       <description>Ici vous trouverez une explication plus detaille a propos des elements qui composent K8s</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 4</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_4/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_4/</link>
       <pubDate>Thu, 22 Aug 2024 09:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_4/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_4/</guid>
       <description>On verra dans ce post la puissance de Wazuh en important de nouvelles règles et des démos</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 3</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_3/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_3/</link>
       <pubDate>Sat, 17 Aug 2024 12:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_3/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_3/</guid>
       <description>Dans ce post, nous allons ajouter, configurer et voir Wazuh en action</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 2</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem_2/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem_2/</link>
       <pubDate>Fri, 16 Aug 2024 21:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem_2/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem_2/</guid>
       <description>Dans la suite du post précédent, nous allons installer et configurer le wazuh-master et autres.</description>
     </item>
     <item>
       <title>Decouverte de Wazuh</title>
-      <link>https://makhal.fr/posts/cyber/decouverte_siem/</link>
+      <link>http://localhost:1313/posts/cyber/decouverte_siem/</link>
       <pubDate>Wed, 07 Aug 2024 20:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/cyber/decouverte_siem/</guid>
+      <guid>http://localhost:1313/posts/cyber/decouverte_siem/</guid>
       <description>Dans une (encore) nouvelle serie de posts, nous allons decouvir le monde extraordianaire des SIEM</description>
     </item>
     <item>
       <title>Comment monitorer un cluster Kubernetes ?</title>
-      <link>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</link>
+      <link>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</guid>
+      <guid>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</guid>
       <description>Dans ce post, je vous explique comment mettre en place un système de monitoring pour votre cluster Kubernetes avec Prometheus et Grafana.</description>
     </item>
     <item>
       <title>Kubernetes Partie 1</title>
-      <link>https://makhal.fr/posts/k8s/k8s1-1/</link>
+      <link>http://localhost:1313/posts/k8s/k8s1-1/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>https://makhal.fr/posts/k8s/k8s1-1/</guid>
+      <guid>http://localhost:1313/posts/k8s/k8s1-1/</guid>
       <description>Dans ce post, je vous présente Kubernetes :D</description>
     </item>
     <item>
       <title>Mise a jour manuelle d&#39;un Switch Cisco par TFTP</title>
-      <link>https://makhal.fr/posts/docs/maj_ios_tftp/</link>
+      <link>http://localhost:1313/posts/docs/maj_ios_tftp/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/maj_ios_tftp/</guid>
+      <guid>http://localhost:1313/posts/docs/maj_ios_tftp/</guid>
       <description>Documentation sur comment mettre a jour manuellement un switch Cisco par TFTP</description>
     </item>
     <item>
       <title>Docker Partie 3</title>
-      <link>https://makhal.fr/posts/docker/docker_3/</link>
+      <link>http://localhost:1313/posts/docker/docker_3/</link>
       <pubDate>Sun, 18 Feb 2024 11:49:38 +0100</pubDate>
-      <guid>https://makhal.fr/posts/docker/docker_3/</guid>
+      <guid>http://localhost:1313/posts/docker/docker_3/</guid>
       <description>La suite de la partie 2, ou je vais vous montrer comment utiliser Docker-Compose</description>
     </item>
     <item>
       <title>Docker Partie 2</title>
-      <link>https://makhal.fr/posts/docker/docker_2/</link>
+      <link>http://localhost:1313/posts/docker/docker_2/</link>
       <pubDate>Sun, 11 Feb 2024 11:49:38 +0100</pubDate>
-      <guid>https://makhal.fr/posts/docker/docker_2/</guid>
+      <guid>http://localhost:1313/posts/docker/docker_2/</guid>
       <description>La suite de la partie 1, ou je vais vous montrer comment utiliser Docker</description>
     </item>
     <item>
       <title>Docker partie 1</title>
-      <link>https://makhal.fr/posts/docker/docker_1/</link>
+      <link>http://localhost:1313/posts/docker/docker_1/</link>
       <pubDate>Sat, 10 Feb 2024 06:16:53 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docker/docker_1/</guid>
+      <guid>http://localhost:1313/posts/docker/docker_1/</guid>
       <description>Je vais vous montrer comment utiliser Docker et pourquoi est-ce que c&amp;rsquo;est si populaire.</description>
     </item>
     <item>
       <title>DMARC - SPF - DKIM</title>
-      <link>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</link>
+      <link>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</link>
       <pubDate>Sun, 28 Jan 2024 08:47:49 +0200</pubDate>
-      <guid>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</guid>
+      <guid>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</guid>
       <description>Au cours de ce post, je vais vous montrer comment mettre en place le DMARC, DKIM et SPF sur votre serveur de messagerie.</description>
     </item>
     <item>
       <title>Docker Swarm</title>
-      <link>https://makhal.fr/posts/docker/docker-swarm/</link>
+      <link>http://localhost:1313/posts/docker/docker-swarm/</link>
       <pubDate>Mon, 23 Oct 2023 06:16:53 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docker/docker-swarm/</guid>
+      <guid>http://localhost:1313/posts/docker/docker-swarm/</guid>
       <description>Dans ce post, je vais vous montrer comment utiliser Docker et Docker Swarm.</description>
     </item>
     <item>
       <title>Bind9</title>
-      <link>https://makhal.fr/posts/old/bind9/</link>
+      <link>http://localhost:1313/posts/old/bind9/</link>
       <pubDate>Sun, 15 Oct 2023 09:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/old/bind9/</guid>
+      <guid>http://localhost:1313/posts/old/bind9/</guid>
       <description>Dans ce post, je vais vous montrer comment configurer un serveur DNS avec Bind9.</description>
     </item>
     <item>
       <title>Presentation</title>
-      <link>https://makhal.fr/posts/presentation/</link>
+      <link>http://localhost:1313/posts/presentation/</link>
       <pubDate>Sat, 14 Oct 2023 16:10:25 +0200</pubDate>
-      <guid>https://makhal.fr/posts/presentation/</guid>
+      <guid>http://localhost:1313/posts/presentation/</guid>
       <description>Dans ce post, je me présente et je parle de mes compétences et de mes certifications.</description>
     </item>
     <item>
       <title></title>
-      <link>https://makhal.fr/index-about/</link>
+      <link>http://localhost:1313/index-about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://makhal.fr/index-about/</guid>
+      <guid>http://localhost:1313/index-about/</guid>
       <description>&lt;h1 id=&#34;a-propos-de-moi&#34;&gt;A propos de moi&lt;/h1&gt;&#xA;&lt;p&gt;Je suis Mohamad El Akhal El Bouzidi, apprenti ingénieur en Master SIGLIS à l’UPPA et alternant au FabLab Ingénierie Numérique.&lt;/p&gt;</description>
     </item>
   </channel>

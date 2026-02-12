@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cloud-Init on makhal.fr</title>
-    <link>https://makhal.fr/tags/cloud-init/</link>
+    <link>http://localhost:1313/tags/cloud-init/</link>
     <description>Recent content in Cloud-Init on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Tue, 21 Jan 2025 18:10:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/cloud-init/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/cloud-init/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proxmox Cloud-Init le guide complet</title>
-      <link>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</link>
+      <link>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</link>
       <pubDate>Tue, 21 Jan 2025 18:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/proxmox-cloud-init/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/proxmox-cloud-init/</guid>
       <description>Un guide complet pour lancer une VM avec Cloud-Init sur Proxmox</description>
     </item>
   </channel>

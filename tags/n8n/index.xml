@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>N8n on makhal.fr</title>
-    <link>https://makhal.fr/tags/n8n/</link>
+    <link>http://localhost:1313/tags/n8n/</link>
     <description>Recent content in N8n on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 02 Apr 2025 06:40:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/n8n/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/n8n/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agent IA n8n prend vie avec VirusTotal (Partie 2)</title>
-      <link>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</link>
+      <link>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</guid>
+      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</guid>
       <description>Intégration de VirusTotal pour l&amp;rsquo;analyse d&amp;rsquo;URL par chat, avec un agent IA.</description>
     </item>
     <item>
       <title>Agent IA n8n : Analysez les URLs (Partie 1)</title>
-      <link>https://makhal.fr/posts/docs/ia/n8n-cyber/</link>
+      <link>http://localhost:1313/posts/docs/ia/n8n-cyber/</link>
       <pubDate>Wed, 26 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber/</guid>
+      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber/</guid>
       <description>Un agent IA avec n8n qui va analyser les urls des sites louches que je croise</description>
     </item>
   </channel>

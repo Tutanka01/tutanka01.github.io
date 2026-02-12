@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Infra on makhal.fr</title>
-    <link>https://makhal.fr/tags/infra/</link>
+    <link>http://localhost:1313/tags/infra/</link>
     <description>Recent content in Infra on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 27 Sep 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="https://makhal.fr/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/infra/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monitoring pour les nuls</title>
-      <link>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</link>
+      <link>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</link>
       <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/monitoring/intro-monitoring/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/monitoring/intro-monitoring/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est le monitoring, pourquoi c&amp;rsquo;est important et quelques outils pour commencer.</description>
     </item>
     <item>
       <title>Sommes-nous devenus accros au cloud ?</title>
-      <link>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</link>
+      <link>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</link>
       <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</guid>
+      <guid>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</guid>
       <description>Accros ou dépendants du cloud ? Entre innovation, coûts et risques, où placer la limite ?</description>
     </item>
     <item>
       <title>Unikernels : OS ultra-léger, ultra-sécurisé</title>
-      <link>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</link>
+      <link>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</link>
       <pubDate>Sat, 03 May 2025 08:15:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/</guid>
       <description>On explore ce que sont les unikernels, comment ils fonctionnent, et pourquoi ils méritent une place dans nos architectures</description>
     </item>
     <item>
       <title>MicroVM - À la découverte</title>
-      <link>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</link>
+      <link>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</link>
       <pubDate>Sun, 13 Apr 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/microvm/microvm-1/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/microvm/microvm-1/</guid>
       <description>On découvre ensemble les microVMs, une alternative aux VMs classiques et quelques applications.</description>
     </item>
     <item>
       <title>KASM - Navigateur et OS jetables</title>
-      <link>https://makhal.fr/posts/sysadmin/kasm-post/</link>
+      <link>http://localhost:1313/posts/sysadmin/kasm-post/</link>
       <pubDate>Wed, 19 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/kasm-post/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/kasm-post/</guid>
       <description>On va découvrir comment mettre en place un navigateur et un OS jetable avec Kasm</description>
     </item>
     <item>
       <title>C&#39;est quoi un système distribué ?</title>
-      <link>https://makhal.fr/posts/sysadmin/distibuted-systems/</link>
+      <link>http://localhost:1313/posts/sysadmin/distibuted-systems/</link>
       <pubDate>Sat, 15 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>https://makhal.fr/posts/sysadmin/distibuted-systems/</guid>
+      <guid>http://localhost:1313/posts/sysadmin/distibuted-systems/</guid>
       <description>Ici je vais vous expliquer ce qu&amp;rsquo;est un système distribué. Et quelques exemples.</description>
     </item>
   </channel>
