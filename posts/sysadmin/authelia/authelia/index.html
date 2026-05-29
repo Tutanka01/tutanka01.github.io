@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, authelia'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Authelia &#43; Traefik : sécurisez tous vos services web">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Authelia &#43; Traefik : sécurisez tous vos services web">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/authelia/authelia/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/authelia/authelia/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/authelia/authelia/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/authelia/authelia/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/cyber">cyber</a> / <a href="https://makhal.fr/tags/sysadmin">sysadmin</a> / <a href="https://makhal.fr/tags/authelia">authelia</a>
+        </div>
+        
+
         <h1>Authelia &#43; Traefik : sécurisez tous vos services web</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,18 +175,19 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/authelia">authelia</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/authelia">authelia</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <p>L&rsquo;authentification et l&rsquo;autorisation sont le nerf de la guerre de la sécurité informatique. Rares sont les entreprises qui n&rsquo;ont jamais été victimes d&rsquo;une fuite de données à cause d&rsquo;un mot de passe compromis (credential theft). Mettre en place un système d&rsquo;authentification robuste et complet est chronophage et complexe.</p>
+        <p>L&rsquo;authentification et l&rsquo;autorisation sont le nerf de la guerre de la sécurité informatique. Rares sont les entreprises qui n&rsquo;ont jamais été victimes d&rsquo;une fuite de données à cause d&rsquo;un mot de passe compromis (credential theft). Mettre en place un système d&rsquo;authentification robuste et complet est chronophage et complexe.</p>
 <p>Mais avec Authelia, vous pouvez centraliser l&rsquo;authentification et l&rsquo;authorisation de vos applications web et services, tout en l&rsquo;installant en à peine deux commandes (et quelques fichiers de configuration). Dans cet article, nous allons découvrir et mettre en place Authelia derrière un reverse proxy Traefik.</p>
 <h2 id="mais-cest-quoi-lauthentification-">Mais c&rsquo;est quoi l&rsquo;authentification ?</h2>
 <p><img src="/images/sysadmin/authelia/authentication-vs-authorization.jpg" alt="authentication-vs-authorization"></p>
@@ -352,7 +366,6 @@
 Dans cet article, nous avons vu comment installer Authelia avec Traefik, configurer les utilisateurs et les règles d&rsquo;accès, et lancer le service.</p>
 <p>J&rsquo;espère que cet article vous a été utile et que vous avez pu mettre en place Authelia avec Traefik sans trop de difficultés. Si vous avez des questions ou des suggestions, n&rsquo;hésitez pas à m&rsquo;envoyer un message sur LinkedIn.</p>
 
-        </p>
         
         
     </div>

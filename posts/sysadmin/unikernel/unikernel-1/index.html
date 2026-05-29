@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, unikernel, infra'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Unikernels : OS ultra-léger, ultra-sécurisé">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Unikernels : OS ultra-léger, ultra-sécurisé">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/unikernel/unikernel-1/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/unikernel/unikernel-1/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/sysadmin">sysadmin</a> / <a href="https://makhal.fr/tags/unikernel">unikernel</a> / <a href="https://makhal.fr/tags/infra">infra</a>
+        </div>
+        
+
         <h1>Unikernels : OS ultra-léger, ultra-sécurisé</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,18 +175,19 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/unikernel">unikernel</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/unikernel">unikernel</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/infra">infra</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/infra">infra</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <p>Bonjour à tous ! Comme toujours, le week-end est pour moi un moment de réflexion et d’expérimentation. Cela fait déjà quelques week-ends que je me penche sur les unikernels. J’ai essayé de comprendre leur fonctionnement pour voir si cela vaut vraiment le coup ou non et, aujourd’hui, je vais vous faire un petit retour d’expérience.</p>
+        <p>Bonjour à tous ! Comme toujours, le week-end est pour moi un moment de réflexion et d’expérimentation. Cela fait déjà quelques week-ends que je me penche sur les unikernels. J’ai essayé de comprendre leur fonctionnement pour voir si cela vaut vraiment le coup ou non et, aujourd’hui, je vais vous faire un petit retour d’expérience.</p>
 <h1 id="quest-ce-quun-unikernel-">Qu’est-ce qu’un unikernel ?</h1>
 <p>Avant de répondre à cette question, je vous invite à lire mon article sur les micro-VMs, dans lequel j’explique ce qui existait auparavant : les VMs classiques, les conteneurs, puis les micro-VMs. Je ne vais donc pas m’attarder là-dessus ici.</p>
 <p>Je vais tout de même vous rappeler brièvement ce qu’est une micro-VM. En gros, il s’agit d’une machine virtuelle ultra-légère : le VMM ne simule que les ressources dont j’ai réellement besoin. Par exemple, si je n’ai pas besoin de carte réseau, je n’en simule pas. Le support des périphériques est également réduit. Résultat : une machine virtuelle bien plus légère qu’une VM classique et, par conséquent, beaucoup plus rapide à démarrer.</p>
@@ -228,7 +242,6 @@
 <p>En bref : Non, les unikernels ne vont pas remplacer toutes nos VMs et conteneurs demain matin. C&rsquo;est trop spécifique pour ça aujourd&rsquo;hui. MAIS, c&rsquo;est un outil extrêmement puissant pour des niches bien précises : sécurité absolue, performance extrême, edge computing, fonctions serverless ultra-rapides&hellip;</p>
 <p>C&rsquo;est une technologie à garder sérieusement dans un coin de sa tête pour les cas où les approches classiques montrent leurs limites. Perso, je trouve ça fascinant et je vais continuer à expérimenter ! Peut etre je vous ferais une vraie demo dans un futur article !</p>
 
-        </p>
         
         
     </div>

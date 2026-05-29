@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Reflexion on makhal.fr</title>
-    <link>http://localhost:1313/tags/reflexion/</link>
+    <link>https://makhal.fr/tags/reflexion/</link>
     <description>Recent content in Reflexion on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 07 Sep 2025 08:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/reflexion/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/reflexion/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sommes-nous devenus accros au cloud ?</title>
-      <link>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</link>
+      <link>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</link>
       <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/reflexion/addictes_au_cloud/</guid>
+      <guid>https://makhal.fr/posts/docs/reflexion/addictes_au_cloud/</guid>
       <description>Accros ou dépendants du cloud ? Entre innovation, coûts et risques, où placer la limite ?</description>
     </item>
   </channel>

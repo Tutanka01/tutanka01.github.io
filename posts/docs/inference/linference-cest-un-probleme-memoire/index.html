@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #c8602a;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>L&#39;inférence, c&#39;est un problème de mémoire</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, llm, inference, self-hosted, architecture'>
+
+    <meta property="og:url" content="https://makhal.fr/posts/docs/inference/linference-cest-un-probleme-memoire/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="L&#39;inférence, c&#39;est un problème de mémoire">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="L&#39;inférence, c&#39;est un problème de mémoire">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/inference/linference-cest-un-probleme-memoire/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/inference/linference-cest-un-probleme-memoire/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="https://makhal.fr/posts/docs/inference/linference-cest-un-probleme-memoire/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://about.makhal.fr/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://about.makhal.fr/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/llm">llm</a> / <a href="https://makhal.fr/tags/inference">inference</a> / <a href="https://makhal.fr/tags/self-hosted">self-hosted</a> / <a href="https://makhal.fr/tags/architecture">architecture</a>
+        </div>
+        
+
+        <h1>L&#39;inférence, c&#39;est un problème de mémoire</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            avril 27, 2026
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/llm">llm</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/inference">inference</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/self-hosted">self-hosted</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/architecture">architecture</a></li>
+        
+        </ul>
+
+        <hr class="editorial-rule">
+    </div>
+
+    <div class="post-content">
+        <p><img src="/images/doc/inference/sama.png" alt="sama"></p>
+<blockquote>
+<p><em>&ldquo;Really excellent work by the inference team to serve this model so efficiently!</em></p>
+<p><em>To a significant degree, we have to become an AI inference company now.&rdquo;</em>
+— <strong>Sam Altman</strong>, 23 avril 2026</p>
+</blockquote>
+<p>Lis-le deux fois.</p>
+<p>OpenAI. L&rsquo;entreprise qui a entraîné GPT-4 avec des centaines de millions de dollars. Qui aligne des milliers de H100 dans ses datacenters. Qui dispose probablement des meilleurs ingénieurs ML de la planète.</p>
+<p>Et leur CEO te dit, en 2026, qu&rsquo;ils doivent <strong>devenir une inference company</strong>.</p>
+<p>Pas une <em>training</em> company. Pas une <em>research</em> company. Une <strong>inference</strong> company.</p>
+<p>Ce n&rsquo;est pas un détail de communication. C&rsquo;est l&rsquo;aveu, à demi-mot, que l&rsquo;inférence LLM est un problème d&rsquo;ingénierie qu&rsquo;on a largement sous-estimé. Et que celui qui résoudra ce problème mieux que les autres aura un avantage stratégique.</p>
+<p>Et c&rsquo;est ce qui fera la difference entre l&rsquo;outil massivement utilisé et l&rsquo;outil marginalisé. Entre l&rsquo;entreprise qui domine le marché et celle qui se fait rattraper.</p>
+<p>Dans le <a href="https://makhal.fr/posts/docs/inference/intro-a-linference/">premier article de la série</a>, on a posé les bases : entraînement vs inférence, pourquoi la VRAM est la ressource clé, comment lancer un modèle local en deux commandes. Là, on rentre dans le moteur.</p>
+<p>Cet article, un seul sujet, et je vais la défendre du début à la fin :</p>
+<blockquote>
+<p><strong>L&rsquo;inférence LLM n&rsquo;est pas un problème de calcul. C&rsquo;est un problème de mémoire.</strong></p>
+</blockquote>
+<p>Tout le reste en découle.</p>
+<h2 id="la-grande-contre-intuition--ton-gpu-passe-son-temps-à-attendre">La grande contre-intuition : ton GPU passe son temps à attendre</h2>
+<p>Quand tu regardes la fiche technique d&rsquo;une NVIDIA L40S, tu vois ça :</p>
+<ul>
+<li>18 176 CUDA cores</li>
+<li>568 Tensor cores de 4ᵉ génération</li>
+<li>91.6 TFLOPS en FP16</li>
+<li>48 Go de VRAM GDDR6 ECC</li>
+</ul>
+<p>Sur le papier, c&rsquo;est un monstre. Capable de faire des dizaines de milliers de milliards d&rsquo;opérations par seconde. Et pourtant, pendant l&rsquo;inférence d&rsquo;un LLM, ce monstre passe le plus clair de son temps à&hellip; <strong>attendre</strong>.</p>
+<p>Pas attendre des données du réseau. Pas attendre un disque. Attendre <strong>sa propre mémoire</strong>.</p>
+<p>C&rsquo;est ce qu&rsquo;on appelle un workload <strong>memory-bound</strong>. Le goulot d&rsquo;étranglement, ce n&rsquo;est pas le calcul, c&rsquo;est la bande passante mémoire.</p>
+<h3 id="prefill-vs-decode--deux-mondes">Prefill vs decode : deux mondes</h3>
+<p>Avant d&rsquo;aller plus loin, une distinction critique. L&rsquo;inférence d&rsquo;un LLM se fait en deux phases :</p>
+<ul>
+<li><strong>Prefill</strong> : on traite tout le prompt d&rsquo;entrée d&rsquo;un coup. Toutes les couches, tous les tokens, en parallèle. C&rsquo;est <em>compute-bound</em>. Le GPU est utilisé à fond. Si ton prompt fait 4 000 tokens, le prefill, c&rsquo;est rapide et efficace.</li>
+<li><strong>Decode</strong> : on génère la réponse, <strong>un token à la fois</strong>. À chaque step, il faut relire les poids du modèle pour produire le prochain token. C&rsquo;est <em>memory-bound</em>. Le GPU attend la mémoire. La majorité du temps perçu par l&rsquo;utilisateur, c&rsquo;est du decode.</li>
+</ul>
+<p>C&rsquo;est cette deuxième phase qui domine l&rsquo;expérience utilisateur sur des réponses longues. Et c&rsquo;est elle qui pose problème.</p>
+<h3 id="pourquoi-le-decode-bride-tout">Pourquoi le decode bride tout</h3>
+<p>Pendant le decode, le modèle doit lire <strong>tous ses poids</strong> depuis la VRAM pour générer <strong>un seul token</strong>. Un Llama 3.1 70B en FP16, c&rsquo;est 140 Go de poids à parcourir. Token par token.</p>
+<p>Si ton GPU dispose de 1 To/s de bande passante, le calcul est trivial :</p>
+<pre tabindex="0"><code>1000 GB/s ÷ 140 GB ≈ 7 tokens/seconde
+</code></pre><p><strong>Au maximum théorique. Juste à cause de la mémoire.</strong> Avant même d&rsquo;avoir parlé de calcul.</p>
+<p>Pendant ce temps, tes Tensor cores s&rsquo;ennuient. Ils ont fini leur multiplication matricielle bien avant que la prochaine fournée de poids n&rsquo;arrive en cache. C&rsquo;est l&rsquo;<em>arithmetic intensity</em>, le ratio entre opérations effectuées et octets lus. Pour un transformer en decode, ce ratio est ridiculement faible.</p>
+<p>C&rsquo;est contre-intuitif, mais c&rsquo;est fondamental :</p>
+<blockquote>
+<p><strong>Pour servir un LLM, tu n&rsquo;achètes pas du compute. Tu achètes de la bande passante.</strong></p>
+</blockquote>
+<p>Tout le reste de cet article découle de cette phrase.</p>
+<h2 id="la-hiérarchie-de-la-mémoire-gpu--hbm-gddr-lpddr">La hiérarchie de la mémoire GPU : HBM, GDDR, LPDDR</h2>
+<p>Si la bande passante est reine, alors le type de mémoire qui équipe ta carte n&rsquo;est pas un détail. C&rsquo;est l&rsquo;élément central. Trois grandes familles existent, et leurs caractéristiques expliquent pourquoi certaines cartes sont conçues pour l&rsquo;inférence et d&rsquo;autres non.</p>
+<h3 id="hbm--la-rolls-royce">HBM : la Rolls-Royce</h3>
+<p>La <strong>High Bandwidth Memory</strong> est empilée en 3D directement à côté du GPU. Latence très faible, bande passante astronomique.</p>
+<table>
+  <thead>
+      <tr>
+          <th>GPU</th>
+          <th>Mémoire</th>
+          <th>Bande passante</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>A100 80 Go</td>
+          <td>HBM2e</td>
+          <td>~2 000 GB/s</td>
+      </tr>
+      <tr>
+          <td>H100 80 Go</td>
+          <td>HBM3</td>
+          <td>~3 350 GB/s</td>
+      </tr>
+      <tr>
+          <td>H200</td>
+          <td>HBM3e</td>
+          <td>~4 800 GB/s</td>
+      </tr>
+      <tr>
+          <td>MI300X</td>
+          <td>HBM3</td>
+          <td>~5 300 GB/s</td>
+      </tr>
+  </tbody>
+</table>
+<p>C&rsquo;est ce qu&rsquo;OpenAI utilise. C&rsquo;est ce que tu trouves dans les datacenters d&rsquo;inférence à grande échelle. Et c&rsquo;est <em>cher</em>. Une H100, c&rsquo;est 30 000 à 40 000 € à l&rsquo;achat. Une H200, on monte au-delà. Une MI300X, idem.</p>
+<p>Des prix au-dela de ce qu&rsquo;un simple mortel peut se permettre pour son serveur perso.</p>
+<p>À cette bande passante, un Llama 70B en FP16 peut atteindre 20-25 tokens/seconde sur un seul GPU. Multiplié par les centaines de milliers de cartes, ça donne le débit d&rsquo;OpenAI.</p>
+<h3 id="gddr6--gddr6x--gddr7--le-compromis-pro">GDDR6 / GDDR6X / GDDR7 : le compromis pro</h3>
+<p>La mémoire des cartes &ldquo;consumer pro&rdquo; et workstation. Bonne, mais pas dans la même ligue que la HBM.</p>
+<table>
+  <thead>
+      <tr>
+          <th>GPU</th>
+          <th>Mémoire</th>
+          <th>Bande passante</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RTX 4090</td>
+          <td>GDDR6X</td>
+          <td>~1 008 GB/s</td>
+      </tr>
+      <tr>
+          <td>RTX 5090</td>
+          <td>GDDR7</td>
+          <td>~1 792 GB/s</td>
+      </tr>
+      <tr>
+          <td><strong>L40S</strong></td>
+          <td>GDDR6 ECC</td>
+          <td><strong>~864 GB/s</strong></td>
+      </tr>
+      <tr>
+          <td>RTX Pro 6000 Blackwell</td>
+          <td>GDDR7</td>
+          <td>~1 792 GB/s</td>
+      </tr>
+  </tbody>
+</table>
+<p>C&rsquo;est ce qu&rsquo;on a sur <strong>EVA</strong>. La L40S, c&rsquo;est un excellent compromis pour une infrastructure universitaire : 48 Go de VRAM (de quoi loger un Qwen 2.5 72B quantizé en Q4), GDDR6 ECC, et un coût qui reste dans le raisonnable.</p>
+<p>Mais 864 GB/s, ça veut dire que sur un Qwen 72B en Q4 (~40 Go de poids), le plafond théorique est de :</p>
+<pre tabindex="0"><code>864 ÷ 40 ≈ 21 tokens/seconde
+</code></pre><p>C&rsquo;est cohérent avec ce qu&rsquo;on observe en pratique. <strong>La L40S ne sera jamais aussi rapide qu&rsquo;une H100 sur ce workload, peu importe les optimisations logicielles</strong>, parce que la limite est physique : c&rsquo;est la mémoire qui n&rsquo;arrive pas à suivre.</p>
+<h3 id="lpddr5x--le-pari-de-la-mémoire-unifiée">LPDDR5x : le pari de la mémoire unifiée</h3>
+<p>Le pari récent de NVIDIA avec les Grace CPUs et la <strong>DGX SPARK</strong>. La mémoire est partagée entre CPU et GPU sur un même bus, pas de PCIe entre les deux.</p>
+<table>
+  <thead>
+      <tr>
+          <th>GPU</th>
+          <th>Mémoire</th>
+          <th>Bande passante</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>DGX SPARK</td>
+          <td>128 Go LPDDR5x</td>
+          <td>~273 GB/s</td>
+      </tr>
+      <tr>
+          <td>Mac Studio M3 Ultra</td>
+          <td>192 Go unifiée</td>
+          <td>~819 GB/s</td>
+      </tr>
+  </tbody>
+</table>
+<p>Tu vois le piège ? <strong>3 à 10× moins de bande passante que la HBM</strong>. Pour le même modèle, le DGX SPARK servira 3 à 10× moins vite qu&rsquo;une H100.</p>
+<p>Mais, et c&rsquo;est là que ça devient intéressant, il <strong>loge des modèles que la H100 ne peut pas loger</strong> sur un seul GPU (128 Go vs 80 Go). C&rsquo;est un trade-off différent. Tu sacrifies du débit pour de la capacité.</p>
+<p>Comme le livre DDIA dit : &ldquo;Un trade-off, c’est un compromis conscient entre plusieurs propriétés désirables, où améliorer une propriété implique souvent d’en dégrader une autre.&rdquo; Totalement vrai ici.</p>
+<p>Dès que les deux DGX SPARK arrivent dans le cluster EVA, on aura l&rsquo;occasion de mesurer ça pour de vrai. Spoiler, ce ne sera pas comparable à la L40S sur les modèles qui rentrent dans 48 Go. Mais ça ouvrira la porte à des modèles qui ne rentrent nulle part ailleurs sans architecture multi-GPU.</p>
+<h2 id="le-tableau-qui-résume-tout">Le tableau qui résume tout</h2>
+<p>Sors une calculette. Compare le coût par GB/s de bande passante :</p>
+<table>
+  <thead>
+      <tr>
+          <th>GPU</th>
+          <th>Prix (~)</th>
+          <th>Bande passante</th>
+          <th>€/GB/s</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>RTX 4090</td>
+          <td>1 800 €</td>
+          <td>1 008 GB/s</td>
+          <td>1.79</td>
+      </tr>
+      <tr>
+          <td>L40S</td>
+          <td>8 500 €</td>
+          <td>864 GB/s</td>
+          <td>9.84</td>
+      </tr>
+      <tr>
+          <td>H100</td>
+          <td>35 000 €</td>
+          <td>3 350 GB/s</td>
+          <td>10.45</td>
+      </tr>
+      <tr>
+          <td>H200</td>
+          <td>45 000 €</td>
+          <td>4 800 GB/s</td>
+          <td>9.38</td>
+      </tr>
+  </tbody>
+</table>
+<p>Premier constat surprenant : la <strong>RTX 4090 est dingue en €/GB/s</strong>. C&rsquo;est pour ça que beaucoup de petits acteurs (et même certaines grosses startups) montent des fermes de 4090 plutôt que d&rsquo;investir dans des H100. Ce n&rsquo;est pas un choix marketing, c&rsquo;est un choix d&rsquo;ingénieur.</p>
+<p>Deuxième constat : la L40S, la H100 et la H200 sont quasiment au même prix par GB/s. Ce qui les distingue, c&rsquo;est le <strong>plafond absolu</strong> (combien de tokens/seconde par GPU) et la <strong>VRAM totale</strong> (quels modèles tu peux loger).</p>
+<p>Quand tu choisis ton infra, tu n&rsquo;optimises pas un seul axe. Tu optimises trois en même temps : <strong>bande passante × VRAM × prix</strong>. Et selon ton workload (modèle 7B vs 70B, 1 utilisateur vs 100, contexte court vs long), le bon choix change.</p>
+<h2 id="pourquoi-sam-altman-a-raison">Pourquoi Sam Altman a raison</h2>
+<p>Reviens au tweet du début.</p>
+<p>OpenAI, en 2026, n&rsquo;est plus dans la course à l&rsquo;entraînement pure. Les modèles open source rattrapent. Llama, Qwen, DeepSeek, Mistral, l&rsquo;écart s&rsquo;est resserré, brutalement. La différenciation se déplace ailleurs :</p>
+<blockquote>
+<p>Dans la capacité à servir ces modèles à des centaines de millions d&rsquo;utilisateurs, à un coût qui ne ruine pas l&rsquo;entreprise.</p>
+</blockquote>
+<p>Et ce déplacement, c&rsquo;est exactement ce qu&rsquo;on vit à plus petite échelle dans une infra universitaire :</p>
+<ul>
+<li>Choisir le bon modèle pour le bon hardware</li>
+<li>Comprendre quel GPU sature à quel débit</li>
+<li>Décider entre latence et capacité selon les usages</li>
+<li>Mesurer, mesurer, mesurer</li>
+</ul>
+<p>L&rsquo;inférence n&rsquo;est pas un problème résolu. Pas pour OpenAI, pas pour Mistral, pas pour AWS, et pas pour ton serveur perso. C&rsquo;est un <strong>problème d&rsquo;ingénierie système</strong> où la mémoire est reine, où le calcul est secondaire, et où les détails déterminent si tu fais 5 tokens/s ou 500.</p>
+<h2 id="ce-quil-faut-retenir">Ce qu&rsquo;il faut retenir</h2>
+<p>Avant que tu t&rsquo;en ailles, voici les trois points clés à garder en tête :</p>
+<ol>
+<li><strong>L&rsquo;inférence LLM est memory-bound, pas compute-bound.</strong> Pendant le decode, ton GPU attend ses poids. Le bottleneck, c&rsquo;est la bande passante mémoire, pas les TFLOPS.</li>
+<li><strong>Le type de mémoire détermine le plafond physique.</strong> HBM &gt; GDDR &gt; LPDDR en bande passante. Une L40S ne pourra jamais égaler une H100, peu importe le logiciel — la limite est dans le silicium.</li>
+<li><strong>Le bon GPU dépend de ton workload.</strong> Bande passante × VRAM × prix : l&rsquo;équation à trois inconnues que personne ne peut résoudre à ta place.</li>
+</ol>
+<h2 id="ok-next-">Ok, next ?</h2>
+<p>Maintenant qu&rsquo;on sait que la mémoire est reine, deux questions naturelles se posent :</p>
+<ul>
+<li><strong>Comment cette mémoire est-elle utilisée pendant qu&rsquo;on sert plusieurs utilisateurs en parallèle ?</strong></li>
+<li><strong>Comment on évite que le service s&rsquo;effondre dès qu&rsquo;on dépasse 5 utilisateurs concurrents ?</strong></li>
+</ul>
+<p>Ce sera l&rsquo;objet du prochain article.</p>
+<p>Et après, on rentre dans le <strong>concret pur</strong>, benchmarks réels sur L40S, mesure de la saturation de la bande passante, évolution du débit en fonction du batch size. Pas de la théorie. Pas du benchmark synthétique. Du terrain, sur EVA.</p>
+<p>À bientôt.</p>
+
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/docs/inference/intro-a-linference/">
+            &#8592;
+            :
+            C&#39;est quoi l&#39;inférence ?
+        </a>
+    </p>
+    <p class="prev-post-date">
+        avril 20, 2026
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Loadbalancer on makhal.fr</title>
-    <link>http://localhost:1313/tags/loadbalancer/</link>
+    <link>https://makhal.fr/tags/loadbalancer/</link>
     <description>Recent content in Loadbalancer on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Thu, 10 Jul 2025 04:12:10 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/loadbalancer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/loadbalancer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Réseau Kubernetes et MetalLB.</title>
-      <link>http://localhost:1313/posts/k8s/rzo-metallb/metallb/</link>
+      <link>https://makhal.fr/posts/k8s/rzo-metallb/metallb/</link>
       <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/rzo-metallb/metallb/</guid>
+      <guid>https://makhal.fr/posts/k8s/rzo-metallb/metallb/</guid>
       <description>On décortique le réseau Kubernetes et on met en place MetalLB, la solution pour exposer vos applications hors du cloud..</description>
     </item>
   </channel>

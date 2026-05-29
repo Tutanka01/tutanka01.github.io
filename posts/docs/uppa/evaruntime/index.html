@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #c8602a;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Fini OpenAI : LLM maison sur un GPU</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, llm, souverainete, gpu, inference, self-hosted, architecture'>
+
+    <meta property="og:url" content="https://makhal.fr/posts/docs/uppa/evaruntime/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Fini OpenAI : LLM maison sur un GPU">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fini OpenAI : LLM maison sur un GPU">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/uppa/evaruntime/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/uppa/evaruntime/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="https://makhal.fr/posts/docs/uppa/evaruntime/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://about.makhal.fr/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://about.makhal.fr/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/llm">llm</a> / <a href="https://makhal.fr/tags/souverainete">souverainete</a> / <a href="https://makhal.fr/tags/gpu">gpu</a> / <a href="https://makhal.fr/tags/inference">inference</a> / <a href="https://makhal.fr/tags/self-hosted">self-hosted</a> / <a href="https://makhal.fr/tags/architecture">architecture</a>
+        </div>
+        
+
+        <h1>Fini OpenAI : LLM maison sur un GPU</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            avril 14, 2026
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/llm">llm</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/souverainete">souverainete</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/gpu">gpu</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/inference">inference</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/self-hosted">self-hosted</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/architecture">architecture</a></li>
+        
+        </ul>
+
+        <hr class="editorial-rule">
+    </div>
+
+    <div class="post-content">
+        <p>Les LLMs sont devenus des outils de travail quotidiens dans le monde de la recherche. Résumer des corpus, générer du code, structurer des idées, ça marche, c&rsquo;est utile, les chercheurs s&rsquo;en emparent naturellement.</p>
+<p>La question qu&rsquo;on a posée à l&rsquo;UPPA, c&rsquo;est : est-ce qu&rsquo;on peut garder ces usages tout en maîtrisant où tournent les modèles et qui a accès aux données ?</p>
+<h2 id="le-contexte-universitaire">Le contexte universitaire</h2>
+<p>L&rsquo;usage des LLMs pour la recherche est légitime et efficace. Mais les APIs cloud soulèvent des questions concrètes que les équipes techniques doivent adresser :</p>
+<ul>
+<li>Les données transitent par des serveurs américains, soumis au Cloud Act et au FISA 702</li>
+<li>Il n&rsquo;y a pas de garantie sur la rétention ou l&rsquo;utilisation des données pour l&rsquo;entraînement</li>
+<li>Le coût peut rapidement devenir significatif : un labo à 50M de tokens/mois sur GPT-4o, c&rsquo;est ~750$ mensuels. Pour une université entière, on parle de dizaines de milliers d&rsquo;euros par an</li>
+</ul>
+<p>Ce n&rsquo;est pas une critique de l&rsquo;usage des APIs — c&rsquo;est une incitation à regarder ce qu&rsquo;il est possible de faire soi-même, avec les ressources qu&rsquo;on a déjà.</p>
+<h2 id="alors-on-déploie-vllm-sur-kubernetes-non-">&ldquo;Alors on déploie vLLM sur Kubernetes, non ?&rdquo;</h2>
+<p>C&rsquo;est la réponse réflexe d&rsquo;un sysadmin. Et c&rsquo;est exactement là où on se plante.</p>
+<p>Les solutions d&rsquo;inférence LLM existantes (vLLM, TGI, Triton) sont conçues pour le data center. Elles partent du principe que le GPU est <strong>dédié</strong> à l&rsquo;inférence, 24h/24, 7j/7, avec des dizaines de requêtes en parallèle en continu.</p>
+<p>Le contexte universitaire, c&rsquo;est l&rsquo;inverse exact :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Réalité universitaire</th>
+          <th>Conséquence</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>~100 utilisateurs, trafic intermittent</td>
+          <td>Le GPU est inactif 89% du temps</td>
+      </tr>
+      <tr>
+          <td>GPU partagé entre inférence et entraînement</td>
+          <td>Le moteur doit <strong>libérer la VRAM</strong> quand il ne sert pas</td>
+      </tr>
+      <tr>
+          <td>Budget serré, pas d&rsquo;équipe DevOps dédiée</td>
+          <td>La solution doit être simple à opérer</td>
+      </tr>
+      <tr>
+          <td>Pas de cluster Kubernetes</td>
+          <td>Un seul serveur, un seul GPU</td>
+      </tr>
+  </tbody>
+</table>
+<p>Et c&rsquo;est là que vLLM devient un problème. vLLM <strong>pré-alloue 90% de la VRAM au démarrage</strong> et la conserve indéfiniment, même sans la moindre requête. Sur une L40S 48 GB, ça veut dire ~43 GB monopolisés en permanence. Impossible de lancer un job d&rsquo;entraînement à côté. Impossible de partager le GPU.</p>
+<p>J&rsquo;ai creusé la question. Les issues GitHub de vLLM sont pleines de demandes de libération dynamique de VRAM (#1908, #6544, #23793, #15287). Toutes marquées <em>stale</em> ou non implémentées. C&rsquo;est un choix de conception : vLLM est fait pour le throughput, pas pour l&rsquo;efficacité énergétique.</p>
+<p>On ne va pas déployer une artillerie lourde pour servir 100 chercheurs qui font 20 requêtes par jour.</p>
+<h2 id="lidée-simple-qui-change-tout--tuer-kill-le-processus">L&rsquo;idée simple qui change tout : tuer (kill) le processus</h2>
+<p>On a construit <strong>EVARuntime</strong>, une gateway d&rsquo;inférence LLM souveraine. L&rsquo;idée de départ est brutalement simple.</p>
+<p>La seule façon de libérer 100% de la VRAM d&rsquo;un GPU, c&rsquo;est de <strong>tuer le processus qui la détient</strong>. Pas de mode sleep, pas de libération partielle, pas de négociation avec le runtime CUDA. On tue. Point.</p>
+<p>La SEULE façon de libérer 100% la VRAM GPU est de tuer le processus.
+L&rsquo;option &ndash;sleep-idle-seconds de llama-server laisse un contexte CUDA actif (~600MB).
+On gère donc llama-server comme un sous-processus asyncio et on le tue
+(SIGTERM -&gt; SIGKILL) après la fenêtre d&rsquo;inactivité.</p>
+<p>C&rsquo;est le commentaire en tête de notre <code>server_manager.py</code>. C&rsquo;est la thèse de tout le projet. Et c&rsquo;est la décision architecturale la plus importante qu&rsquo;on ait prise.</p>
+<p>Concrètement : <code>llama-server</code> (le moteur d&rsquo;inférence de llama.cpp) tourne comme un <strong>sous-processus</strong> de notre gateway FastAPI. Quand personne ne l&rsquo;utilise pendant 5 minutes, on le tue. Le GPU passe de ~350W à ~30W. La VRAM est libérée à 100%. Un job d&rsquo;entraînement peut prendre le relais.</p>
+<p>Quand quelqu&rsquo;un envoie une requête, le modèle se recharge en 10 à 20 secondes. Pendant ce temps, les requêtes sont mises en attente grâce à un <code>asyncio.Event</code>, et aucune n&rsquo;est perdue.</p>
+<h2 id="larchitecture--un-proxy-intelligent-devant-un-subprocess">L&rsquo;architecture : un proxy intelligent devant un subprocess</h2>
+<div class="mermaid">
+graph TD
+    A[Internet] -->|HTTPS| B[Nginx - TLS, SSE no-buffer, IP filtering]
+    B --> C[FastAPI Gateway - port 8000]
+    C --> D[Auth + Rate Limiting]
+    D --> E[Model Manager]
+    E -->|subprocess| F[llama-server - port 8081+]
+    F --> G[NVIDIA L40S 48GB]
+
+    E -->|idle 5 min| H[SIGTERM -> SIGKILL]
+    H -->|GPU libre ~30W| G
+
+    style H fill:#c0392b,color:#fff
+    style G fill:#27ae60,color:#fff
+</div>
+<p>L&rsquo;architecture tient sur une serviette de restaurant :</p>
+<ol>
+<li><strong>Nginx</strong> gère le TLS, le filtrage IP du campus, et le no-buffering pour le streaming SSE</li>
+<li><strong>FastAPI</strong> authentifie les requêtes, applique le rate limiting, et gère le cycle de vie du modèle</li>
+<li><strong>llama-server</strong> fait l&rsquo;inférence, lancé comme sous-processus asyncio</li>
+<li><strong>SQLite WAL</strong> stocke les utilisateurs, les clés API (hashées SHA-256), et les logs d&rsquo;usage</li>
+</ol>
+<p>Pas de Redis. Pas de RabbitMQ. Pas de Kubernetes. Pas de Docker. Un venv Python, un service systemd, un reverse proxy nginx. C&rsquo;est tout.</p>
+<p>La simplicité de l&rsquo;architecture est un atout majeur. Moins de composants, moins de points de défaillance, moins de maintenance. Et surtout, ça correspond à la réalité des infrastructures universitaires : un seul serveur, un seul GPU, une équipe technique réduite.</p>
+<h2 id="la-machine-à-états-qui-fait-que-ça-marche">La machine à états qui fait que ça marche</h2>
+<p>Le cœur du système, c&rsquo;est une machine à états dans <code>ServerManager</code>. Quatre états, des transitions verrouillées par un <code>asyncio.Lock</code>, et un pattern qui résout élégamment le problème des requêtes concurrentes pendant le chargement :</p>
+<pre tabindex="0"><code>UNLOADED -&gt; LOADING -&gt; READY -&gt; UNLOADING -&gt; UNLOADED
+</code></pre><p>Le cas critique : 10 requêtes arrivent en même temps alors que le modèle est déchargé. Sans précaution, on lancerait 10 processus llama-server.</p>
+<p>Avec notre design, la première requête déclenche le chargement. Les 9 suivantes détectent l&rsquo;état <code>LOADING</code> et attendent le même <code>Event</code>. Quand le modèle est prêt, l&rsquo;<code>Event</code> est set, et les 10 requêtes sont traitées. Zéro requête perdue, un seul processus (modele) lancé.</p>
+<p>C&rsquo;est du pur asyncio, sans thread, sans multiprocessing, sans Redis. Et ça suffit.</p>
+<h2 id="api-openai-compatible--zéro-migration">API OpenAI-compatible : zéro migration</h2>
+<p>Le deal-breaker pour l&rsquo;adoption, c&rsquo;est toujours la migration. Si vos chercheurs doivent changer leur code, c&rsquo;est compliqué. Personne ne le fera.</p>
+<p>EVARuntime expose une API 100% compatible OpenAI. Vos scripts existants, vos notebooks Jupyter, vos intégrations LangChain, LiteLLM, Vercel AI SDK&hellip; tout fonctionne. Il suffit de changer deux lignes :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> openai <span style="color:#f92672">import</span> OpenAI
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> OpenAI(
+</span></span><span style="display:flex;"><span>    base_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://llm.univ-pau.fr/v1&#34;</span>,  <span style="color:#75715e"># &lt;- votre serveur</span>
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;llmgw-votre_cle_api&#34;</span>,           <span style="color:#75715e"># &lt;- votre clé</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>response <span style="color:#f92672">=</span> client<span style="color:#f92672">.</span>chat<span style="color:#f92672">.</span>completions<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>    model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;llama-3.3-70b-instruct&#34;</span>,
+</span></span><span style="display:flex;"><span>    messages<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: <span style="color:#e6db74">&#34;Explique le théorème de Bayes.&#34;</span>}],
+</span></span><span style="display:flex;"><span>    stream<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> chunk <span style="color:#f92672">in</span> response:
+</span></span><span style="display:flex;"><span>    print(chunk<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>delta<span style="color:#f92672">.</span>content <span style="color:#f92672">or</span> <span style="color:#e6db74">&#34;&#34;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>, flush<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><p>Le streaming SSE fonctionne token par token. Les tool calls sont supportés. Le proxy est transparent : tous les paramètres de sampling avancés de llama.cpp (mirostat, dry_multiplier, repeat_penalty, top_k, min_p&hellip;) passent directement au backend sans configuration.</p>
+<p>C&rsquo;est un drop-in replacement. Changez l&rsquo;URL, changez la clé, c&rsquo;est fini.</p>
+<h2 id="sécurité--pas-de-compromis">Sécurité : pas de compromis</h2>
+<p>On ne déploie pas un LLM accessible depuis internet sans un minimum de sécurité. Voici ce qu&rsquo;on a mis en place, sans pour autant tomber dans la paranoïa :</p>
+<p><strong>Clés API hashées SHA-256.</strong> La clé brute n&rsquo;est jamais stockée. On génère un préfixe de 14 caractères pour l&rsquo;identification humaine, et on ne garde que le hash. Comme un mot de passe.</p>
+<p><strong>Rate limiting par fenêtre glissante.</strong> Pas de Redis, juste une <code>deque</code> de timestamps par utilisateur. On purge les entrées hors de la fenêtre d'1 minute, on refuse si le compteur dépasse la limite. C&rsquo;est l&rsquo;algorithme sliding window log, implémentable en 30 lignes de Python. À l&rsquo;échelle de 100 utilisateurs, c&rsquo;est largement suffisant.</p>
+<p><strong>Double authentification admin.</strong> Les routes <code>/admin</code> sont protégées par un secret admin ET par le filtrage IP de nginx (réseau campus uniquement). Même si le secret fuite, l&rsquo;API d&rsquo;admin n&rsquo;est pas accessible depuis internet.</p>
+<p><strong>Hardening systemd.</strong> Le service tourne avec <code>NoNewPrivileges</code>, <code>PrivateTmp</code>, <code>ProtectSystem</code>, sous un utilisateur dédié sans shell. llama-server n&rsquo;écoute que sur <code>127.0.0.1</code> &ndash; il n&rsquo;est jamais exposé directement.</p>
+<h2 id="lefficacité-énergétique-nest-pas-un-détail">L&rsquo;efficacité énergétique n&rsquo;est pas un détail</h2>
+<p>On en parle peu, mais c&rsquo;est un argument massif. Voici les mesures réelles sur notre L40S :</p>
+<table>
+  <thead>
+      <tr>
+          <th>État</th>
+          <th>Puissance GPU</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>GPU libre (modèle déchargé)</td>
+          <td><strong>~20-30W</strong></td>
+          <td>Processus tué, VRAM 100% libre</td>
+      </tr>
+      <tr>
+          <td>Modèle chargé, inactif</td>
+          <td>~100-150W</td>
+          <td>Modèle en VRAM, aucune requête</td>
+      </tr>
+      <tr>
+          <td>Inférence active (70B Q4_K_M)</td>
+          <td>~300-350W</td>
+          <td>Génération de tokens</td>
+      </tr>
+  </tbody>
+</table>
+<p>Un GPU qui tourne pour rien la nuit, le week-end, pendant les vacances&hellip; ça consomme. Avec un mode &ldquo;always-on&rdquo; classique (vLLM, TGI), votre GPU idle consomme ~150W en permanence. Sur un an :</p>
+<pre tabindex="0"><code>150W x 24h x 365j = 1 314 kWh
+</code></pre><p>Avec EVARuntime et son timeout de 5 minutes :</p>
+<pre tabindex="0"><code>30W x 20h + 350W x 4h = 600 + 1400 = 2 000 Wh/jour
+(en estimant 4h d&#39;utilisation active par jour)
+</code></pre><p>Soit <strong>~730 kWh/an</strong> contre ~1 314 kWh. Et c&rsquo;est une estimation conservatrice &ndash; en réalité, le GPU est probablement actif moins de 4h par jour dans notre contexte.</p>
+<p>C&rsquo;est pas une économie de bout de chandelle. C&rsquo;est <strong>~45% de consommation en moins</strong> sur le GPU. Et surtout, pendant les heures creuses, ce GPU peut servir à de l&rsquo;entraînement. Avec vLLM, il est monopolisé à ne rien faire.</p>
+<h2 id="multi-modèles-et-gestion-vram-automatique">Multi-modèles et gestion VRAM automatique</h2>
+<p>La gateway ne se limite pas à un seul modèle. Le <code>ModelManager</code> gère un pool de <code>ServerManager</code>, chacun pilotant un sous-processus llama-server sur un port dédié. Le budget VRAM est enforcé automatiquement :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>budget_net <span style="color:#f92672">=</span> total_vram_gb <span style="color:#f92672">-</span> vram_overhead_gb <span style="color:#f92672">-</span> (total_vram_gb <span style="color:#f92672">*</span> vram_safety_margin)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sur L40S : 48.0 - 2.0 - (48.0 * 0.05) = 43.6 GB</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Avant chaque chargement :</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> used_vram <span style="color:#f92672">+</span> model<span style="color:#f92672">.</span>vram_gb <span style="color:#f92672">&gt;</span> budget_net:
+</span></span><span style="display:flex;"><span>    evict_lru()  <span style="color:#75715e"># on décharge le modèle le moins récemment utilisé</span>
+</span></span></code></pre></div><p>Concrètement : si un chercheur demande Llama-3.3-70B pendant qu&rsquo;un Qwen2.5-9B est chargé mais idle, le système décharge automatiquement le Qwen pour faire de la place. C&rsquo;est de l&rsquo;éviction LRU, comme un cache CPU, mais pour la VRAM.</p>
+<p>Ou meme si jamais le modele est actif, mais que le GPU n&rsquo;est pas saturé a 100%, on peut charger plusieurs modèles en parallèle. Par exemple, un Qwen2.5-9B (10 GB VRAM) peut coexister avec un Qwen2.5-3B (4 GB VRAM) et un Llama-3.3-13B Q4_K_M (8 GB VRAM) sur la même L40S, tant que le total ne dépasse pas le budget net de ~43.6 GB qu&rsquo;on s&rsquo;est fixé.</p>
+<p>Le registre des modèles est un simple fichier YAML :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">models</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">id</span>: <span style="color:#e6db74">&#34;llama-3.3-70b-instruct&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">path</span>: <span style="color:#e6db74">&#34;/models/Llama-3.3-70B-Instruct-Q4_K_M.gguf&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">description</span>: <span style="color:#e6db74">&#34;Llama 3.3 70B -- usage général&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">vram_gb</span>: <span style="color:#ae81ff">42.0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">capabilities</span>: [<span style="color:#ae81ff">text_generation, tool_calls, streaming]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">llama_params</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">n_gpu_layers</span>: <span style="color:#ae81ff">999</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">ctx_size</span>: <span style="color:#ae81ff">32768</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">parallel</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">flash_attn</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">cache_type_k</span>: <span style="color:#e6db74">&#34;q8_0&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">cache_type_v</span>: <span style="color:#e6db74">&#34;q8_0&#34;</span>
+</span></span></code></pre></div><p>Ajouter un modèle, c&rsquo;est ajouter une entrée dans ce fichier. Le recharger, c&rsquo;est un appel API. C&rsquo;est pas Kubernetes, c&rsquo;est un fichier YAML et un process kill.</p>
+<h2 id="les-paramètres-qui-comptent">Les paramètres qui comptent</h2>
+<p>On ne déploie pas un LLM 70B sur un GPU 48 GB sans un peu de finesse. Voici les paramètres qu&rsquo;on a retenus pour la L40S, et pourquoi :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Paramètre</th>
+          <th>Valeur</th>
+          <th>Pourquoi</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-ngl 999</code></td>
+          <td>Offload complet GPU</td>
+          <td>Tout en VRAM, zéro CPU inférence</td>
+      </tr>
+      <tr>
+          <td><code>-c 32768</code></td>
+          <td>Contexte total</td>
+          <td>4 slots x 8K tokens par utilisateur</td>
+      </tr>
+      <tr>
+          <td><code>--parallel 4</code></td>
+          <td>Slots concurrents</td>
+          <td>Suffisant pour un trafic académique</td>
+      </tr>
+      <tr>
+          <td><code>-b 4096 / -ub 512</code></td>
+          <td>Batch sizes</td>
+          <td>Optimisé pour le prefill sur Ada Lovelace</td>
+      </tr>
+      <tr>
+          <td><code>-ctk q8_0 / -ctv q8_0</code></td>
+          <td>KV cache quantisé</td>
+          <td>-50% VRAM sur le cache, qualité identique</td>
+      </tr>
+      <tr>
+          <td><code>-fa on</code></td>
+          <td>Flash Attention 2</td>
+          <td>Exploite l&rsquo;architecture Ada Lovelace (compute 8.9)</td>
+      </tr>
+      <tr>
+          <td><strong>VRAM totale</strong></td>
+          <td><strong>~40.5 GB</strong></td>
+          <td>38 GB poids + 2.5 GB KV cache, sur 48 GB dispo</td>
+      </tr>
+  </tbody>
+</table>
+<p>Il reste ~7.5 GB de marge. Assez pour un petit modèle en parallèle, ou pour absorber des pics de contexte.</p>
+<h2 id="pourquoi-llamacpp-et-pas-vllm-">Pourquoi llama.cpp et pas vLLM ?</h2>
+<p>On m&rsquo;a posé la question. La réponse tient en un tableau :</p>
+<table>
+  <thead>
+      <tr>
+          <th>Critère</th>
+          <th>llama.cpp</th>
+          <th>vLLM</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Libération VRAM 100%</td>
+          <td>Natif, fiable</td>
+          <td>Impossible nativement</td>
+      </tr>
+      <tr>
+          <td>Redémarrage d&rsquo;un 70B</td>
+          <td>10-20 secondes</td>
+          <td>2-5 minutes</td>
+      </tr>
+      <tr>
+          <td>Support GGUF</td>
+          <td>Natif, performant</td>
+          <td>Expérimental, ~8x plus lent</td>
+      </tr>
+      <tr>
+          <td>Débit sous forte charge</td>
+          <td>Bon</td>
+          <td>3-6x meilleur</td>
+      </tr>
+      <tr>
+          <td>Gestion subprocess</td>
+          <td>1 processus</td>
+          <td>Multi-workers CUDA complexes</td>
+      </tr>
+  </tbody>
+</table>
+<p>vLLM est meilleur sous forte concurrence soutenue. Mais &ldquo;forte concurrence soutenue&rdquo;, c&rsquo;est 50 requêtes en parallèle en continu. Pas notre cas. On a 4 slots pour 100 utilisateurs avec un trafic intermittent. L&rsquo;avantage de vLLM n&rsquo;entre jamais en jeu.</p>
+<p>Le seul scénario où on migrerait vers vLLM : un GPU dédié exclusivement à l&rsquo;inférence, avec 20-50 utilisateurs simultanés en continu. Ce jour-là, on réécrit le <code>ServerManager</code>. Pas avant.</p>
+<h2 id="ce-que-ça-donne-en-vrai">Ce que ça donne en vrai</h2>
+<p>EVARuntime tourne en production à l&rsquo;<strong>Université de Pau et des Pays de l&rsquo;Adour</strong> (UPPA). Voici les chiffres réels :</p>
+<ul>
+<li><strong>~100 utilisateurs</strong> (doctorants, chercheurs, personnels)</li>
+<li><strong>Llama 3.3 70B</strong> en quantification Q4_K_M</li>
+<li><strong>4 slots parallèles</strong>, contexte 8K par slot</li>
+<li><strong>API OpenAI-compatible</strong> : les chercheurs utilisent le client Python OpenAI standard</li>
+<li><strong>~30W au repos</strong>, ~350W en inférence active</li>
+<li><strong>10-20 secondes</strong> de chargement à froid</li>
+<li><strong>Zéro requête perdue</strong> pendant le chargement</li>
+<li><strong>Zéro donnée</strong> qui quitte l&rsquo;infrastructure de l&rsquo;UPPA</li>
+</ul>
+<p>Le tout sur un seul serveur avec une NVIDIA L40S 48 GB.</p>
+<h2 id="conclusion--on-na-pas-besoin-dun-cluster">Conclusion : on n&rsquo;a pas besoin d&rsquo;un cluster</h2>
+<p>Ce qu&rsquo;on a appris en construisant EVARuntime, c&rsquo;est que &ldquo;déployer un LLM&rdquo; n&rsquo;implique pas nécessairement un cluster Kubernetes, une équipe DevOps, ou un budget cloud à six chiffres.</p>
+<p>Un seul GPU. Un script d&rsquo;installation. Une API compatible OpenAI. Un subprocess qu&rsquo;on tue quand on n&rsquo;en a plus besoin.</p>
+<p>Pour un contexte comme l&rsquo;UPPA — 100 utilisateurs, trafic intermittent, GPU partagé — cette architecture est non seulement suffisante, elle est optimale. Et elle tourne en production pour le prouver.</p>
+<p>Si les ressources GPU sont déjà là, il vaut la peine de se poser la question : qu&rsquo;est-ce qu&rsquo;on peut faire avec ?</p>
+
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/other/agenticblog/">
+            &#8592;
+            :
+            AgenticBlog : Le futur de la création de contenu
+        </a>
+    </p>
+    <p class="prev-post-date">
+        mars 21, 2026
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/docs/inference/intro-a-linference/">
+            :
+            C&#39;est quoi l&#39;inférence ?
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            avril 20, 2026
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

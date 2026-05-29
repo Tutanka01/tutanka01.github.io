@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postfix on makhal.fr</title>
-    <link>http://localhost:1313/tags/postfix/</link>
+    <link>https://makhal.fr/tags/postfix/</link>
     <description>Recent content in Postfix on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 28 Jan 2024 08:47:49 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/postfix/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/postfix/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DMARC - SPF - DKIM</title>
-      <link>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</link>
+      <link>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</link>
       <pubDate>Sun, 28 Jan 2024 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/posts/old/messagerie/dmark_dkim_spf/</guid>
+      <guid>https://makhal.fr/posts/old/messagerie/dmark_dkim_spf/</guid>
       <description>Au cours de ce post, je vais vous montrer comment mettre en place le DMARC, DKIM et SPF sur votre serveur de messagerie.</description>
     </item>
   </channel>

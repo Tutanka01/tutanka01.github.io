@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IA on makhal.fr</title>
-    <link>http://localhost:1313/tags/ia/</link>
+    <link>https://makhal.fr/tags/ia/</link>
     <description>Recent content in IA on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 02 Apr 2025 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ia/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/ia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Agent IA n8n prend vie avec VirusTotal (Partie 2)</title>
-      <link>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</link>
+      <link>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber-2/</guid>
+      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber-2/</guid>
       <description>Intégration de VirusTotal pour l&amp;rsquo;analyse d&amp;rsquo;URL par chat, avec un agent IA.</description>
     </item>
     <item>
       <title>Midjourney, DALL-E... Superbes, mais où vont vos données ?</title>
-      <link>http://localhost:1313/posts/docs/ia/images-ia/</link>
+      <link>https://makhal.fr/posts/docs/ia/images-ia/</link>
       <pubDate>Fri, 28 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ia/images-ia/</guid>
+      <guid>https://makhal.fr/posts/docs/ia/images-ia/</guid>
       <description>On va voir les alternatives OpenSource du monde de la generation d&amp;rsquo;images par IA.</description>
     </item>
     <item>
       <title>Agent IA n8n : Analysez les URLs (Partie 1)</title>
-      <link>http://localhost:1313/posts/docs/ia/n8n-cyber/</link>
+      <link>https://makhal.fr/posts/docs/ia/n8n-cyber/</link>
       <pubDate>Wed, 26 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/ia/n8n-cyber/</guid>
+      <guid>https://makhal.fr/posts/docs/ia/n8n-cyber/</guid>
       <description>Un agent IA avec n8n qui va analyser les urls des sites louches que je croise</description>
     </item>
     <item>
       <title>Détecteur d&#39;anomalies réseau IA pour Proxmox</title>
-      <link>http://localhost:1313/posts/cyber/ai/sentinel/</link>
+      <link>https://makhal.fr/posts/cyber/ai/sentinel/</link>
       <pubDate>Sun, 26 Jan 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/ai/sentinel/</guid>
+      <guid>https://makhal.fr/posts/cyber/ai/sentinel/</guid>
       <description>Un détecteur d’anomalies réseau entraîné par IA pour sécuriser ton cluster Proxmox</description>
     </item>
   </channel>

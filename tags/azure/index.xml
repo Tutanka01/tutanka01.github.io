@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Azure on makhal.fr</title>
-    <link>http://localhost:1313/tags/azure/</link>
+    <link>https://makhal.fr/tags/azure/</link>
     <description>Recent content in Azure on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 30 Oct 2024 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Decouverte de l&#39;IAC avec Pulumi</title>
-      <link>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</link>
+      <link>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/</guid>
+      <guid>https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/</guid>
       <description>Dans ce post, nous allons decouvrir l&amp;rsquo;IAC avec Pulumi sur Azure</description>
     </item>
   </channel>

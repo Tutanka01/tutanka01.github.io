@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Monitoring on makhal.fr</title>
-    <link>http://localhost:1313/tags/monitoring/</link>
+    <link>https://makhal.fr/tags/monitoring/</link>
     <description>Recent content in Monitoring on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 21 Jun 2025 08:10:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/monitoring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Observabilité : Le pilier oublié du DevOps</title>
-      <link>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</link>
+      <link>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</link>
       <pubDate>Sat, 21 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/sysadmin/observabilite/intro-observabilite/</guid>
+      <guid>https://makhal.fr/posts/sysadmin/observabilite/intro-observabilite/</guid>
       <description>On oublie souvent de parler de l&amp;rsquo;observabilité, ici on va faire un petit tour d&amp;rsquo;horizon de ce que c&amp;rsquo;est et pourquoi c&amp;rsquo;est important.</description>
     </item>
     <item>
       <title>Comment monitorer un cluster Kubernetes ?</title>
-      <link>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</link>
+      <link>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</link>
       <pubDate>Sun, 19 May 2024 12:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/k8s/monitoring/monitoring-k8s/</guid>
+      <guid>https://makhal.fr/posts/k8s/monitoring/monitoring-k8s/</guid>
       <description>Dans ce post, je vous explique comment mettre en place un système de monitoring pour votre cluster Kubernetes avec Prometheus et Grafana.</description>
     </item>
   </channel>

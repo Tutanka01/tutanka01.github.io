@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker-Swarm on makhal.fr</title>
-    <link>http://localhost:1313/tags/docker-swarm/</link>
+    <link>https://makhal.fr/tags/docker-swarm/</link>
     <description>Recent content in Docker-Swarm on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sat, 26 Apr 2025 06:49:38 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker-swarm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/docker-swarm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Swarm vs Kubernetes : lequel choisir ?</title>
-      <link>http://localhost:1313/posts/docker/swarm_vs_k8s/</link>
+      <link>https://makhal.fr/posts/docker/swarm_vs_k8s/</link>
       <pubDate>Sat, 26 Apr 2025 06:49:38 +0100</pubDate>
-      <guid>http://localhost:1313/posts/docker/swarm_vs_k8s/</guid>
+      <guid>https://makhal.fr/posts/docker/swarm_vs_k8s/</guid>
       <description>Kubernetes est partout, mais est-ce toujours le bon choix ? Explorons Docker Swarm, une alternative plus simple.</description>
     </item>
     <item>
       <title>Docker Swarm</title>
-      <link>http://localhost:1313/posts/docker/docker-swarm/</link>
+      <link>https://makhal.fr/posts/docker/docker-swarm/</link>
       <pubDate>Mon, 23 Oct 2023 06:16:53 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docker/docker-swarm/</guid>
+      <guid>https://makhal.fr/posts/docker/docker-swarm/</guid>
       <description>Dans ce post, je vais vous montrer comment utiliser Docker et Docker Swarm.</description>
     </item>
   </channel>

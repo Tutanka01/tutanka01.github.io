@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on makhal.fr</title>
-    <link>http://localhost:1313/pages/</link>
+    <link>https://makhal.fr/pages/</link>
     <description>Recent content in Pages on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Wed, 25 Sep 2024 17:29:57 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/pages/about/</link>
+      <link>https://makhal.fr/pages/about/</link>
       <pubDate>Wed, 25 Sep 2024 17:29:57 +0200</pubDate>
-      <guid>http://localhost:1313/pages/about/</guid>
+      <guid>https://makhal.fr/pages/about/</guid>
       <description>&lt;h1 id=&#34;mohamad-el-akhal-el-bouzidi&#34;&gt;Mohamad El Akhal El Bouzidi&lt;/h1&gt;&#xA;&lt;p&gt;Salut ! Je m&amp;rsquo;appelle &lt;strong&gt;Mohamad El Akhal El Bouzidi&lt;/strong&gt;, passionné d’informatique, de cloud, et de cybersécurité.&#xA;Actuellement en &lt;strong&gt;Master Systèmes d’Information Avancés (SIGLIS)&lt;/strong&gt; à l’&lt;strong&gt;Université de Pau et des Pays de l’Adour&lt;/strong&gt;, je travaille en alternance au &lt;strong&gt;FabLab Ingénierie Numérique&lt;/strong&gt;, où je conçois et déploie des infrastructures &lt;strong&gt;cloud natives&lt;/strong&gt; (Kubernetes, CI/CD, DevOps) au service des étudiants, chercheurs et entreprises.&lt;/p&gt;&#xA;&lt;p&gt;Mon parcours est guidé par une double envie :&lt;/p&gt;</description>
     </item>
   </channel>

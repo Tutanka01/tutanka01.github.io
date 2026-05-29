@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, windows, endpoint'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/poc/defenderui/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/poc/defenderui/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Booster Defender gratuitement avec Defender UI">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Booster Defender gratuitement avec Defender UI">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/poc/defenderui/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/poc/defenderui/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/poc/defenderui/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/poc/defenderui/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/poc/defenderui/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/poc/defenderui/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/cyber">cyber</a> / <a href="https://makhal.fr/tags/windows">windows</a> / <a href="https://makhal.fr/tags/endpoint">endpoint</a>
+        </div>
+        
+
         <h1>Booster Defender gratuitement avec Defender UI</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,18 +175,19 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cyber">cyber</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cyber">cyber</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/windows">windows</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/windows">windows</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/endpoint">endpoint</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/endpoint">endpoint</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <p>Marre des virus, ransomwares et autres joyeusetés qui pullulent sur internet ? Moi aussi ! Et visiblement, les éditeurs d&rsquo;antivirus aussi, à en juger par les prix qui ne cessent de grimper. Logique, me direz-vous, la sécurité a un prix. Sauf que… quand on déballe un nouveau PC, on a déjà une solution de sécurité installée et gratuite : Defender.</p>
+        <p>Marre des virus, ransomwares et autres joyeusetés qui pullulent sur internet ? Moi aussi ! Et visiblement, les éditeurs d&rsquo;antivirus aussi, à en juger par les prix qui ne cessent de grimper. Logique, me direz-vous, la sécurité a un prix. Sauf que… quand on déballe un nouveau PC, on a déjà une solution de sécurité installée et gratuite : Defender.</p>
 <p>Alors, pourquoi aller chercher (et payer) ailleurs quand on a déjà une référence du marché sous le nez ? Oui, oui, Defender, celui qu&rsquo;on a tous par défaut sur Windows, fait partie des meilleurs ! Et en plus, il est gratuit.</p>
 <blockquote>
 <p>Si vous n&rsquo;êtes pas convaincu, je vous invite a regarder cette video de <a href="https://www.youtube.com/watch?v=oTRJNfjh_iU">PC Security Channel</a> ou il met Defender a l&rsquo;epruve contre 200 ransomwares, et honnetement, le resultat est bon !</p>
@@ -227,7 +241,6 @@
 <p>Si jamais vous avez des questions ou des remarques, n&rsquo;hésitez pas à les partager en me contactant sur Linkedin.</p>
 <p>Et si vous avez aimé cet article, n&rsquo;hésitez pas à le partager autour de vous. La sécurité informatique, c&rsquo;est l&rsquo;affaire de tous !</p>
 
-        </p>
         
         
     </div>

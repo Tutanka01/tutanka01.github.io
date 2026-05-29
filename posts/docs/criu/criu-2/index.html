@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #c8602a;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>CRIU : L&#39;art de la résurrection de processus</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, cloud-native, linux, criu, systems, architecture'>
+
+    <meta property="og:url" content="https://makhal.fr/posts/docs/criu/criu-2/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CRIU : L&#39;art de la résurrection de processus">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CRIU : L&#39;art de la résurrection de processus">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/criu/criu-2/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/criu/criu-2/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="https://makhal.fr/posts/docs/criu/criu-2/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://about.makhal.fr/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://about.makhal.fr/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/cloud-native">cloud-native</a> / <a href="https://makhal.fr/tags/linux">linux</a> / <a href="https://makhal.fr/tags/criu">criu</a> / <a href="https://makhal.fr/tags/systems">systems</a> / <a href="https://makhal.fr/tags/architecture">architecture</a>
+        </div>
+        
+
+        <h1>CRIU : L&#39;art de la résurrection de processus</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            février 15, 2026
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/cloud-native">cloud-native</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/linux">linux</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/criu">criu</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/systems">systems</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/architecture">architecture</a></li>
+        
+        </ul>
+
+        <hr class="editorial-rule">
+    </div>
+
+    <div class="post-content">
+        <p>Si vous suivez ce blog, vous êtes familiers avec le dogme central du Cloud Native : <strong>l&rsquo;immuabilité</strong>.</p>
+<p>Ce principe stipule que les workloads sont jetables (<em>Cattle</em>). On ne corrige pas un processus défaillant, on le tue (<em>kill</em>) et on le remplace. Cette approche a révolutionné la résilience et la scalabilité de nos systèmes distribués en éliminant la dérive de configuration.</p>
+<p>Mais cette robustesse a un coût que nous avons fini par accepter comme une fatalité : <strong>le temps d&rsquo;initialisation</strong>.</p>
+<p>Démarrer un conteneur, charger les bibliothèques, &ldquo;chauffer&rdquo; les caches, établir les pools de connexions&hellip; tout cela prend de précieuses secondes (le fameux <em>Cold Start</em>, voir mon article sur les <a href="/posts/sysadmin/microvm/microvm-1/">MicroVM</a>). Nous avons appris à vivre avec cette latence, considérant que l&rsquo;état d&rsquo;un processus (RAM) est, par définition, perdu au redémarrage.</p>
+<p><strong>Et si l&rsquo;immuabilité de l&rsquo;artefact n&rsquo;impliquait pas nécessairement la perte de l&rsquo;état ?</strong></p>
+<p>C&rsquo;est la promesse de <strong>CRIU</strong> (<em>Checkpoint/Restore In Userspace</em>). Cette technologie permet de &ldquo;geler&rdquo; un processus en cours d&rsquo;exécution, de sauvegarder son état complet sur disque, et de le &ldquo;téléporter&rdquo; pour le restaurer à l&rsquo;identique, ailleurs et plus tard.</p>
+<p>Dans cet article, nous allons explorer la notion de <strong>mobilité d’état</strong> (<em>State Mobility</em>). Nous verrons comment CRIU opère dans les entrailles de Linux et comment il remet en question le modèle du &ldquo;tout jetable&rdquo;.</p>
+<h2 id="le-malentendu-du-stateless">Le malentendu du &ldquo;Stateless&rdquo;</h2>
+<blockquote>
+<p><strong>Note :</strong> Dans cet article, j&rsquo;utiliserai de manière interchangeable les termes &ldquo;processus&rdquo; et &ldquo;application&rdquo;, même si techniquement un processus est une instance d&rsquo;exécution.</p>
+</blockquote>
+<p>Avant de plonger dans la technique, il faut dissiper un malentendu. On confond souvent l&rsquo;état des données (<em>Data State</em>) et l&rsquo;état d&rsquo;exécution (<em>Execution State</em>).</p>
+<p>Quand on dit qu&rsquo;une application Cloud Native doit être <em>stateless</em>, on parle généralement de l&rsquo;architecture REST : le serveur ne doit pas conserver de session client entre deux requêtes. Si le serveur redémarre, la base de données (Postgres, Redis) a toujours les informations, donc le service n&rsquo;est pas interrompu.</p>
+<p>Cependant, du point de vue du système d&rsquo;exploitation, le concept de &ldquo;stateless&rdquo; n&rsquo;existe pas. Un processus, même le plus simple &ldquo;Hello World&rdquo; en Java ou Node.js, possède un état. Il a chargé des pages en mémoire RAM, il a compilé du code, il a ouvert des descripteurs de fichiers et il maintient des sockets TCP connectés.</p>
+<p>C&rsquo;est cet <strong>état d&rsquo;exécution</strong> que nous perdons systématiquement aujourd&rsquo;hui. Quand Kubernetes tue un Pod pour le déplacer, il détruit cet investissement en temps de calcul (le temps de chauffe) et force le nouveau Pod à tout recommencer à zéro. C&rsquo;est du gaspillage de ressources et de temps.</p>
+<p>CRIU propose de capturer cet état volatil pour le rendre persistant.</p>
+<h2 id="comment-figer-le-temps-sous-linux">Comment figer le temps sous Linux</h2>
+<p>Contrairement aux anciennes méthodes de snapshot de machines virtuelles qui copient tout le disque et la RAM brute, CRIU opère, comme son nom l&rsquo;indique, en <strong>Userspace</strong>. Cela signifie qu&rsquo;il n&rsquo;a pas besoin de modules noyau exotiques pour fonctionner ; il utilise les outils standard de Linux.</p>
+<p>La procedure est plutot simple mais tres ingenieuse. Lorsqu&rsquo;on demande à CRIU de faire un checkpoint, il commence par <em>geler</em> l&rsquo;arbre de processus cible en utilisant l&rsquo;appel système <code>ptrace</code>. Une fois le processus figé, CRIU lui injecte un petit bout de code &ldquo;parasite&rdquo;.</p>
+<blockquote>
+<p>Bientot je vais faire un article sur les syscalls Linux, mais pour faire simple, <code>ptrace</code> est un mécanisme qui permet à un processus de contrôler un autre processus. C&rsquo;est la base des debuggers comme GDB.</p>
+</blockquote>
+<p>Ce <em><strong>parasite</strong></em> va scanner le processus de l&rsquo;intérieur. Il va lire l&rsquo;emplacement des pages mémoires, lister les fichiers ouverts, noter la position des pointeurs d&rsquo;instruction du CPU et identifier les connexions réseaux actives. Toutes ces informations sont ensuite sérialisées et écrites dans une série de fichiers images sur le disque. Une fois le dump terminé, le processus peut être soit tué, soit laissé en vie&hellip;</p>
+<p>La restauration est l&rsquo;opération inverse, mais elle est beaucoup plus spectaculaire. CRIU lit les fichiers images et demande au noyau de recréer les processus exactement comme ils étaient. Le plus impressionnant est que CRIU est capable de restaurer le même <strong>PID</strong> (Process ID) qu&rsquo;à l&rsquo;origine. Il &ldquo;remplit&rdquo; ensuite la mémoire RAM avec les données sauvegardées et rouvre les fichiers. Pour le processus, c&rsquo;est comme s&rsquo;il s&rsquo;était endormi une microseconde, alors qu&rsquo;il s&rsquo;est peut-être passé des jours, ou qu&rsquo;il a changé de serveur physique.</p>
+<p>Voila une demo pas mal pour comprendre le processus :</p>
+
+
+<style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 850px; /* Limite la largeur maximale de la vidéo */
+    height: auto;
+    margin: 0 auto; /* Centre la vidéo horizontalement */
+  }
+
+  .video-container video {
+    width: 100%; /* La vidéo prendra 100% de la largeur du conteneur */
+    height: auto; /* La hauteur sera ajustée proportionnellement */
+  }
+</style>
+
+<div class="video-container">
+    <video controls src="/images/doc/CRIU/CRIUDEMO.mp4" title="Title"></video>
+
+</div>
+
+<h2 id="boot-vs-resume">Boot vs Resume</h2>
+<p>Pourquoi s&rsquo;embêter avec cette complexité ? Parce que cela nous permet de passer d&rsquo;un modèle basé sur le <strong>Démarrage</strong> (Boot) à un modèle basé sur la <strong>Reprise</strong> (Resume).</p>
+<p>Prenons l&rsquo;exemple du Serverless et des fonctions Java. Démarrer une JVM, charger Spring Boot et initialiser les frameworks peut prendre 5 à 10 secondes. C&rsquo;est inacceptable pour une fonction qui doit répondre en millisecondes.</p>
+<p>Avec l&rsquo;approche CRIU, on change la stratégie. On démarre l&rsquo;application une fois, lors de la phase de build. On la laisse s&rsquo;initialiser complètement. Puis, on effectue un checkpoint. On obtient une image disque de la mémoire &ldquo;chaude&rdquo;.
+En production, lorsqu&rsquo;une requête arrive, on ne démarre pas l&rsquo;application mais on restaure simplement l&rsquo;image mémoire. Le temps de &ldquo;boot&rdquo; disparaît, remplacé par le temps de copie mémoire, qui est négligeable.</p>
+<p>C&rsquo;est exactement la technologie utilisée par AWS pour <strong>Lambda SnapStart</strong>. Ce n&rsquo;est pas de la magie, c&rsquo;est de la gestion intelligente de l&rsquo;état d&rsquo;exécution.</p>
+<h2 id="au-delà-de-la-performance--la-sécurité-et-le-forensic">Au-delà de la performance : La sécurité et le Forensic</h2>
+<p>Si l&rsquo;optimisation des performances est le cas d&rsquo;usage le plus évident, mon préféré reste l&rsquo;application en cybersécurité.</p>
+<p>Imaginons un scénario classique, votre SIEM (Wazuh, par exemple) détecte un comportement suspect dans un conteneur en production. Le réflexe standard est d&rsquo;isoler le conteneur ou de le tuer. Mais en le tuant, on détruit les preuves volatiles : les clés de chiffrement en RAM, les connexions actives vers le C2 (Command &amp; Control) de l&rsquo;attaquant.</p>
+<p>Avec CRIU, nous pouvons &ldquo;geler&rdquo; le conteneur compromis instantanément. Nous déplaçons ensuite les fichiers de checkpoint vers un environnement sécurisé (une Sandbox déconnectée du réseau de production) et nous restaurons le processus.</p>
+<p>Nous avons alors une copie parfaite de l&rsquo;attaque en cours, figée dans le temps, que nous pouvons analyser, laisser tourner, ou inspecter avec un debugger, sans aucun risque pour la production. C&rsquo;est ce qu&rsquo;on appelle le <strong>Live Forensic</strong>, et c&rsquo;est une arme redoutable.</p>
+<h2 id="pourquoi-ce-nest-pas-encore-la-norme-">Pourquoi ce n&rsquo;est pas encore la norme ?</h2>
+<p>Si la technologie est si puissante, pourquoi ne l&rsquo;utilisons-nous pas partout par défaut dans Kubernetes ?</p>
+<p>La réponse réside dans la complexité de l&rsquo;environnement extérieur. Sauvegarder la mémoire est &ldquo;facile&rdquo;. Mais restaurer les connexions avec le monde extérieur est un cauchemar.</p>
+<p>Le problème principal est le réseau. Si vous sauvegardez un processus qui a une connexion TCP ouverte, et que vous le restaurez sur une autre machine avec une adresse IP différente, la connexion TCP est invalide. Le noyau va tenter d&rsquo;envoyer des paquets avec des numéros de séquence qui ne correspondent plus à rien, et la connexion sera réinitialisée (RST). CRIU possède un mode &ldquo;TCP Repair&rdquo; pour gérer cela, mais cela nécessite souvent une infrastructure réseau capable de suivre (SDN, IP virtuelles qui suivent le conteneur).</p>
+<p>Il y a aussi la question de l&rsquo;horloge système. Si un processus calcule une durée en comparant l&rsquo;heure avant et après le checkpoint, il peut se réveiller en pensant que 5 jours se sont écoulés en une seconde, ce qui peut causer des timeouts ou des bugs logiques imprévus.</p>
+<p>Enfin, CRIU nécessite des privilèges élevés (souvent <code>CAP_SYS_ADMIN</code> ou root) pour manipuler les processus d&rsquo;une telle manière, ce qui va à l&rsquo;encontre des bonnes pratiques de sécurité consistant à tout verrouiller.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>CRIU n&rsquo;est pas juste un outil de &ldquo;pause&rdquo;. C&rsquo;est une technologie qui remet en perspective notre conception de l&rsquo;architecture Cloud.</p>
+<p>Nous avons passé la dernière décennie à optimiser la destruction et la recréation de nos infrastructures (<em>Immutability</em>). La prochaine étape logique n&rsquo;est pas de reconstruire plus vite, mais de ne plus avoir besoin de reconstruire. C&rsquo;est la transition vers la <strong>mobilité d&rsquo;état</strong>.</p>
+<p>Bien que l&rsquo;utilisation directe de CRIU reste complexe aujourd&rsquo;hui, elle s&rsquo;intègre progressivement dans nos outils quotidiens (Podman, Containerd, Kubernetes via des projets comme <em>Checkpoint/Restore in Kubernetes</em>). Comprendre son fonctionnement, c&rsquo;est comprendre comment nous opérerons les systèmes de demain : fluides, persistants et véritablement mobiles.</p>
+
+        
+        
+            <script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'dark',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/docs/ebpf/ebpf-1/">
+            &#8592;
+            :
+            eBPF, au cœur du kernel Linux
+        </a>
+    </p>
+    <p class="prev-post-date">
+        janvier 21, 2026
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/sysadmin/cloud/archi-aws/">
+            :
+            Votre facture AWS vous ment
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            mars 13, 2026
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

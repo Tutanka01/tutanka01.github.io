@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, kubernetes, devops, docker'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
+    <meta property="og:url" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/k8s/k8s-os/k8s-os/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/k8s/k8s-os/k8s-os/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/k8s/k8s-os/k8s-os/" />
+    <link rel="canonical" href="https://makhal.fr/posts/k8s/k8s-os/k8s-os/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/kubernetes">kubernetes</a> / <a href="https://makhal.fr/tags/devops">devops</a> / <a href="https://makhal.fr/tags/docker">docker</a>
+        </div>
+        
+
         <h1>L&#39;explication que j&#39;aurais aimé avoir sur Kubernetes</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,18 +175,19 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/kubernetes">kubernetes</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/kubernetes">kubernetes</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <p>Kubernetes comme vous le savez très sûrement depuis le nombre conséquent de posts que j&rsquo;ai faits dessus (<a href="/posts/k8s/k8s1-1/">ici</a> ou <a href="/posts/k8s/k8s1-3/">ici</a>) c&rsquo;est un orchestrateur de conteneurs. Comme je l&rsquo;ai déjà expliqué, il prend l&rsquo;état que vous voulez avoir dans votre cluster Kubernetes avec les différents manifests que vous lui donnez, et il essaye de les appliquer tant bien que mal, dans le cluster qu&rsquo;il gère dans les différents nœuds.</p>
+        <p>Kubernetes comme vous le savez très sûrement depuis le nombre conséquent de posts que j&rsquo;ai faits dessus (<a href="/posts/k8s/k8s1-1/">ici</a> ou <a href="/posts/k8s/k8s1-3/">ici</a>) c&rsquo;est un orchestrateur de conteneurs. Comme je l&rsquo;ai déjà expliqué, il prend l&rsquo;état que vous voulez avoir dans votre cluster Kubernetes avec les différents manifests que vous lui donnez, et il essaye de les appliquer tant bien que mal, dans le cluster qu&rsquo;il gère dans les différents nœuds.</p>
 <p>Beaucoup de mots techniques pour ne pas dire grand-chose au final. Kubernetes c&rsquo;est complexe à maîtriser, tant l&rsquo;outillage (<code>kubectl *</code>, les fichiers yaml&hellip;) que la théorie en soi. C&rsquo;est quoi vraiment un contrôleur ? Pourquoi on a besoin d&rsquo;une BDD et pourquoi etcd ? Pourquoi est-ce qu&rsquo;il utilise des Kube-proxy (des iptables glorifiés) ?</p>
 <p>Ces questions peuvent se répondre en visitant la doc officielle de <a href="https://kubernetes.io/docs/home/">Kubernetes</a>. Mais ce n&rsquo;est pas ce qu&rsquo;on va faire dans ce post. Ici dans ce post, je vais essayer de simplifier un maximum Kubernetes pour que vous (et moi) puissiez comprendre c&rsquo;est quoi ce truc dont tout le monde parle, et pourquoi c&rsquo;est devenu absolument nécessaire d&rsquo;avoir ça en entreprise ?</p>
 <p>Je vais utiliser un exemple qu&rsquo;on connaît tous, les systèmes d&rsquo;exploitation, ces systèmes qu&rsquo;on utilise quotidiennement, dans nos PC, nos téléphones, tablettes et j&rsquo;en passe. Qui nous permettent de faire nos tâches et qui paradoxalement sont l&rsquo;exemple parfait pour expliquer comment Kubernetes marche. Donc attachez-vous et commençons cette aventure !!</p>
@@ -299,7 +313,6 @@
 <p>Maintenant arrêtez d&rsquo;avoir peur de Kubernetes et allez casser du YAML !</p>
 <p>Bon, c&rsquo;est la fin, je vous remercie d&rsquo;avoir lu jusqu&rsquo;a la, et je vous dis a la prochaine !!</p>
 
-        </p>
         
         
             <script

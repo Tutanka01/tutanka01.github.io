@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SIEM on makhal.fr</title>
-    <link>http://localhost:1313/tags/siem/</link>
+    <link>https://makhal.fr/tags/siem/</link>
     <description>Recent content in SIEM on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Thu, 22 Aug 2024 09:05:49 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/siem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/siem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Découverte de Wazuh Partie 4</title>
-      <link>http://localhost:1313/posts/cyber/decouverte_siem_4/</link>
+      <link>https://makhal.fr/posts/cyber/decouverte_siem_4/</link>
       <pubDate>Thu, 22 Aug 2024 09:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/decouverte_siem_4/</guid>
+      <guid>https://makhal.fr/posts/cyber/decouverte_siem_4/</guid>
       <description>On verra dans ce post la puissance de Wazuh en important de nouvelles règles et des démos</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 3</title>
-      <link>http://localhost:1313/posts/cyber/decouverte_siem_3/</link>
+      <link>https://makhal.fr/posts/cyber/decouverte_siem_3/</link>
       <pubDate>Sat, 17 Aug 2024 12:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/decouverte_siem_3/</guid>
+      <guid>https://makhal.fr/posts/cyber/decouverte_siem_3/</guid>
       <description>Dans ce post, nous allons ajouter, configurer et voir Wazuh en action</description>
     </item>
     <item>
       <title>Découverte de Wazuh Partie 2</title>
-      <link>http://localhost:1313/posts/cyber/decouverte_siem_2/</link>
+      <link>https://makhal.fr/posts/cyber/decouverte_siem_2/</link>
       <pubDate>Fri, 16 Aug 2024 21:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/decouverte_siem_2/</guid>
+      <guid>https://makhal.fr/posts/cyber/decouverte_siem_2/</guid>
       <description>Dans la suite du post précédent, nous allons installer et configurer le wazuh-master et autres.</description>
     </item>
     <item>
       <title>Decouverte de Wazuh</title>
-      <link>http://localhost:1313/posts/cyber/decouverte_siem/</link>
+      <link>https://makhal.fr/posts/cyber/decouverte_siem/</link>
       <pubDate>Wed, 07 Aug 2024 20:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/posts/cyber/decouverte_siem/</guid>
+      <guid>https://makhal.fr/posts/cyber/decouverte_siem/</guid>
       <description>Dans une (encore) nouvelle serie de posts, nous allons decouvir le monde extraordianaire des SIEM</description>
     </item>
   </channel>

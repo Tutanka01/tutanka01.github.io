@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #c8602a;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Votre facture AWS vous ment</title>
+    <meta name="description" content="">
+    <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, cloud, sysadmin, aws'>
+
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/cloud/archi-aws/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Votre facture AWS vous ment">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Votre facture AWS vous ment">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/cloud/archi-aws/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/cloud/archi-aws/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
+
+    
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/cloud/archi-aws/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.7398468d24d3be6d394551c2705062b18acbf84a7dcdbc2f2d48c304b29d2020.js" integrity="sha256-c5hGjSTTvm05RVHCcFBisYrL&#43;Ep9zbwvLUjDBLKdICA="></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6QF6WSBEBS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6QF6WSBEBS');
+    </script>
+    
+    
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
+    
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+        
+        
+            <div class="avatar">
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
+                </a>
+            </div>
+        
+
+        
+        <div class="nav-title">
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
+        </div>
+
+        
+        <div class="nav-links">
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/posts/"> Posts </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://makhal.fr/tags/"> Tags </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://about.makhal.fr/"> Bio </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                </div>
+            
+                <div class="nav-link">
+                    <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                </div>
+            
+
+            
+            <span class="nav-icons-divider"></span>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">   
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/posts/"> Posts </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://makhal.fr/tags/"> Tags </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://about.makhal.fr/"> Bio </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.youtube.com/@makhalX"><span data-feather='youtube'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/mohamad-el-akhal-8b8319221/"><span data-feather='linkedin'></span>  </a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="https://github.com/tutanka01"><span data-feather='github'></span>  </a>
+                    </li>
+                
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/cloud">cloud</a> / <a href="https://makhal.fr/tags/sysadmin">sysadmin</a> / <a href="https://makhal.fr/tags/aws">aws</a>
+        </div>
+        
+
+        <h1>Votre facture AWS vous ment</h1>
+        <small role="doc-subtitle"></small>
+        <p class="post-date">
+            mars 13, 2026
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/cloud">cloud</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
+        
+            <li class="post-tag"><a href="https://makhal.fr/tags/aws">aws</a></li>
+        
+        </ul>
+
+        <hr class="editorial-rule">
+    </div>
+
+    <div class="post-content">
+        <h1 id="le-cloud-vous-a-économisé-de-largent--votre-facture-aws-dit-le-contraire">Le cloud vous a économisé de l&rsquo;argent ? Votre facture AWS dit le contraire.</h1>
+<p>On vous a vendu le cloud comme une économie, mais votre facture AWS prouve que vous payez pour de la complexité invisible. On se fait lobotomiser par les coûts cachés, ces petits frais qui s&rsquo;accumulent dans l&rsquo;ombre pendant qu&rsquo;on admire nos dashboards. Le vrai problème n&rsquo;est pas le prix à la demande des instances, c&rsquo;est l&rsquo;architecture bancale qu&rsquo;on traîne depuis le début. Et le sale boulot de l&rsquo;optimisation, personne ne veut le faire.</p>
+<h2 id="pourquoi-on-se-fait-avoir-">Pourquoi on se fait avoir ?</h2>
+<p>Le cloud, c&rsquo;est une usine à gaz magnifique. On y migre nos applis, on active des services, et on oublie que chaque décision d&rsquo;architecture a un prix caché. AWS ne vous facture pas seulement pour les ressources que vous utilisez, mais aussi pour celles que vous gaspillez, pour les failles de sécurité que vous n&rsquo;avez pas colmatées, et pour les pannes que votre mauvaise conception provoque. C&rsquo;est comme si vous payiez un loyer pour un appartement dont vous n&rsquo;utilisez que la moitié des pièces, en plus de financer les serrures défaillantes et les fuites d&rsquo;eau.</p>
+<p>Le framework Well-Architected d&rsquo;AWS existe justement pour ça. Il vous donne une boussole pour naviguer dans ce bazar. Mais attention, ce n&rsquo;est pas une solution magique. C&rsquo;est un guide, pas un remède. Il vous force à regarder en face les six piliers de votre architecture : l&rsquo;excellence opérationnelle, la sécurité, la fiabilité, l&rsquo;efficacité des performances, l&rsquo;optimisation des coûts et la durabilité. Ignorer un seul de ces piliers, c&rsquo;est comme construire une maison sur du sable. Vous le paierez, tôt ou tard.</p>
+<h2 id="les-trois-gouffres-financiers-invisibles">Les trois gouffres financiers invisibles</h2>
+<p>Trois domaines vous ruinent discrètement : la sécurité, la disponibilité et l&rsquo;efficacité des ressources. Prenons la sécurité. Une mauvaise configuration, un accès en trop, et c&rsquo;est le jackpot pour un hacker. Le coût d&rsquo;une brèche ne se limite pas à la perte de données. C&rsquo;est la réputation, les amendes, les clients qui fuient. AWS vous alerte sur les risques critiques (HRI) via son outil Well-Architected. Les ignorer, c&rsquo;est jouer à la roulette russe avec votre business.</p>
+<p>Ensuite, la disponibilité. Une panne, même de quelques minutes, ça coûte une fortune en productivité perdue et en SLA non respectés. Votre équipe ne peut pas bosser, vos clients sont furieux, et vous devez payer des consultants pour réparer la catastrophe. Enfin, l&rsquo;efficacité des ressources. Combien de serveurs tournent pour rien le week-end ? Combien de bases de données sont surdimensionnées &ldquo;au cas où&rdquo; ? On provisionne large par peur, et on paie pour du vide. La facture est salée.</p>
+<h2 id="le-well-architected-framework--votre-boussole">Le Well-Architected Framework : votre boussole</h2>
+<p>Le framework n&rsquo;est pas qu&rsquo;un checklist théorique. C&rsquo;est un processus concret. Il vous pousse à auditer votre architecture, à identifier les risques, et à corriger le tir. Prenons un exemple : la sécurité. Le framework vous dit de suivre le principe du moindre privilège. En clair, ne donnez à vos utilisateurs et services que les permissions strictement nécessaires. C&rsquo;est simple à dire, mais en pratique, c&rsquo;est le bazar. Combien de rôles IAM ont des droits administrateur par flemme ?</p>
+<p>AWS vous donne des outils pour ça. L&rsquo;outil Well-Architected vous pose des questions et vous classe les risques en critiques (HRI), moyens (MRI) ou faibles (LRI). Un HRI en sécurité, c&rsquo;est une porte ouverte aux attaques. Le framework vous guide aussi sur la protection des données (chiffrement partout), la protection de l&rsquo;infrastructure (segmentation réseau) et la surveillance. Mais attention, c&rsquo;est à vous de faire le boulot. AWS ne le fera pas à votre place.</p>
+<h2 id="en-pratique--chasser-les-coûts-cachés">En pratique : chasser les coûts cachés</h2>
+<p>Passons aux choses sérieuses. Voici un exemple concret pour optimiser les coûts de calcul. Imaginons une application qui n&rsquo;est utilisée que pendant les heures de bureau. Pourquoi payer une instance EC2 24h/24 ? On peut utiliser des instances Spot ou planifier l&rsquo;arrêt des instances la nuit.</p>
+<p>Voici un snippet de code Terraform pour planifier l&rsquo;arrêt d&rsquo;une instance EC2 la nuit et le week-end. C&rsquo;est un début, mais ça peut économiser jusqu&rsquo;à 70% des coûts de calcul.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-hcl" data-lang="hcl"><span style="display:flex;"><span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;aws_cloudwatch_event_rule&#34; &#34;stop_instances&#34;</span> {
+</span></span><span style="display:flex;"><span>  name                <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;stop-instances-nights-weekends&#34;</span>
+</span></span><span style="display:flex;"><span>  description         <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Arrête les instances la nuit et le week-end&#34;</span>
+</span></span><span style="display:flex;"><span>  schedule_expression <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;cron(0 19 ? * MON-FRI *)&#34;</span><span style="color:#75715e"> # 19h du lundi au vendredi
+</span></span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">resource</span> <span style="color:#e6db74">&#34;aws_cloudwatch_event_target&#34; &#34;stop_instances&#34;</span> {
+</span></span><span style="display:flex;"><span>  rule      <span style="color:#f92672">=</span> <span style="color:#66d9ef">aws_cloudwatch_event_rule</span>.<span style="color:#66d9ef">stop_instances</span>.<span style="color:#66d9ef">name</span>
+</span></span><span style="display:flex;"><span>  target_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;StopEC2Instances&#34;</span>
+</span></span><span style="display:flex;"><span>  arn       <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;arn:aws:automatisations:${var.region}:${data.aws_caller_identity.current.account_id}:automation-definition/AWS-StopEC2Instances:$DEFAULT&#34;</span>
+</span></span><span style="display:flex;"><span>  role_arn  <span style="color:#f92672">=</span> <span style="color:#66d9ef">aws_iam_role</span>.<span style="color:#66d9ef">ec2_automation</span>.<span style="color:#66d9ef">arn</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  input <span style="color:#f92672">=</span> <span style="color:#66d9ef">jsonencode</span>({
+</span></span><span style="display:flex;"><span>    InstanceIds <span style="color:#f92672">=</span> <span style="color:#66d9ef">aws_instance</span>.<span style="color:#66d9ef">app</span>[<span style="color:#960050;background-color:#1e0010">*</span>].<span style="color:#66d9ef">id</span>
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Autre exemple : les snapshots EBS. On en crée, on les garde, et on oublie. Un script simple pour nettoyer les vieux snapshots peut réduire la facture de stockage.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># Supprime les snapshots EBS de plus de 30 jours</span>
+</span></span><span style="display:flex;"><span>aws ec2 describe-snapshots --owner-ids self --query <span style="color:#e6db74">&#39;Snapshots[?StartTime&lt;`2024-01-01`].SnapshotId&#39;</span> --output text | <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>xargs -I <span style="color:#f92672">{}</span> aws ec2 delete-snapshot --snapshot-id <span style="color:#f92672">{}</span>
+</span></span></code></pre></div><h2 id="et-si-on-arrêtait-de-payer-pour-la-complexité-">Et si on arrêtait de payer pour la complexité ?</h2>
+<p>Le vrai enjeu n&rsquo;est peut-être pas de réduire la facture, mais de décider combien on est prêt à payer pour ne plus gérer l&rsquo;infrastructure. Le cloud nous a débarrassé des serveurs physiques, mais il nous a donné un nouveau monstre : la complexité opérationnelle. Le framework Well-Architected est un antidote, mais il demande du temps, de la compétence, et une volonté de faire le ménage. La question est : êtes-vous prêt à investir dans cette rigueur, ou préférez-vous continuer à payer pour vos erreurs ? La balle est dans votre camp.</p>
+
+        
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/docs/criu/criu-2/">
+            &#8592;
+            :
+            CRIU : L&#39;art de la résurrection de processus
+        </a>
+    </p>
+    <p class="prev-post-date">
+        février 15, 2026
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/other/agenticblog/">
+            :
+            AgenticBlog : Le futur de la création de contenu
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            mars 21, 2026
+        </p>
+</div>
+
+
+            
+        
+    </div>
+</div>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2026 makhal.fr</span>
+    
+</footer>
+</body>
+</html>

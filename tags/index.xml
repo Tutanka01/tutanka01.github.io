@@ -2,500 +2,556 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on makhal.fr</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://makhal.fr/tags/</link>
     <description>Recent content in Tags on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Wed, 21 Jan 2026 06:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Cyber</title>
-      <link>http://localhost:1313/tags/cyber/</link>
-      <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cyber/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ebpf</title>
-      <link>http://localhost:1313/tags/ebpf/</link>
-      <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ebpf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docs</title>
-      <link>http://localhost:1313/tags/docs/</link>
-      <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/docs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Envoy</title>
-      <link>http://localhost:1313/tags/envoy/</link>
-      <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/envoy/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Mon, 27 Apr 2026 08:40:45 +0200</lastBuildDate>
+    <atom:link href="https://makhal.fr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Architecture</title>
-      <link>http://localhost:1313/tags/architecture/</link>
-      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/architecture/</guid>
+      <link>https://makhal.fr/tags/architecture/</link>
+      <pubDate>Mon, 27 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/architecture/</guid>
       <description></description>
     </item>
     <item>
-      <title>Philosophie</title>
-      <link>http://localhost:1313/tags/philosophie/</link>
-      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/philosophie/</guid>
+      <title>Inference</title>
+      <link>https://makhal.fr/tags/inference/</link>
+      <pubDate>Mon, 27 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/inference/</guid>
       <description></description>
     </item>
     <item>
-      <title>Zerotrust</title>
-      <link>http://localhost:1313/tags/zerotrust/</link>
-      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/zerotrust/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Knative</title>
-      <link>http://localhost:1313/tags/knative/</link>
-      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/knative/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kubernetes</title>
-      <link>http://localhost:1313/tags/kubernetes/</link>
-      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Serverless</title>
-      <link>http://localhost:1313/tags/serverless/</link>
-      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/serverless/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Twingate</title>
-      <link>http://localhost:1313/tags/twingate/</link>
-      <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/twingate/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vpn</title>
-      <link>http://localhost:1313/tags/vpn/</link>
-      <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/vpn/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Devops</title>
-      <link>http://localhost:1313/tags/devops/</link>
-      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/devops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Infra</title>
-      <link>http://localhost:1313/tags/infra/</link>
-      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/infra/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SecOPS</title>
-      <link>http://localhost:1313/tags/secops/</link>
-      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/secops/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sysadmin</title>
-      <link>http://localhost:1313/tags/sysadmin/</link>
-      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/sysadmin/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IOT</title>
-      <link>http://localhost:1313/tags/iot/</link>
-      <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/tags/iot/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LoraWan</title>
-      <link>http://localhost:1313/tags/lorawan/</link>
-      <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/tags/lorawan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cloud</title>
-      <link>http://localhost:1313/tags/cloud/</link>
-      <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cloud/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reflexion</title>
-      <link>http://localhost:1313/tags/reflexion/</link>
-      <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/reflexion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Mon, 01 Sep 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>K3s</title>
-      <link>http://localhost:1313/tags/k3s/</link>
-      <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/k3s/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>K3sup</title>
-      <link>http://localhost:1313/tags/k3sup/</link>
-      <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/k3sup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Loadbalancer</title>
-      <link>http://localhost:1313/tags/loadbalancer/</link>
-      <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/loadbalancer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Metallb</title>
-      <link>http://localhost:1313/tags/metallb/</link>
-      <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/metallb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Containers</title>
-      <link>http://localhost:1313/tags/containers/</link>
-      <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/containers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Virtualisation</title>
-      <link>http://localhost:1313/tags/virtualisation/</link>
-      <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/virtualisation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Authentik</title>
-      <link>http://localhost:1313/tags/authentik/</link>
-      <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/authentik/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Iam</title>
-      <link>http://localhost:1313/tags/iam/</link>
-      <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/iam/</guid>
+      <title>Llm</title>
+      <link>https://makhal.fr/tags/llm/</link>
+      <pubDate>Mon, 27 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/llm/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Hosted</title>
-      <link>http://localhost:1313/tags/self-hosted/</link>
+      <link>https://makhal.fr/tags/self-hosted/</link>
+      <pubDate>Mon, 27 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/self-hosted/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpu</title>
+      <link>https://makhal.fr/tags/gpu/</link>
+      <pubDate>Mon, 20 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Souverainete</title>
+      <link>https://makhal.fr/tags/souverainete/</link>
+      <pubDate>Mon, 20 Apr 2026 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/souverainete/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aws</title>
+      <link>https://makhal.fr/tags/aws/</link>
+      <pubDate>Fri, 13 Mar 2026 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud</title>
+      <link>https://makhal.fr/tags/cloud/</link>
+      <pubDate>Fri, 13 Mar 2026 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sysadmin</title>
+      <link>https://makhal.fr/tags/sysadmin/</link>
+      <pubDate>Fri, 13 Mar 2026 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/sysadmin/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud-Native</title>
+      <link>https://makhal.fr/tags/cloud-native/</link>
+      <pubDate>Sun, 15 Feb 2026 14:45:00 +0100</pubDate>
+      <guid>https://makhal.fr/tags/cloud-native/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Criu</title>
+      <link>https://makhal.fr/tags/criu/</link>
+      <pubDate>Sun, 15 Feb 2026 14:45:00 +0100</pubDate>
+      <guid>https://makhal.fr/tags/criu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://makhal.fr/tags/linux/</link>
+      <pubDate>Sun, 15 Feb 2026 14:45:00 +0100</pubDate>
+      <guid>https://makhal.fr/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systems</title>
+      <link>https://makhal.fr/tags/systems/</link>
+      <pubDate>Sun, 15 Feb 2026 14:45:00 +0100</pubDate>
+      <guid>https://makhal.fr/tags/systems/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cyber</title>
+      <link>https://makhal.fr/tags/cyber/</link>
+      <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/cyber/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ebpf</title>
+      <link>https://makhal.fr/tags/ebpf/</link>
+      <pubDate>Wed, 21 Jan 2026 06:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/ebpf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docs</title>
+      <link>https://makhal.fr/tags/docs/</link>
+      <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/docs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Envoy</title>
+      <link>https://makhal.fr/tags/envoy/</link>
+      <pubDate>Sat, 27 Dec 2025 06:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/envoy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophie</title>
+      <link>https://makhal.fr/tags/philosophie/</link>
+      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/philosophie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zerotrust</title>
+      <link>https://makhal.fr/tags/zerotrust/</link>
+      <pubDate>Tue, 25 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/zerotrust/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knative</title>
+      <link>https://makhal.fr/tags/knative/</link>
+      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/knative/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kubernetes</title>
+      <link>https://makhal.fr/tags/kubernetes/</link>
+      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Serverless</title>
+      <link>https://makhal.fr/tags/serverless/</link>
+      <pubDate>Tue, 11 Nov 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/serverless/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Twingate</title>
+      <link>https://makhal.fr/tags/twingate/</link>
+      <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/twingate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vpn</title>
+      <link>https://makhal.fr/tags/vpn/</link>
+      <pubDate>Sun, 05 Oct 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/vpn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Devops</title>
+      <link>https://makhal.fr/tags/devops/</link>
+      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/devops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Infra</title>
+      <link>https://makhal.fr/tags/infra/</link>
+      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/infra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SecOPS</title>
+      <link>https://makhal.fr/tags/secops/</link>
+      <pubDate>Sat, 27 Sep 2025 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/secops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IOT</title>
+      <link>https://makhal.fr/tags/iot/</link>
+      <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
+      <guid>https://makhal.fr/tags/iot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LoraWan</title>
+      <link>https://makhal.fr/tags/lorawan/</link>
+      <pubDate>Mon, 15 Sep 2025 08:47:49 +0200</pubDate>
+      <guid>https://makhal.fr/tags/lorawan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reflexion</title>
+      <link>https://makhal.fr/tags/reflexion/</link>
+      <pubDate>Sun, 07 Sep 2025 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/reflexion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://makhal.fr/tags/docker/</link>
+      <pubDate>Mon, 01 Sep 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>K3s</title>
+      <link>https://makhal.fr/tags/k3s/</link>
+      <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/k3s/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>K3sup</title>
+      <link>https://makhal.fr/tags/k3sup/</link>
+      <pubDate>Sun, 24 Aug 2025 08:05:49 +0100</pubDate>
+      <guid>https://makhal.fr/tags/k3sup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loadbalancer</title>
+      <link>https://makhal.fr/tags/loadbalancer/</link>
+      <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
+      <guid>https://makhal.fr/tags/loadbalancer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Metallb</title>
+      <link>https://makhal.fr/tags/metallb/</link>
+      <pubDate>Thu, 10 Jul 2025 04:12:10 +0100</pubDate>
+      <guid>https://makhal.fr/tags/metallb/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://makhal.fr/tags/containers/</link>
+      <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtualisation</title>
+      <link>https://makhal.fr/tags/virtualisation/</link>
+      <pubDate>Sun, 06 Jul 2025 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/virtualisation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Authentik</title>
+      <link>https://makhal.fr/tags/authentik/</link>
       <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/self-hosted/</guid>
+      <guid>https://makhal.fr/tags/authentik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iam</title>
+      <link>https://makhal.fr/tags/iam/</link>
+      <pubDate>Fri, 27 Jun 2025 08:40:45 +0200</pubDate>
+      <guid>https://makhal.fr/tags/iam/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitoring</title>
-      <link>http://localhost:1313/tags/monitoring/</link>
+      <link>https://makhal.fr/tags/monitoring/</link>
       <pubDate>Sat, 21 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/monitoring/</guid>
+      <guid>https://makhal.fr/tags/monitoring/</guid>
       <description></description>
     </item>
     <item>
       <title>Observabilité</title>
-      <link>http://localhost:1313/tags/observabilit%C3%A9/</link>
+      <link>https://makhal.fr/tags/observabilit%C3%A9/</link>
       <pubDate>Sat, 21 Jun 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/observabilit%C3%A9/</guid>
+      <guid>https://makhal.fr/tags/observabilit%C3%A9/</guid>
       <description></description>
     </item>
     <item>
       <title>Authelia</title>
-      <link>http://localhost:1313/tags/authelia/</link>
+      <link>https://makhal.fr/tags/authelia/</link>
       <pubDate>Wed, 28 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/authelia/</guid>
+      <guid>https://makhal.fr/tags/authelia/</guid>
       <description></description>
     </item>
     <item>
       <title>Gitops</title>
-      <link>http://localhost:1313/tags/gitops/</link>
+      <link>https://makhal.fr/tags/gitops/</link>
       <pubDate>Fri, 16 May 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/gitops/</guid>
+      <guid>https://makhal.fr/tags/gitops/</guid>
       <description></description>
     </item>
     <item>
       <title>Unikernel</title>
-      <link>http://localhost:1313/tags/unikernel/</link>
+      <link>https://makhal.fr/tags/unikernel/</link>
       <pubDate>Sat, 03 May 2025 08:15:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/unikernel/</guid>
+      <guid>https://makhal.fr/tags/unikernel/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker-Swarm</title>
-      <link>http://localhost:1313/tags/docker-swarm/</link>
+      <link>https://makhal.fr/tags/docker-swarm/</link>
       <pubDate>Sat, 26 Apr 2025 06:49:38 +0100</pubDate>
-      <guid>http://localhost:1313/tags/docker-swarm/</guid>
+      <guid>https://makhal.fr/tags/docker-swarm/</guid>
       <description></description>
     </item>
     <item>
       <title>MicroVM</title>
-      <link>http://localhost:1313/tags/microvm/</link>
+      <link>https://makhal.fr/tags/microvm/</link>
       <pubDate>Sun, 13 Apr 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/microvm/</guid>
+      <guid>https://makhal.fr/tags/microvm/</guid>
       <description></description>
     </item>
     <item>
       <title>Sandbox</title>
-      <link>http://localhost:1313/tags/sandbox/</link>
+      <link>https://makhal.fr/tags/sandbox/</link>
       <pubDate>Mon, 07 Apr 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sandbox/</guid>
+      <guid>https://makhal.fr/tags/sandbox/</guid>
       <description></description>
     </item>
     <item>
       <title>IA</title>
-      <link>http://localhost:1313/tags/ia/</link>
+      <link>https://makhal.fr/tags/ia/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ia/</guid>
+      <guid>https://makhal.fr/tags/ia/</guid>
       <description></description>
     </item>
     <item>
       <title>N8n</title>
-      <link>http://localhost:1313/tags/n8n/</link>
+      <link>https://makhal.fr/tags/n8n/</link>
       <pubDate>Wed, 02 Apr 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/n8n/</guid>
+      <guid>https://makhal.fr/tags/n8n/</guid>
       <description></description>
     </item>
     <item>
       <title>Stable Diffusion</title>
-      <link>http://localhost:1313/tags/stable-diffusion/</link>
+      <link>https://makhal.fr/tags/stable-diffusion/</link>
       <pubDate>Fri, 28 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/stable-diffusion/</guid>
+      <guid>https://makhal.fr/tags/stable-diffusion/</guid>
       <description></description>
     </item>
     <item>
       <title>Kiwix</title>
-      <link>http://localhost:1313/tags/kiwix/</link>
+      <link>https://makhal.fr/tags/kiwix/</link>
       <pubDate>Sun, 23 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/kiwix/</guid>
+      <guid>https://makhal.fr/tags/kiwix/</guid>
       <description></description>
     </item>
     <item>
       <title>Homelab</title>
-      <link>http://localhost:1313/tags/homelab/</link>
+      <link>https://makhal.fr/tags/homelab/</link>
       <pubDate>Thu, 20 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/homelab/</guid>
+      <guid>https://makhal.fr/tags/homelab/</guid>
       <description></description>
     </item>
     <item>
       <title>Nixos</title>
-      <link>http://localhost:1313/tags/nixos/</link>
+      <link>https://makhal.fr/tags/nixos/</link>
       <pubDate>Thu, 20 Mar 2025 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/nixos/</guid>
+      <guid>https://makhal.fr/tags/nixos/</guid>
       <description></description>
     </item>
     <item>
       <title>Endpoint</title>
-      <link>http://localhost:1313/tags/endpoint/</link>
+      <link>https://makhal.fr/tags/endpoint/</link>
       <pubDate>Fri, 14 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/endpoint/</guid>
+      <guid>https://makhal.fr/tags/endpoint/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>http://localhost:1313/tags/windows/</link>
+      <link>https://makhal.fr/tags/windows/</link>
       <pubDate>Fri, 14 Mar 2025 06:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/windows/</guid>
+      <guid>https://makhal.fr/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Mail</title>
-      <link>http://localhost:1313/tags/mail/</link>
+      <link>https://makhal.fr/tags/mail/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/mail/</guid>
+      <guid>https://makhal.fr/tags/mail/</guid>
       <description></description>
     </item>
     <item>
       <title>Mailcow</title>
-      <link>http://localhost:1313/tags/mailcow/</link>
+      <link>https://makhal.fr/tags/mailcow/</link>
       <pubDate>Sat, 08 Feb 2025 08:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/mailcow/</guid>
+      <guid>https://makhal.fr/tags/mailcow/</guid>
       <description></description>
     </item>
     <item>
       <title>Machine Learning</title>
-      <link>http://localhost:1313/tags/machine-learning/</link>
+      <link>https://makhal.fr/tags/machine-learning/</link>
       <pubDate>Sun, 26 Jan 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/machine-learning/</guid>
+      <guid>https://makhal.fr/tags/machine-learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Proxmox</title>
-      <link>http://localhost:1313/tags/proxmox/</link>
+      <link>https://makhal.fr/tags/proxmox/</link>
       <pubDate>Sun, 26 Jan 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/proxmox/</guid>
+      <guid>https://makhal.fr/tags/proxmox/</guid>
       <description></description>
     </item>
     <item>
       <title>Sentinelbox</title>
-      <link>http://localhost:1313/tags/sentinelbox/</link>
+      <link>https://makhal.fr/tags/sentinelbox/</link>
       <pubDate>Sun, 26 Jan 2025 08:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sentinelbox/</guid>
+      <guid>https://makhal.fr/tags/sentinelbox/</guid>
       <description></description>
     </item>
     <item>
       <title>Cloud-Init</title>
-      <link>http://localhost:1313/tags/cloud-init/</link>
+      <link>https://makhal.fr/tags/cloud-init/</link>
       <pubDate>Tue, 21 Jan 2025 18:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cloud-init/</guid>
+      <guid>https://makhal.fr/tags/cloud-init/</guid>
       <description></description>
     </item>
     <item>
       <title>POC</title>
-      <link>http://localhost:1313/tags/poc/</link>
+      <link>https://makhal.fr/tags/poc/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/poc/</guid>
+      <guid>https://makhal.fr/tags/poc/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://makhal.fr/tags/python/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://makhal.fr/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Ransomware</title>
-      <link>http://localhost:1313/tags/ransomware/</link>
+      <link>https://makhal.fr/tags/ransomware/</link>
       <pubDate>Sun, 08 Dec 2024 11:01:10 +0100</pubDate>
-      <guid>http://localhost:1313/tags/ransomware/</guid>
+      <guid>https://makhal.fr/tags/ransomware/</guid>
       <description></description>
     </item>
     <item>
       <title>Azure</title>
-      <link>http://localhost:1313/tags/azure/</link>
+      <link>https://makhal.fr/tags/azure/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/azure/</guid>
+      <guid>https://makhal.fr/tags/azure/</guid>
       <description></description>
     </item>
     <item>
       <title>IAC</title>
-      <link>http://localhost:1313/tags/iac/</link>
+      <link>https://makhal.fr/tags/iac/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/iac/</guid>
+      <guid>https://makhal.fr/tags/iac/</guid>
       <description></description>
     </item>
     <item>
       <title>Pulumi</title>
-      <link>http://localhost:1313/tags/pulumi/</link>
+      <link>https://makhal.fr/tags/pulumi/</link>
       <pubDate>Wed, 30 Oct 2024 06:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/pulumi/</guid>
+      <guid>https://makhal.fr/tags/pulumi/</guid>
       <description></description>
     </item>
     <item>
       <title>SIEM</title>
-      <link>http://localhost:1313/tags/siem/</link>
+      <link>https://makhal.fr/tags/siem/</link>
       <pubDate>Thu, 22 Aug 2024 09:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/siem/</guid>
+      <guid>https://makhal.fr/tags/siem/</guid>
       <description></description>
     </item>
     <item>
       <title>Wazuh</title>
-      <link>http://localhost:1313/tags/wazuh/</link>
+      <link>https://makhal.fr/tags/wazuh/</link>
       <pubDate>Thu, 22 Aug 2024 09:05:49 +0100</pubDate>
-      <guid>http://localhost:1313/tags/wazuh/</guid>
+      <guid>https://makhal.fr/tags/wazuh/</guid>
       <description></description>
     </item>
     <item>
       <title>Ccna</title>
-      <link>http://localhost:1313/tags/ccna/</link>
+      <link>https://makhal.fr/tags/ccna/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ccna/</guid>
+      <guid>https://makhal.fr/tags/ccna/</guid>
       <description></description>
     </item>
     <item>
       <title>Cisco</title>
-      <link>http://localhost:1313/tags/cisco/</link>
+      <link>https://makhal.fr/tags/cisco/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cisco/</guid>
+      <guid>https://makhal.fr/tags/cisco/</guid>
       <description></description>
     </item>
     <item>
       <title>Ios</title>
-      <link>http://localhost:1313/tags/ios/</link>
+      <link>https://makhal.fr/tags/ios/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/ios/</guid>
+      <guid>https://makhal.fr/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Tftp</title>
-      <link>http://localhost:1313/tags/tftp/</link>
+      <link>https://makhal.fr/tags/tftp/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/tftp/</guid>
+      <guid>https://makhal.fr/tags/tftp/</guid>
       <description></description>
     </item>
     <item>
       <title>Postfix</title>
-      <link>http://localhost:1313/tags/postfix/</link>
+      <link>https://makhal.fr/tags/postfix/</link>
       <pubDate>Sun, 28 Jan 2024 08:47:49 +0200</pubDate>
-      <guid>http://localhost:1313/tags/postfix/</guid>
+      <guid>https://makhal.fr/tags/postfix/</guid>
       <description></description>
     </item>
     <item>
       <title>Bind9</title>
-      <link>http://localhost:1313/tags/bind9/</link>
+      <link>https://makhal.fr/tags/bind9/</link>
       <pubDate>Sun, 15 Oct 2023 09:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/bind9/</guid>
+      <guid>https://makhal.fr/tags/bind9/</guid>
       <description></description>
     </item>
     <item>
       <title>Dns</title>
-      <link>http://localhost:1313/tags/dns/</link>
+      <link>https://makhal.fr/tags/dns/</link>
       <pubDate>Sun, 15 Oct 2023 09:10:45 +0200</pubDate>
-      <guid>http://localhost:1313/tags/dns/</guid>
+      <guid>https://makhal.fr/tags/dns/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/tags/about/</link>
+      <link>https://makhal.fr/tags/about/</link>
       <pubDate>Sat, 14 Oct 2023 16:10:25 +0200</pubDate>
-      <guid>http://localhost:1313/tags/about/</guid>
+      <guid>https://makhal.fr/tags/about/</guid>
       <description></description>
     </item>
     <item>
       <title>Cv</title>
-      <link>http://localhost:1313/tags/cv/</link>
+      <link>https://makhal.fr/tags/cv/</link>
       <pubDate>Sat, 14 Oct 2023 16:10:25 +0200</pubDate>
-      <guid>http://localhost:1313/tags/cv/</guid>
+      <guid>https://makhal.fr/tags/cv/</guid>
       <description></description>
     </item>
   </channel>

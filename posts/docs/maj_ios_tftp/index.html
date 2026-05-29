@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, cisco, ccna, tftp, ios'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/maj_ios_tftp/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/maj_ios_tftp/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mise a jour manuelle d&#39;un Switch Cisco par TFTP">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mise a jour manuelle d&#39;un Switch Cisco par TFTP">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/maj_ios_tftp/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/maj_ios_tftp/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/maj_ios_tftp/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/maj_ios_tftp/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/maj_ios_tftp/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/maj_ios_tftp/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/cisco">cisco</a> / <a href="https://makhal.fr/tags/ccna">ccna</a> / <a href="https://makhal.fr/tags/tftp">tftp</a> / <a href="https://makhal.fr/tags/ios">ios</a>
+        </div>
+        
+
         <h1>Mise a jour manuelle d&#39;un Switch Cisco par TFTP</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,20 +175,21 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/cisco">cisco</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/cisco">cisco</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ccna">ccna</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ccna">ccna</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/tftp">tftp</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/tftp">tftp</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/ios">ios</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/ios">ios</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <h1 id="mise-a-jour-manuelle-du-switch">Mise a jour manuelle du switch</h1>
+        <h1 id="mise-a-jour-manuelle-du-switch">Mise a jour manuelle du switch</h1>
 <p>Dans cette documentation je vais vous montrer comment procéder a une mise a jour manuelle en utilisant la méthode <strong>tftp</strong> pour un switch Cisco. Cette méthode est très utile, surtout si vous avez un switch qui n&rsquo;est pas connecte a internet, ou si vous avez des problèmes de connexion. Dans les prochaines parties de cette documentation je vais vous montrer comment procéder a cette mise a jour mais cette fois ci grace a Ansible ! En attendant, voici comment procéder manuellement.</p>
 <h2 id="téléchargement-et-installation-manuelle">Téléchargement et installation manuelle.</h2>
 <p>La première chose qu&rsquo;on doit faire est paramétrer le switch pour lui donner une adresse IP, pour lui permettre la communication entre lui et le serveur <em>tftp</em>. Pour cela on va donner une adresse IP a l&rsquo;interface <em>vlan 1</em> dans notre range IP. Pour le faire voici les étapes :</p>
@@ -228,7 +242,6 @@ Switch#reload
 <p><img src="/images/doc/maj_ios_tftp/tftp3.png" alt=""></p>
 <p>Voila ! J&rsquo;espere que vous avez bien aime ce petit tutoriel, et que vous avez pu mettre a jour votre switch sans aucun problème. Si vous avez des questions n&rsquo;hésitez pas a me contacter.</p>
 
-        </p>
         
         
             <script

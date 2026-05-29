@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, sysadmin, devops, Linux, containers'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/">
+    <meta property="og:url" content="https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="C&#39;est quoi vraiment un conteneur ?">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="C&#39;est quoi vraiment un conteneur ?">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/sysadmin/antomie-container/antomie_container/" />
+    <link rel="canonical" href="https://makhal.fr/posts/sysadmin/antomie-container/antomie_container/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/sysadmin">sysadmin</a> / <a href="https://makhal.fr/tags/devops">devops</a> / <a href="https://makhal.fr/tags/linux">Linux</a> / <a href="https://makhal.fr/tags/containers">containers</a>
+        </div>
+        
+
         <h1>C&#39;est quoi vraiment un conteneur ?</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,20 +175,21 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/sysadmin">sysadmin</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/sysadmin">sysadmin</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/linux">Linux</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/linux">Linux</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/containers">containers</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/containers">containers</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <p>Les conteneurs sont devenus incontournables dans notre petit monde de l&rsquo;IT. On en parle partout : Docker, Kubernetes, Podman… On les utilise pour déployer des applications, faciliter le développement et accélérer les mises en production.</p>
+        <p>Les conteneurs sont devenus incontournables dans notre petit monde de l&rsquo;IT. On en parle partout : Docker, Kubernetes, Podman… On les utilise pour déployer des applications, faciliter le développement et accélérer les mises en production.</p>
 <p>Mais est-ce qu&rsquo;on s&rsquo;est déjà vraiment demandé ce qu&rsquo;est un conteneur, au fond ? Pour beaucoup d&rsquo;entre nous, c&rsquo;est juste une boîte noire : on y met une application, et ça marche&hellip;</p>
 <p>Le problème, c&rsquo;est que derrière cette boîte noire se cachent des concepts techniques essentiels. Et dans un monde où tout devient de plus en plus automatisé (IA, ChatGPT, orchestrateurs, etc.), comprendre ces bases reste indispensable. Sinon, on risque de devenir de simples utilisateurs de solutions qu&rsquo;on ne maîtrise plus.</p>
 <h2 id="quest-ce-quun-conteneur-">Qu&rsquo;est-ce qu&rsquo;un conteneur ?</h2>
@@ -243,7 +257,6 @@
 <p>Comprendre ces bases permet non seulement de mieux maîtriser Docker, Kubernetes et leurs dérivés, mais aussi de mieux diagnostiquer, optimiser et sécuriser ses environnements de production.</p>
 <p>Dans un prochain article, on pourrait même aller plus loin : voir comment Docker ou containerd s’appuient sur ces briques pour créer nos fameux conteneurs.</p>
 
-        </p>
         
         
             <script

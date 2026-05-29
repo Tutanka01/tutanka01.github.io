@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, devops, IAC, Pulumi, Azure'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta property="og:url" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Decouverte de l&#39;IAC avec Pulumi">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Decouverte de l&#39;IAC avec Pulumi">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docs/iac/pulumi/pulumi-azure/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docs/iac/pulumi/pulumi-azure/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/devops">devops</a> / <a href="https://makhal.fr/tags/iac">IAC</a> / <a href="https://makhal.fr/tags/pulumi">Pulumi</a> / <a href="https://makhal.fr/tags/azure">Azure</a>
+        </div>
+        
+
         <h1>Decouverte de l&#39;IAC avec Pulumi</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,20 +175,21 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/devops">devops</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/devops">devops</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/iac">IAC</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/iac">IAC</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/pulumi">Pulumi</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/pulumi">Pulumi</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/azure">Azure</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/azure">Azure</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <h1 id="découverte-de-liac-avec-pulumi">Découverte de l&rsquo;IaC avec Pulumi</h1>
+        <h1 id="découverte-de-liac-avec-pulumi">Découverte de l&rsquo;IaC avec Pulumi</h1>
 <p>Bonjour à tous, j’espère que vous allez bien ! Aujourd&rsquo;hui, on va découvrir ensemble deux concepts essentiels : l’Infrastructure as Code (IaC) et l’outil <strong>Pulumi</strong>. Si ces termes vous semblent flous, pas d’inquiétude, je vais tout vous expliquer !</p>
 <h2 id="infrastructure-as-code-iac">Infrastructure as Code (IaC)</h2>
 <p>L’IaC, ou <em><strong>Infrastructure as Code</strong></em>, consiste à <strong>déployer et gérer de l&rsquo;infrastructure</strong> (par exemple des VMs, des conteneurs, des réseaux, des buckets S3, etc.) à travers du code. Cette approche permet non seulement de <em><strong>versionner</strong></em> l’infrastructure mais aussi de la <em><strong>tester</strong></em>, de la <em><strong>déployer</strong></em> de manière reproductible, et de mieux la documenter.</p>
@@ -270,7 +284,6 @@
 <h3 id="conclusion">Conclusion</h3>
 <p>Voilà, dans cet article nous avons exploré l&rsquo;IaC avec Pulumi et déployé notre première infrastructure sur Azure. J’espère que cet article vous a été utile et que vous avez appris quelque chose de nouveau. Si vous avez des questions, n&rsquo;hésitez pas à me les poser, je serai ravi d&rsquo;y répondre.</p>
 
-        </p>
         
         
             <script

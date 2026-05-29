@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, docker'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/docker/docker_3/">
+    <meta property="og:url" content="https://makhal.fr/posts/docker/docker_3/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Docker Partie 3">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Docker Partie 3">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/docker/docker_3/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/docker/docker_3/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/docker/docker_3/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/docker/docker_3/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/docker/docker_3/" />
+    <link rel="canonical" href="https://makhal.fr/posts/docker/docker_3/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/docker">docker</a>
+        </div>
+        
+
         <h1>Docker Partie 3</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,14 +175,15 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/docker">docker</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/docker">docker</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <h1 id="docker-partie-3">Docker Partie 3</h1>
+        <h1 id="docker-partie-3">Docker Partie 3</h1>
 <h2 id="docker-compose">Docker-Compose</h2>
 <p>Normalement, vous avez déjà une idée de ce qu&rsquo;est Docker, et comment l&rsquo;utiliser. Au moins vous captez le concept de base. Mais, si vous avez déjà essayé de lancer plusieurs conteneurs en même temps, vous avez dû vous rendre compte que c&rsquo;est un peu complique. Vous devez lancer chaque conteneur un par un, et vous devez vous souvenir des commandes pour chaque conteneur. C&rsquo;est là que Docker-Compose entre en jeu.</p>
 <p>Surtout quand vous voulez les faire communiquer entre eux, c&rsquo;est un peu complique. Vous devez vous souvenir des noms des conteneurs, des reseaux qui lui sont associés, des ports qu&rsquo;ils exposent, etc&hellip;</p>
@@ -268,7 +282,6 @@
 <p>Bon, peut être que je vous ai un peu perdu avec l&rsquo;exemple de Graylog. Mais je voulais seulement vous montrer la puissance que docker compose peut vous offrir. Vous pouvez lancer plusieurs services en même temps, et en un claquement de doigts vous avez ce qui allait vous prendre des heures si vous aviez utilisé <code>docker run</code>. V</p>
 <p>J&rsquo;espere que vous avez compris l&rsquo;essentiel de Docker-Compose.</p>
 
-        </p>
         
         
     </div>

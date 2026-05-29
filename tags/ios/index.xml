@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ios on makhal.fr</title>
-    <link>http://localhost:1313/tags/ios/</link>
+    <link>https://makhal.fr/tags/ios/</link>
     <description>Recent content in Ios on makhal.fr</description>
     <generator>Hugo</generator>
     <language>fr-fr</language>
     <lastBuildDate>Sun, 21 Apr 2024 21:40:45 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://makhal.fr/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mise a jour manuelle d&#39;un Switch Cisco par TFTP</title>
-      <link>http://localhost:1313/posts/docs/maj_ios_tftp/</link>
+      <link>https://makhal.fr/posts/docs/maj_ios_tftp/</link>
       <pubDate>Sun, 21 Apr 2024 21:40:45 +0200</pubDate>
-      <guid>http://localhost:1313/posts/docs/maj_ios_tftp/</guid>
+      <guid>https://makhal.fr/posts/docs/maj_ios_tftp/</guid>
       <description>Documentation sur comment mettre a jour manuellement un switch Cisco par TFTP</description>
     </item>
   </channel>

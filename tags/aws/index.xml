@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on makhal.fr</title>
+    <link>https://makhal.fr/tags/aws/</link>
+    <description>Recent content in Aws on makhal.fr</description>
+    <generator>Hugo</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Fri, 13 Mar 2026 08:10:45 +0200</lastBuildDate>
+    <atom:link href="https://makhal.fr/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Votre facture AWS vous ment</title>
+      <link>https://makhal.fr/posts/sysadmin/cloud/archi-aws/</link>
+      <pubDate>Fri, 13 Mar 2026 08:10:45 +0200</pubDate>
+      <guid>https://makhal.fr/posts/sysadmin/cloud/archi-aws/</guid>
+      <description>70% d&amp;rsquo;économies possibles sur vos instances EC2. Mais le vrai coût caché n&amp;rsquo;est pas celui que vous croyez.</description>
+    </item>
+  </channel>
+</rss>

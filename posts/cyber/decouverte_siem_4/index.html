@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         :root {
-            --accent-color: #FF4D4D;
+            --accent-color: #c8602a;
         }
     </style>
 
@@ -21,22 +21,22 @@
     <meta name="description" content="">
     <meta name="keywords" content='blog, makhal, cyber, SIEM, BUT R&amp;T, Wazuh, SecOPS'>
 
-    <meta property="og:url" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
+    <meta property="og:url" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Découverte de Wazuh Partie 4">
     <meta property="og:description" content="">
-    <meta property="og:image" content="http://localhost:1313/images/avatar.jpg">
-    <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="og:image" content="https://makhal.fr/images/avatar.jpg">
+    <meta property="og:image:secure_url" content="https://makhal.fr/images/avatar.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Découverte de Wazuh Partie 4">
     <meta name="twitter:description" content="">
-    <meta property="twitter:domain" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
-    <meta property="twitter:url" content="http://localhost:1313/posts/cyber/decouverte_siem_4/">
-    <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpg">
+    <meta property="twitter:domain" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
+    <meta property="twitter:url" content="https://makhal.fr/posts/cyber/decouverte_siem_4/">
+    <meta name="twitter:image" content="https://makhal.fr/images/avatar.jpg">
 
     
-    <link rel="canonical" href="http://localhost:1313/posts/cyber/decouverte_siem_4/" />
+    <link rel="canonical" href="https://makhal.fr/posts/cyber/decouverte_siem_4/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -59,7 +59,9 @@
     </script>
     
     
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap">
     
     
 </head>
@@ -72,26 +74,26 @@
         
         
             <div class="avatar">
-                <a href="http://localhost:1313/">
-                    <img src="http://localhost:1313//images/avatar.jpg" alt="avatar" />
+                <a href="https://makhal.fr/">
+                    <img src="https://makhal.fr//images/avatar.jpg" alt="avatar" />
                 </a>
             </div>
         
 
         
         <div class="nav-title">
-            <a class="nav-brand" href="http://localhost:1313/">makhal.fr</a>
+            <a class="nav-brand" href="https://makhal.fr/">makhal.fr</a>
         </div>
 
         
         <div class="nav-links">
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="https://makhal.fr/posts/"> Posts </a>
                 </div>
             
                 <div class="nav-link">
-                    <a href="http://localhost:1313/tags/"> Tags </a>
+                    <a href="https://makhal.fr/tags/"> Tags </a>
                 </div>
             
                 <div class="nav-link">
@@ -125,11 +127,11 @@
             <ul class="nav-hamburger-list visibility-hidden">   
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/posts/"> Posts </a>
+                        <a href="https://makhal.fr/posts/"> Posts </a>
                     </li>
                 
                     <li class="nav-item">
-                        <a href="http://localhost:1313/tags/"> Tags </a>
+                        <a href="https://makhal.fr/tags/"> Tags </a>
                     </li>
                 
                     <li class="nav-item">
@@ -154,6 +156,17 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
+        <a href="/" class="back-button">
+            <span data-feather="arrow-left"></span>
+            <span>Retour</span>
+        </a>
+
+        
+        <div class="post-tags-above">
+            <a href="https://makhal.fr/tags/siem">SIEM</a> / <a href="https://makhal.fr/tags/wazuh">Wazuh</a> / <a href="https://makhal.fr/tags/secops">SecOPS</a>
+        </div>
+        
+
         <h1>Découverte de Wazuh Partie 4</h1>
         <small role="doc-subtitle"></small>
         <p class="post-date">
@@ -162,18 +175,19 @@
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/siem">SIEM</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/siem">SIEM</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/wazuh">Wazuh</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/wazuh">Wazuh</a></li>
         
-            <li class="post-tag"><a href="http://localhost:1313/tags/secops">SecOPS</a></li>
+            <li class="post-tag"><a href="https://makhal.fr/tags/secops">SecOPS</a></li>
         
         </ul>
+
+        <hr class="editorial-rule">
     </div>
 
     <div class="post-content">
-        <p>
-            <h1 id="introduction">Introduction</h1>
+        <h1 id="introduction">Introduction</h1>
 <p>Dans ce nouveau post, comme promis dans le dernier post, je vais vous montrer la vraie puissance de Wazuh et comment est-ce que Wazuh peut nous aider à améliorer la sécurité de notre infrastructure, mais bien entendu, avant de faire ça, je vais installer Sysmon sur Windows (j&rsquo;expliquerai plus tard ce que c&rsquo;est), ajouter quelques rules Wazuh pour améliorer la capacité de détection de Wazuh. Tout cela est plus dans ce post !</p>
 <h2 id="nouvelles-rules">Nouvelles <em><strong>Rules</strong></em></h2>
 <p>Dans cette grande partie, on va faire deux choses principalement : on va d&rsquo;abord installer Sysmon sur nos systèmes Windows, et également revisiter nos configurations de groupes pour les améliorer et les optimiser. Une fois que nous aurons fait ça, j&rsquo;importerai de nouvelles règles sur notre Wazuh-Server pour avoir une meilleure détection des possibles menaces qui peuvent exister sur nos systèmes.</p>
@@ -291,7 +305,6 @@ Tout d&rsquo;abord, il faut savoir que chaque ligne de log importée depuis un W
 <h2 id="conclusion">Conclusion</h2>
 <p>Et voilà, merci beaucoup d&rsquo;avoir suivi ce post, je vous dis à la prochaine !</p>
 
-        </p>
         
         
             <script
